@@ -1,0 +1,54 @@
+# Firstly, we need to define what tags should be considered sentence delimiters. For this example, only full stop is set as delimiter.
+DELIMITERS = "<.>" "<;>" "<,>" "<:>";
+
+# We can define sets for common tag clusters
+
+LIST V = v ;
+LIST VAux = vaux ;
+LIST NotV = n adj prn adv pr conn cnjcoo cnjsub det neg;
+LIST Adj = adj ;
+List Quant = (det qnt) ;
+List @neg = neg ;
+
+SECTION
+
+# If there is a verb than can be an auxiliary or main verb followed by another verb, remove the verb analysis of the first verb.
+REMOVE V IF (0 V) (0 VAux) (1 V) ;
+
+# If there is a verb that can be an auxiliary or main verb and it is followed by any part of speech other than verb, remove the auxiliary analysis of the verb
+REMOVE VAux IF (0 V) (0 VAux) (1 NotV) ;
+
+# If I am an adjective and a quantifier but do not agree in number with the preceding noun, I must be a quantifier
+REMOVE Adj IF (-1 (n pl)) (0 Quant) (0 (adj sg)) ;
+
+# If I am a noun that can be singular or plural and am followed by a singular adjective, I cannot be plural
+REMOVE (n pl) IF (0 (n sg)) (0 (n pl)) (1 (adj sg)) ;
+
+# If I am a noun that can be singular or plural and am follwed by a plural adjective, I cannot be singular
+REMOVE (n sg) IF (0 (n sg)) (0 (n pl)) (1 (adj pl)) ;
+
+# If I can be an ordinal and a cardinal and am modifying a plural noun, I am not an ordinal (one is never both ordinal and cardinal so this is not a problem)
+REMOVE (num ord) IF (-1 (n pl)) (0 (num ord)) (0 (num card)) ;
+
+# If I can be an ordinal and a cardinal and am modifying a singular noun, I am not a cardinal (one is never both ordinal and cardinal so this is not a problem)
+REMOVE (num card) IF (-1 (n sg)) (0 (num ord)) (0 (num card)) ;
+
+# If I can be a demonstrative nominal and a relative pronoun but am not proceeded by a noun, I cannot be a relative pronoun.
+#REMOVE (prn dem) IF (-1 (n)) (0 (prn rel)) (0 (prn dem)) ;
+
+# Removes verb analysis when koya is incorrectly analyzed as form of connected
+REMOVE (v) IF (0 ("koya")) (0 (conn)) ;
+
+# Remove intensified imperative analysis for koya imperative. Correct imperative is yaka, not y-aka.
+REMOVE (v imp intns) IF (0 ("koya" imp)) ;
+
+#If the negative particle "te" appears anywhere in the sentence, add a neg tag to verbs in the sentence. Uncomment this if desired in machine translation.
+#MAP @neg TARGET V IF (0* ("<te>")) ;
+
+# Resources:
+# http://visl.sdu.dk/cg3.html
+# http://groups.google.com/group/constraint-grammar
+# http://kevindonnelly.org.uk/2010/05/constraint-grammar-tutorial/
+# http://wiki.apertium.org/wiki/Constraint_Grammar
+# http://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
+

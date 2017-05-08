@@ -1,0 +1,156 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../lin.autogen.hfst
+    Morph: ../lin.automorf.hfst
+Tests:
+  Adjective:
+    malámu<adj>: malámu
+    molaí<adj><pl>: milaí
+    monéne<adj><pl>: minéne
+    monéne<adj><sg>: monéne
+    ya<conn>: ya
+  Adjectives:
+    moké<adj><pl>: miké
+    moké<adj><sg>: moké
+    monéne<adj><pl>: minéne
+    monéne<adj><sg>: monéne
+  Adverb: {}
+  Noun:
+    moto<n><pl><cl2>: bato
+    moto<n><sg><cl1>: moto
+    moyíbi<n><pl><cl4>: miyíbi
+    moyíbi<n><sg><cl3>: moyíbi
+  Noun Classes and Plurals:
+    bolingo<n><sg><cl14>: bolingo
+    bondoki<n><sg><cl14>: bondoki
+    ekolo<n><pl><cl8>: bikolo
+    ekolo<n><sg><cl7>: ekolo
+    kolinga<n><sg><cl15>: kolinga
+    kotála<n><sg><cl15>: kotála
+    likita<n><pl><cl6>: makita
+    likita<n><sg><cl5>: likita
+    lokásá<n><pl><cl6>: makásá
+    lokásá<n><sg><cl11>: lokásá
+    mbelí<n><pl><cl10>: mbelí
+    mbelí<n><sg><cl9>: mbelí
+    mokolo<n><pl><cl4>: mikolo
+    mokolo<n><sg><cl3>: mokolo
+    molakisi<n><pl><cl2>: balakisi
+    molakisi<n><sg><cl1>: molakisi
+    nzelá<n><pl><cl10>: nzelá
+    nzelá<n><sg><cl9>: nzelá
+  Noun Prefix Stacking:
+    bozóba<n><sg><cl14><inst>: babozóba
+    elóko<n><pl><cl8><def>: babilóko
+    lokásá<n><pl><cl6><def>: bamakásá
+    lokúmu<n><sg><cl11><inst>: balokúmu
+    mokonzi<n><pl><cl1><abs><inst>: bakimokonzi
+    mokonzi<n><sg><cl1><abs>: kimokonzi
+    moyíbi<n><sg><cl1><abs>: kimoyíbi
+  Parts of Speech: {}
+  Preposition (and Conjunction):
+    na<cngcoo>: na
+    na<pr>: na
+  Pronoun:
+    ngáí<prn><pers><p1><sg><aa>: ngáí
+    náni<prn><itg><sg><aa>: náni
+    níni<prn><itg><sg><nn>: níni
+    yangó<prn><pers><p3><pl><nn>: yangó
+  Pronouns:
+    bangó<prn><pers><p3><pl><aa>: bangó
+    banáni<prn><itg><pl><aa>: banáni
+    baóyo<prn><dem><pl>: baóyo
+    bínó<prn><pers><p2><pl><aa>: bínó
+    bísó<prn><pers><p1><pl><aa>: bísó
+    ngáí<prn><pers><p1><sg><aa>: ngáí
+    náni<prn><itg><sg><aa>: náni
+    níni<prn><itg><pl><nn>: níni
+    níni<prn><itg><sg><nn>: níni
+    wâna<prn><dem><pl>: baóyo wâna
+    wâna<prn><dem><sg>: óyo wâna
+    yangó<prn><pers><p3><pl><nn>: yangó
+    yangó<prn><pers><p3><sg><nn>: yangó
+    yé<prn><pers><p3><sg><aa>: yé
+    yó<prn><pers><p2><sg><aa>: yó
+    óyo<prn><dem><sg>: óyo
+  Verb:
+    kokwéya<v><pres><p1><sg><aa>: nakwéyí
+    kokwéya<v><pres><p3><pl><aa>: bakwéyí
+    kokwéya<v><pres><p3><sg><aa>: akwéyí
+    kokwéya<v><pres><p3><sp><nn>: ekwéyí
+  Verb Compound Forms:
+    kosála<v><inf>: kosála
+    kotúna<v><inf>: kotúna
+    kozala<vaux><fut><p1><pl><aa>: tokozala
+    kozala<vaux><fut><p1><sg><aa>: nakozala
+    kozala<vaux><past><p1><pl><aa>: tozaláká
+    kozala<vaux><past><p1><sg><aa>: nazaláká
+    kozala<vaux><pres><p1><pl><aa>: tozalí
+    kozala<vaux><pres><p1><sg><aa>: nazalí
+    kozala<vaux><urp><p1><pl><aa>: tozalákí
+    kozala<vaux><urp><p1><sg><aa>: nazalákí
+  Verb Future Tense and Reflexive:
+    kosála<v><fut><p1><pl><aa>: tokosála
+    kotúna<v><ref><fut><p1><sg><aa>: nakomítúna
+    kotúna<v><ref><past><p2><sg><aa>: omítúnáká
+    kotúna<v><ref><pres><p3><sg><aa>: amítúní
+  Verb Mood:
+    kokenda<v><imp>: kendá
+    kosála<v><imp>: sálá
+    kosála<v><prs><p1><pl><aa>: tósalí
+    kosála<v><prs><p1><sg><aa>: násalí
+    kosála<v><prs><p2><pl><aa>: bósalí
+    kosála<v><prs><p2><sg><aa>: ósalí
+    kosála<v><prs><p3><pl><aa>: básalí
+    kosála<v><prs><p3><sg><aa>: ésalí
+    koyâ<v><imp>: yáká
+    kozala<v><inf>: kozala
+  Verb Past Tense:
+    kosála<v><dpres><p1><pl><aa>: tosálá
+    kosála<v><dpres><p1><sg><aa>: nasálá
+    kosála<v><dpres><p2><pl><aa>: bosálá
+    kosála<v><dpres><p2><sg><aa>: osálá
+    kosála<v><dpres><p3><pl><aa>: basálá
+    kosála<v><dpres><p3><sg><aa>: asálá
+    kosála<v><past><p1><pl><aa>: tosáláká
+    kosála<v><past><p1><sg><aa>: nasáláká
+    kosála<v><past><p2><pl><aa>: bosáláká
+    kosála<v><past><p2><sg><aa>: osáláká
+    kosála<v><past><p3><pl><aa>: basáláká
+    kosála<v><past><p3><sg><aa>: asáláká
+    kosála<v><urp><p1><pl><aa>: tosálákí
+    kosála<v><urp><p1><sg><aa>: nasálákí
+    kosála<v><urp><p2><pl><aa>: bosálákí
+    kosála<v><urp><p2><sg><aa>: osálákí
+    kosála<v><urp><p3><pl><aa>: basálákí
+    kosála<v><urp><p3><sg><aa>: asálákí
+  Verb Present Tense:
+    kokámwa<v><pres><p1><sg><aa>: nakámwé
+    kokámwa<v><pres><p3><pl><aa>: bakámwé
+    kolinga<v><pres><p1><pl><aa>: tolingí
+    kolinga<v><pres><p1><sg><aa>: nalingí
+    kolinga<v><pres><p2><pl><aa>: bolingí
+    kolinga<v><pres><p2><sg><aa>: olingí
+    kolinga<v><pres><p3><pl><aa>: balingí
+    kolinga<v><pres><p3><sg><aa>: alingí
+    kolinga<v><pres><p3><sp><nn>: elingí
+  Verb Radical Extensions:
+    kobánga<v><caus><pres><p1><pl><aa>: tobángisí
+    kobóta<v><pass><pres><p1><sg><aa>: nabótamí
+    kokunda<v><pass><pres><p3><sp><nn>: ekundamí
+    kolinga<v><recip><pres><p3><pl><aa>: balinganí
+    koloba<v><appl><pres><p1><sg><aa>: nalobelí
+    konyánga<v><caus><rev><pres><p3><sp><nn>: enyángolí
+    konyánga<v><rev><pres><p3><sp><nn>: enyángwé
+    kopona<v><appl><pres><p3><sg><aa>: aponelí
+    kotíka<v><stat><pres><p1><sg><aa>: natíkalí
+    koyéba<v><caus><pres><p3><sg><aa>: ayébisí
+    koyéba<v><recip><pres><p3><pl><aa>: bayébaní
+  spellrelax:
+    bómoí<n><sg><cl14>: bɔmɔi
+    etebu<n><sg><cl7>: ɛtɛbu
+    lokúmu<n><sg><cl11><inst>: balokumu
+    mokolo<n><sg><cl3>: mɔkɔlɔ
+    nzelá<n><sg><cl9>: nzela
+    óyo<prn><dem><sg>: oyo

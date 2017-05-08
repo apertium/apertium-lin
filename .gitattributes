@@ -1,1 +1,27 @@
 * text=auto !eol
+/AUTHORS -text
+/COPYING -text
+/ChangeLog -text
+/Makefile.am -text
+/NEWS -text
+/README -text
+/apertium-lin.lin.lexc -text
+/apertium-lin.lin.rlx -text
+/apertium-lin.lin.twoc -text
+/apertium-lin.lin.twol -text
+/apertium-lin.pc.in -text
+/apertium-lin.post-lin.dix -text
+/autogen.sh -text
+/calc_disam.sh -text
+/configure.ac -text
+dev/editdist.py -text
+dev/spellrelax.twol -text
+/lin.prob -text svneol=unset#unset
+/modes.xml -text
+speller/editdist.default.txt -text
+speller/index.xml -text
+speller/strings.default.txt -text
+speller/words.default.txt -text
+tests/commonwords.yaml -text
+tests/lin.yaml -text
+tests/run-twol-pairtests.sh -text

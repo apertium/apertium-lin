@@ -1,0 +1,41 @@
+Alphabet
+ A Á Â Ǎ B Ç D E É Ê Ě Ɛ Ɛ́ Ɛ̂ Ɛ̌ Ä F G H I Í Î Ǐ J Ž K L M N Ň O Ó Ô Ǒ Ö Ɔ Ɔ́ Ɔ̂ Ɔ̌ P Q R S Ş T U Ú Û Ǔ Ü W X Y Ý Z
+ a á â ǎ b ç d e é ê ě ɛ ɛ́ ɛ̂ ɛ̌ ä f g h i í î ǐ j ž k l m n ň o ó ô ǒ ö ɔ ɔ́ ɔ̂ ɔ̌ p q r s ş t u ú û ǔ ü w x y ý z
+
+%{A%}:a 
+%>:0
+%{í%}:í
+%{n%}:n
+;
+
+
+!@ n:n a:a >:0 k:k á:á m:m w:w >:0 {í}:é
+!@ t:t o:o >:0 l:l i:i n:n g:g >:0 {í}:í
+
+Sets
+
+Vowel = A E Ä I O Ö U Ü Y Ý 
+        a e ä i o ö u ü y ý ;
+
+mletters = B E P
+            b e p ;
+
+Rules 
+
+!"Remove suffix vowel with vowel-ending stem"
+!i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+
+"Verbs stems ending in w take é not í in present tense"
+%{í%}:é <=> :w :0 _ .#. ;
+
+"Class IX nouns are prefaced by m when followed by b,e,p (by n, otherwise)"
+%{n%}:m <=> _ :mletters ;
+
+
+! Resources:
+! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol
+! https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
+! http://hfst.sourceforge.net/
+! http://wiki.apertium.org/wiki/Twol
+! http://wiki.apertium.org/wiki/Hfst
+

@@ -1,0 +1,1527 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                                                         !!!
+!!!                   L I N G A L A   T R A N S D U C E R                   !!!
+!!!                                                                         !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Multichar_Symbols
+
+! Part of speech categories
+%<n%>       ! Noun
+%<adj%>     ! Adjective
+%<prn%>     ! Pronoun
+%<adv%>     ! Adverb
+%<pr%>      ! Preposition
+%<conn%>    ! Connective (various uses)
+%<cnjcoo%>  ! Coordinating Conjunction
+%<cnjsub%>  ! Subordinating Conjunction
+%<v%>       ! Verb
+%<ij%>      ! Interjection
+%<foc%>     ! Focus marker
+
+%<neg%>     ! Negative particle
+%<num%>     ! Numeral
+
+! Number morphology
+%<pl%>      ! Plural
+%<sg%>      ! Singular
+%<sp%>      ! Singular or Plural
+
+! Person morphology
+%<p1%>      ! First person
+%<p2%>      ! Second person
+%<p3%>      ! Third person
+
+! Animacy morphology
+%<aa%>      ! Animate
+%<nn%>      ! Inanimate
+
+! Verb tense and mood morphology
+%<pres%>    ! Present tense
+%<past%>    ! Unrelated distant past
+%<urp%>     ! Unrelated recent past
+%<dpres%>   ! Present grounded in the distant past
+%<fut%>     ! Future tense
+%<prs%>     ! Present subjunctive (Not currently in use)
+%<fts%>     ! Future subjunctive (Not currently in use)
+%<pis%>     ! Imperfect subjunctive (Not currently in use)
+%<imp%>     ! Imperative
+%<inf%>     ! Infinitive
+%<vaux%>    ! Aux. Verb
+%<intns%>   ! Intensifying (denotes certain for future/infinitive, insistence for imperative)
+
+! Verb radical morphology
+%<appl%>    ! Applicative
+%<caus%>    ! Causative
+%<recip%>   ! Reciprocal
+%<pass%>    ! Passive
+%<rev%>     ! Reversive
+%<stat%>    ! Stative
+%<contr%>   ! Contraction form (only used with kozala "to be") (Not currently in use)
+%<refl%>    ! Reflexive
+
+! Pronoun morpholgy
+%<pers%>   ! Personal pronoun
+%<dem%>    ! Demonstrative
+%<rel%>    ! Relative pronoun
+%<itg%>    ! Interrogative pronoun
+
+%<det%>    ! Determiner
+%<qnt%>  ! Quantifier
+
+! Noun-specific morphology
+%<abs%>     ! Abstract form of non-abstract noun
+%<def%>     ! Definite plural
+%<inst%>    ! Instantiated abstract noun
+%<prop%>    ! Proper noun
+
+! Noun-class morphology
+%<cl1%>     ! Class 1 noun
+%<cl1a%>    ! Class 1a noun (See Meeuwis, 2010)
+%<cl3%>     ! Class 3 noun
+%<cl5%>     ! Class 5 noun
+%<cl7%>     ! Class 7 noun
+%<cl9%>     ! Class 9 noun
+%<cl11%>    ! Class 11 noun
+%<cl14%>    ! Class 14 noun
+%<cl15%>    ! Class 15 noun
+
+! Numeral Categories
+%<ord%> ! Ordinal
+%<ord%> ! Cardinal
+
+
+%[%+sg%]   ! Singular (noun prefix matching)
+%[%+pl%]   ! Plural (noun prefix matching)
+%[%+abs%]  ! Abstract (derived from non-abstract)
+%[%+def%]  ! Definite (used w. plural)
+%[%+inst%] ! Instantiation of abstract concept
+
+%[%+p1%]   ! First person
+%[%+p2%]   ! Second person
+%[%+p3%]   ! Third person
+%[%+aa%]   ! Animate (used w. verb)
+%[%+nn%]   ! Inanimate (used w. verb)
+%[%+fut%]  ! Future tense
+%[%+ref%]  ! Reflexive
+%[%+inf%]  ! Infinitive
+%[%+imp%]  ! Imperative
+
+%[%-sg%]   ! Singular (noun prefix matching)
+%[%-pl%]   ! Plural (noun prefix matching)
+%[%-abs%]  ! Abstract (derived from non-abstract)
+%[%-def%]  ! Definite (used w. plural)
+%[%-inst%] ! Instantiation of abstract concept
+
+%[%-p1%]   ! First person
+%[%-p2%]   ! Second person
+%[%-p3%]   ! Third person
+%[%-aa%]   ! Animate (used w. verb)
+%[%-nn%]   ! Inanimate (used w. verb)
+%[%-fut%]  ! Future tense
+%[%-ref%]  ! Reflexive
+%[%-inf%]  ! Infinitive
+%[%-imp%]  ! Imperative
+
+
+%<sent%>      ! Sentence marker
+%<guio%>      ! Hyphen
+%<cm%>        ! Comma
+%<apos%>      ! Apostrophe
+%<rquot%>     ! Quote marker (right hand side) 
+%<lquot%>     ! Quote marker (left hand side) 
+%<rpar%>      ! Parenthetical marker (right hand side) 
+%<lpar%>      ! Parenthetical marker (left hand side) 
+
+! Other symbols
+%>      ! Morpheme boundary
+%+      ! Compounding/incorporation lexical side
+%-
+%       ! Space
+%{í%}   ! can be í or é (used with verb present tense suffix)
+%{n%}   ! can be n or m (used for class 9 "prefix")
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                       M O R P H O T A C T I C S                         !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Root
+NounPrefix ;
+ProperNouns ;
+VerbPersonNum-Prefix ;
+Pronouns ;
+Prepositions ;
+Conjunctions ;
+Connective ;
+Adjective-Prefix ;
+Adverb ;
+YesNo ;
+LoanWords ;
+Tentative ;
+Irregular ;
+Punctuation ;
+Numerals ;
+Quantifiers ;
+FocusMarkers ;
+Interjections ;
+
+LEXICON COMMON-Suffix
+# ;
+
+!=============================================================================!
+!                         Noun Morphotactics                                  !
+!=============================================================================!
+
+LEXICON NounPrefix
+I-II ;
+Ia-II ;
+III-IV ;
+V-VI ;
+VI-Only ;
+VII-VIII ;
+IX-X ;
+XI-VI ;
+XIV ;
+XV ;
+PrefixStacking-ABS ;
+PrefixStacking-DEF ;
+PrefixStacking-INST ;
+
+LEXICON I-II
+%[%-sg%]:mo%> I-II-Stems ;
+%[%-pl%]:ba%> I-II-Stems ;
+
+LEXICON Ia-II
+%[%-sg%]: Ia-II-Stems ;
+%[%-pl%]:ba%> Ia-II-Stems ;
+
+LEXICON III-IV
+%[%-sg%]:mo%> III-IV-Stems ;
+%[%-pl%]:mi%> III-IV-Stems ;
+
+LEXICON V-VI
+%[%-sg%]:li%> V-VI-Stems ;
+%[%-pl%]:ma%> V-VI-Stems ;
+
+LEXICON VI-Only
+%[%-pl%]:ma%> VI-Only-Stems ;
+
+LEXICON VII-VIII
+%[%-sg%]:e%> VII-VIII-Stems ;
+%[%-pl%]:bi%> VII-VIII-Stems ;
+
+LEXICON IX-X
+IX-X-Invar ;
+IX-X-Var ;
+!%[%-sg%]: IX-X-Stems ;
+!%[%-pl%]:ba%> IX-X-Stems ; ! (Meeuwis, 2010)
+!%[%-sg%]:n%> IX-X-n-Stems ;
+!%[%-sg%]:m%> IX-X-m-Stems ;
+!%[%-pl%]:n%> IX-X-n-Stems ;
+!%[%-pl%]:m%> IX-X-m-Stems ;
+
+!!! Stems are either always prefaced by n/m or always not. Differentiated by lexicon structure
+LEXICON IX-X-Invar
+%[%-sg%]: IX-X-Stems ;
+%[%-pl%]:ba%> IX-X-Stems ; ! (Meeuwis, 2010)
+%[%-sg%]: IX-X-a-Stems ;
+%[%-pl%]:ba%> IX-X-a-Stems ;
+
+!!! Stems can be prefaced by n/m or not. Analyze both, generate with n/m.
+LEXICON IX-X-Var
+%[%-sg%]:%{n%} IX-X-b-Stems ;
+%[%-pl%]:ba%>%{n%} IX-X-b-Stems ;
+%[%-sg%]: IX-X-b-Stems ; ! Dir/LR
+%[%-pl%]:ba%> IX-X-b-Stems ; ! Dir/LR
+
+LEXICON XI-VI
+%[%-sg%]:lo%> XI-VI-Stems ;
+%[%-pl%]:ma%> XI-VI-Stems ;
+
+LEXICON XIV
+%[%-sg%]:bo%> XIV-Stems ;
+
+LEXICON XV
+%[%-sg%]:ko%> XV-Stems ;
+
+LEXICON PrefixStacking-ABS
+%[%-abs%]:ki%> I-II ;
+%[%-abs%]:ki%> Ia-II ;
+%[%-abs%]:ki%> III-IV ;
+%[%-abs%]:ki%> V-VI ;
+%[%-abs%]:ki%> VII-VIII ;
+%[%-abs%]:ki%> IX-X ;
+%[%-abs%]:ki%> XI-VI ;
+%[%-abs%]:ki%> XIV ;
+
+LEXICON PrefixStacking-DEF
+%[%-def%]:ba%> I-II ;
+%[%-def%]:ba%> Ia-II ;
+%[%-def%]:ba%> III-IV ;
+%[%-def%]:ba%> V-VI ;
+%[%-def%]:ba%> VII-VIII ;
+%[%-def%]:ba%> IX-X ;
+%[%-def%]:ba%> XI-VI ;
+
+LEXICON PrefixStacking-INST
+%[%-inst%]:ba%> XI-VI ;
+%[%-inst%]:ba%> XIV ;
+
+LEXICON I-II-Suffix
+%[%+sg%]%<n%>%<cl1%>%<sg%>: COMMON-Suffix ;
+%[%+pl%]%<n%>%<cl1%>%<pl%>: COMMON-Suffix ; ! Technically class 2
+%[%+sg%]%[%+abs%]%<n%>%<cl1%>%<sg%>%<abs%>: COMMON-Suffix ;
+%[%+pl%]%[%+abs%]%<n%>%<cl1%>%<pl%>%<abs%>: COMMON-Suffix ; ! Technically class 2
+%[%+pl%]%[%+def%]%<n%>%<cl1%>%<pl%>%<def%>: COMMON-Suffix ; ! Technically class 2
+
+LEXICON Ia-II-Suffix
+%[%+sg%]%<n%>%<cl1a%>%<sg%>: COMMON-Suffix ;
+%[%+pl%]%<n%>%<cl1a%>%<pl%>: COMMON-Suffix ; ! Technically class 2
+%[%+sg%]%[%+abs%]%<n%>%<cl1a%>%<sg%>%<abs%>: COMMON-Suffix ;
+%[%+pl%]%[%+abs%]%<n%>%<cl1a%>%<pl%>%<abs%>: COMMON-Suffix ; ! Technically class 2
+%[%+pl%]%[%+def%]%<n%>%<cl1a%>%<pl%>%<def%>: COMMON-Suffix ; ! Technically class 2
+
+LEXICON III-IV-Suffix
+%[%+sg%]%<n%>%<cl3%>%<sg%>: COMMON-Suffix ;
+%[%+pl%]%<n%>%<cl3%>%<pl%>: COMMON-Suffix ; ! Technically class 4
+%[%+sg%]%[%+abs%]%<n%>%<cl3%>%<sg%>%<abs%>: COMMON-Suffix ;
+%[%+pl%]%[%+abs%]%<n%>%<cl3%>%<pl%>%<abs%>: COMMON-Suffix ; ! Technically class 4
+%[%+pl%]%[%+def%]%<n%>%<cl3%>%<pl%>%<def%>: COMMON-Suffix ; ! Technically class 4
+
+LEXICON V-VI-Suffix
+%[%+sg%]%<n%>%<cl5%>%<sg%>: COMMON-Suffix ;
+%[%+pl%]%<n%>%<cl5%>%<pl%>: COMMON-Suffix ; ! Technically class 6
+%[%+sg%]%[%+abs%]%<n%>%<cl5%>%<sg%>%<abs%>: COMMON-Suffix ;
+%[%+pl%]%[%+abs%]%<n%>%<cl5%>%<pl%>%<abs%>: COMMON-Suffix ; ! Technically class 6
+%[%+pl%]%[%+def%]%<n%>%<cl5%>%<pl%>%<def%>: COMMON-Suffix ; ! Technically class 6
+
+LEXICON VII-VIII-Suffix
+%[%+sg%]%<n%>%<cl7%>%<sg%>: COMMON-Suffix ;
+%[%+pl%]%<n%>%<cl7%>%<pl%>: COMMON-Suffix ; ! Technically class 8
+%[%+sg%]%[%+abs%]%<n%>%<cl7%>%<sg%>%<abs%>: COMMON-Suffix ;
+%[%+pl%]%[%+abs%]%<n%>%<cl7%>%<pl%>%<abs%>: COMMON-Suffix ; ! Technically class 8
+%[%+pl%]%[%+def%]%<n%>%<cl7%>%<pl%>%<def%>: COMMON-Suffix ; ! Technically class 8
+
+LEXICON IX-X-Suffix
+%[%+sg%]%<n%>%<cl9%>%<sg%>: COMMON-Suffix ;
+%[%+pl%]%<n%>%<cl9%>%<pl%>: COMMON-Suffix ; ! Technically class 10
+%[%+sg%]%[%+abs%]%<n%>%<cl9%>%<sg%>%<abs%>: COMMON-Suffix ;
+%[%+pl%]%[%+abs%]%<n%>%<cl9%>%<pl%>%<abs%>: COMMON-Suffix ; ! Technically class 10
+%[%+pl%]%[%+def%]%<n%>%<cl9%>%<pl%>%<def%>: COMMON-Suffix ; ! Technically class 10
+
+LEXICON XI-VI-Suffix
+%[%+sg%]%<n%>%<cl11%>%<sg%>: COMMON-Suffix ;
+%[%+pl%]%<n%>%<cl11%>%<pl%>: COMMON-Suffix ; ! Technically class 6
+%[%+sg%]%[%+abs%]%<n%>%<cl11%>%<sg%>%<abs%>: COMMON-Suffix ;
+%[%+pl%]%[%+abs%]%<n%>%<cl11%>%<pl%>%<abs%>: COMMON-Suffix ; ! Technically class 6
+%[%+pl%]%[%+def%]%<n%>%<cl11%>%<pl%>%<def%>: COMMON-Suffix ; ! Technically class 6
+%[%+sg%]%[%+inst%]%<n%>%<cl11%>%<sg%>%<inst%>: COMMON-Suffix ;
+
+LEXICON XIV-Suffix
+%[%+sg%]%<n%>%<cl14%>%<sg%>: COMMON-Suffix ;
+%[%+sg%]%[%+abs%]%<n%>%<cl14%>%<sg%>%<abs%>: COMMON-Suffix ;
+%[%+sg%]%[%+inst%]%<n%>%<cl14%>%<sg%>%<inst%>: COMMON-Suffix ;
+
+LEXICON XV-Suffix
+%[%+sg%]%<n%>%<cl15%>%<sg%>: COMMON-Suffix ;
+
+LEXICON ProperNoun-Suffix
+%<n%>%<prop%>: COMMON-Suffix ;
+
+
+!=============================================================================!
+!                         Verb Morphotactics                                  !
+!=============================================================================!
+
+LEXICON VerbPersonNum-Prefix
+%[%-p1%]%[%-sg%]%[%-aa%]:na%> VerbFutRefOrStem ;
+%[%-p2%]%[%-sg%]%[%-aa%]:o%> VerbFutRefOrStem ;
+%[%-p3%]%[%-sg%]%[%-aa%]:a%> VerbFutRefOrStem ;
+%[%-p1%]%[%-pl%]%[%-aa%]:to%> VerbFutRefOrStem ;
+%[%-p2%]%[%-pl%]%[%-aa%]:bo%> VerbFutRefOrStem ;
+%[%-p3%]%[%-pl%]%[%-aa%]:ba%> VerbFutRefOrStem ;
+%[%-p3%]%[%-nn%]:e%> VerbFutRefOrStem ;
+%[%-inf%]:ko%> Verb-Stems ; ! Infinitive form goes straight to stems
+%[%-imp%]: Verb-Stems ; ! Imperative goes straight to stems
+
+LEXICON VerbFutRefOrStem
+Verb-Stems ;
+VerbFut-Prefix ;
+VerbRef-Inf ;
+
+LEXICON VerbFut-Prefix
+%[%-fut%]:ko VerbRefOrStem ;
+
+LEXICON VerbRefOrStem
+VerbRef-Inf ;
+Verb-Stems ;
+
+LEXICON VerbRef-Inf
+%[%-ref%]:mí%> Verb-Stems ;
+
+LEXICON Verb-Suffix
+Verb-Rad-Ex ;
+%<v%>:%> Verb-TAM-Suffix ;
+
+LEXICON Aux-Verb-Suffix
+%<vaux%>: Verb-TAM-Suffix ;
+
+LEXICON Verb-Rad-Ex
+%<v%>%<appl%>:%>el%> Verb-Rad-Ex2 ;
+%<v%>%<caus%>:%>is%> Verb-Rad-Ex2 ;
+%<v%>%<recip%>:%>an%> Verb-Rad-Ex2 ;
+%<v%>%<rev%>:%>w%> Verb-Rad-Ex2 ;
+%<v%>%<stat%>:%>al%> Verb-Rad-Ex2 ;
+%<v%>%<pass%>:%>am%> Verb-Rad-Ex2 ;
+%<v%>%<caus%>%<rev%>:%>ol%> Verb-TAM-Suffix ;
+
+LEXICON Verb-Rad-Ex2
+Verb-TAM-Suffix ;
+%<appl%>:el%> Verb-TAM-Suffix ;
+%<caus%>:is%> Verb-TAM-Suffix ;
+%<recip%>:an%> Verb-TAM-Suffix ;
+%<rev%>:w%> Verb-TAM-Suffix ;
+%<pass%>:am%> Verb-TAM-Suffix ;
+
+LEXICON Verb-TAM-Suffix
+Verb-Present-Suffix ;
+Verb-Past-Suffix ;
+Verb-URP-Suffix ;
+Verb-DPRES-Suffix ;
+Verb-Fut-Suffix ;
+Verb-Present-Ref-Suffix ;
+Verb-Past-Ref-Suffix ;
+Verb-URP-Ref-Suffix ;
+Verb-DPRES-Ref-Suffix ;
+Verb-Fut-Ref-Suffix ;
+Verb-InfImp-Suffix ;
+
+LEXICON Verb-Irreg1-Suffix
+%<v%>:%> Verb-TAM-Irreg1-Suffix ;
+
+LEXICON Verb-Irreg2-Suffix
+%<v%>:%> Verb-TAM-Irreg2-Suffix ;
+
+! Takes the "normal" root in the future, infinitive, and imperative
+LEXICON Verb-TAM-Irreg1-Suffix
+Verb-Fut-Suffix ;
+Verb-Fut-Ref-Suffix ;
+Verb-InfImp-Suffix ;
+
+! Otherwise takes the irregular root
+LEXICON Verb-TAM-Irreg2-Suffix
+Verb-Present-Suffix ;
+Verb-Past-Suffix ;
+Verb-URP-Suffix ;
+Verb-DPRES-Suffix ;
+Verb-Present-Ref-Suffix ;
+Verb-Past-Ref-Suffix ;
+Verb-URP-Ref-Suffix ;
+Verb-DPRES-Ref-Suffix ;
+
+LEXICON Verb-InfImp-Suffix
+%[%+inf%]%<inf%>:a COMMON-Suffix ;
+%[%+inf%]%<inf%>%<intns%>:áká COMMON-Suffix ;
+%[%+imp%]%<imp%>:a COMMON-Suffix ;
+%[%+imp%]%<imp%>%<intns%>:áká COMMON-Suffix ;
+
+LEXICON Verb-Present-Suffix
+%[%+p1%]%[%+sg%]%[%+aa%]%<pres%>%<p1%>%<sg%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%<pres%>%<p2%>%<sg%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%<pres%>%<p3%>%<sg%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%<pres%>%<p1%>%<pl%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%<pres%>%<p2%>%<pl%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%<pres%>%<p3%>%<pl%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%<pres%>%<p3%>%<sp%>%<nn%>:%{í%} COMMON-Suffix ;
+
+LEXICON Verb-Past-Suffix
+%[%+p1%]%[%+sg%]%[%+aa%]%<past%>%<p1%>%<sg%>%<aa%>:áká COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%<past%>%<p2%>%<sg%>%<aa%>:áká COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%<past%>%<p3%>%<sg%>%<aa%>:áká COMMON-Suffix ;
+!%[%+p3%]%[%+sg%]%[%+aa%]%<past%>%<p3%>%<sg%>%<aa%>%<TEST%>:aka COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%<past%>%<p1%>%<pl%>%<aa%>:áká COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%<past%>%<p2%>%<pl%>%<aa%>:áká COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%<past%>%<p3%>%<pl%>%<aa%>:áká COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%<past%>%<p3%>%<sp%>%<nn%>:áká COMMON-Suffix ;
+
+LEXICON Verb-URP-Suffix
+%[%+p1%]%[%+sg%]%[%+aa%]%<urp%>%<p1%>%<sg%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%<urp%>%<p2%>%<sg%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%<urp%>%<p3%>%<sg%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%<urp%>%<p1%>%<pl%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%<urp%>%<p2%>%<pl%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%<urp%>%<p3%>%<pl%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%<urp%>%<p3%>%<sp%>%<nn%>:ákí COMMON-Suffix ;
+
+LEXICON Verb-DPRES-Suffix 
+%[%+p1%]%[%+sg%]%[%+aa%]%<dpres%>%<p1%>%<sg%>%<aa%>:á COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%<dpres%>%<p2%>%<sg%>%<aa%>:á COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%<dpres%>%<p3%>%<sg%>%<aa%>:á COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%<dpres%>%<p1%>%<pl%>%<aa%>:á COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%<dpres%>%<p2%>%<pl%>%<aa%>:á COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%<dpres%>%<p3%>%<pl%>%<aa%>:á COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%<dpres%>%<p3%>%<sp%>%<nn%>:á COMMON-Suffix ;
+
+LEXICON Verb-Fut-Suffix 
+%[%+p1%]%[%+sg%]%[%+aa%]%[%+fut%]%<fut%>%<p1%>%<sg%>%<aa%>:a COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%[%+fut%]%<fut%>%<p2%>%<sg%>%<aa%>:a COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%[%+fut%]%<fut%>%<p3%>%<sg%>%<aa%>:a COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%[%+fut%]%<fut%>%<p1%>%<pl%>%<aa%>:a COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%[%+fut%]%<fut%>%<p2%>%<pl%>%<aa%>:a COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%[%+fut%]%<fut%>%<p3%>%<pl%>%<aa%>:a COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%[%+fut%]%<fut%>%<p3%>%<sp%>%<nn%>:a COMMON-Suffix ;
+%[%+p1%]%[%+sg%]%[%+aa%]%[%+fut%]%<intns%>%<fut%>%<p1%>%<sg%>%<aa%>:áká COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%[%+fut%]%<intns%>%<fut%>%<p2%>%<sg%>%<aa%>:áká COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%[%+fut%]%<intns%>%<fut%>%<p3%>%<sg%>%<aa%>:áká COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%[%+fut%]%<intns%>%<fut%>%<p1%>%<pl%>%<aa%>:áká COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%[%+fut%]%<intns%>%<fut%>%<p2%>%<pl%>%<aa%>:áká COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%[%+fut%]%<intns%>%<fut%>%<p3%>%<pl%>%<aa%>:áká COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%[%+fut%]%<intns%>%<fut%>%<p3%>%<sp%>%<nn%>:áká COMMON-Suffix ;
+
+LEXICON Verb-Present-Ref-Suffix
+%[%+p1%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<pres%>%<p1%>%<sg%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<pres%>%<p2%>%<sg%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<pres%>%<p3%>%<sg%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<pres%>%<p1%>%<pl%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<pres%>%<p2%>%<pl%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<pres%>%<p3%>%<pl%>%<aa%>:%{í%} COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%[%+ref%]%<refl%>%<pres%>%<p3%>%<sp%>%<nn%>:%{í%} COMMON-Suffix ;
+
+LEXICON Verb-Past-Ref-Suffix
+%[%+p1%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<past%>%<p1%>%<sg%>%<aa%>:áká COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<past%>%<p2%>%<sg%>%<aa%>:áká COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<past%>%<p3%>%<sg%>%<aa%>:áká COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<past%>%<p1%>%<pl%>%<aa%>:áká COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<past%>%<p2%>%<pl%>%<aa%>:áká COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<past%>%<p3%>%<pl%>%<aa%>:áká COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%[%+ref%]%<refl%>%<past%>%<p3%>%<sp%>%<nn%>:áká COMMON-Suffix ;
+
+LEXICON Verb-URP-Ref-Suffix
+%[%+p1%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<urp%>%<p1%>%<sg%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<urp%>%<p2%>%<sg%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<urp%>%<p3%>%<sg%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<urp%>%<p1%>%<pl%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<urp%>%<p2%>%<pl%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<urp%>%<p3%>%<pl%>%<aa%>:ákí COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%[%+ref%]%<refl%>%<urp%>%<p3%>%<sp%>%<nn%>:ákí COMMON-Suffix ;
+
+LEXICON Verb-DPRES-Ref-Suffix 
+%[%+p1%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p1%>%<sg%>%<aa%>:á COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p2%>%<sg%>%<aa%>:á COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p3%>%<sg%>%<aa%>:á COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p1%>%<pl%>%<aa%>:á COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p2%>%<pl%>%<aa%>:á COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p3%>%<pl%>%<aa%>:á COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%[%+ref%]%<refl%>%<dpres%>%<p3%>%<sp%>%<nn%>:á COMMON-Suffix ;
+
+LEXICON Verb-Fut-Ref-Suffix 
+%[%+p1%]%[%+sg%]%[%+aa%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p1%>%<sg%>%<aa%>:a COMMON-Suffix ;
+%[%+p2%]%[%+sg%]%[%+aa%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p2%>%<sg%>%<aa%>:a COMMON-Suffix ;
+%[%+p3%]%[%+sg%]%[%+aa%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p3%>%<sg%>%<aa%>:a COMMON-Suffix ;
+%[%+p1%]%[%+pl%]%[%+aa%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p1%>%<pl%>%<aa%>:a COMMON-Suffix ;
+%[%+p2%]%[%+pl%]%[%+aa%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p2%>%<pl%>%<aa%>:a COMMON-Suffix ;
+%[%+p3%]%[%+pl%]%[%+aa%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p3%>%<pl%>%<aa%>:a COMMON-Suffix ;
+%[%+p3%]%[%+nn%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p3%>%<sp%>%<nn%>:a COMMON-Suffix ;
+
+!=============================================================================!
+!                         Pronoun Morphotactics                               !
+!=============================================================================!
+
+LEXICON PRON-Ngai
+%<prn%>%<pers%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Yo
+%<prn%>%<pers%>%<p2%>%<sg%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Ye
+%<prn%>%<pers%>%<p3%>%<sg%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Biso
+%<prn%>%<pers%>%<p1%>%<pl%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Bino
+%<prn%>%<pers%>%<p2%>%<pl%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Bango
+%<prn%>%<pers%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Yango
+%<prn%>%<pers%>%<p3%>%<sg%>%<nn%>: COMMON-Suffix ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<nn%>: COMMON-Suffix ;
+%<det%>%<dem%>: COMMON-Suffix ; ! Determiner
+
+LEXICON PRON-Oyo
+%<det%>%<dem%>: COMMON-Suffix ; ! If used as determiner
+%<prn%>%<dem%>%<sg%>: COMMON-Suffix ; ! If used as nominal
+%<prn%>%<rel%>: COMMON-Suffix ; ! If used as relative
+
+LEXICON PRON-Wana
+%<det%>%<dem%>: COMMON-Suffix ;
+
+LEXICON PRON-Baoyo
+%<prn%>%<dem%>%<pl%>: COMMON-Suffix ;
+
+LEXICON PRON-Nani
+%<prn%>%<itg%>%<sg%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Banani
+%<prn%>%<itg%>%<pl%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Nini
+%<prn%>%<itg%>%<sg%>%<nn%>: COMMON-Suffix ;
+%<prn%>%<itg%>%<pl%>%<nn%>: COMMON-Suffix ;
+
+!=============================================================================!
+!                         Misc. Morphotactics                                 !
+!=============================================================================!
+
+LEXICON Quant-Suffix
+%<det%>%<qnt%>: COMMON-Suffix ;
+
+LEXICON Prep-Suffix
+%<pr%>: COMMON-Suffix ;
+
+LEXICON Conj-Coord-Suffix
+%<cnjcoo%>: COMMON-Suffix ;
+
+LEXICON Conj-Subord-Suffix
+%<cnjsub%>: COMMON-Suffix ;
+
+LEXICON Conn-Suffix
+%<conn%>: COMMON-Suffix ;
+
+LEXICON Neg-Suffix
+%<neg%>: COMMON-Suffix ;
+
+LEXICON Adjective-Prefix
+Adjective-Stems ;
+%[%-sg%]:mo%> Adjective-Stems ;
+%[%-pl%]:mi%> Adjective-Stems ;
+
+LEXICON Adjective-Var-Suffix
+%[%+sg%]%<adj%>%<sg%>: COMMON-Suffix ;
+%[%+pl%]%<adj%>%<pl%>: COMMON-Suffix ;
+
+LEXICON Adjective-InVar-Suffix
+%<adj%>: COMMON-Suffix ;
+
+LEXICON Adverb-Suffix
+%<adv%>: COMMON-Suffix ;
+
+LEXICON Numeral-Suffix
+%<num%>%<ord%>: COMMON-Suffix ;
+%<num%>%<card%>: COMMON-Suffix ;
+
+LEXICON Focus-Suffix
+%<foc%>: COMMON-Suffix ;
+
+LEXICON Interjection-Suffix
+%<ij%>: COMMON-Suffix ;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                          L E X I C O N                                  !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!=============================================================================!
+!                               Nouns                                         !
+!=============================================================================!
+
+LEXICON I-II-Stems
+mobali:bali I-II-Suffix ; ! "Boy, man, husband"
+mobáteli:báteli I-II-Suffix ; ! "Protector"
+mobatisi:batisi I-II-Suffix ; ! "Person who baptises"
+mobikisi:bikisi I-II-Suffix ; ! "Savior"
+mokambi:kambi I-II-Suffix ; ! "President"
+mokonzi:konzi I-II-Suffix ; ! "Chief, king, boss"
+mokristo:kristo I-II-Suffix ; ! "A christian"
+molakisi:lakisi I-II-Suffix ; ! "Teacher"
+moloni:loni I-II-Suffix ; ! "Sower"
+monguna:nguna I-II-Suffix ; ! "Enemy"
+moningá:ningá I-II-Suffix ; ! "Friend"
+mopagánu:pagánu I-II-Suffix ; ! "Pagan"
+mopaya:paya I-II-Suffix ; ! "Visitor"
+mosáli:sáli I-II-Suffix ; ! "Worker"
+mosántu:sántu I-II-Suffix ; ! "Saint"
+mosusu:susu I-II-Suffix ; ! "Other"
+motéyi:téyi I-II-Suffix ; ! "Teacher"
+moto:to I-II-Suffix ; ! "Person"
+moúmbu:úmbu I-II-Suffix ; ! "Slave"
+moyembi:yembi I-II-Suffix ; ! "Singer"
+moyíbi:yíbi I-II-Suffix ; ! "Thief"
+
+LEXICON Ia-II-Stems
+anjelu:anjelu Ia-II-Suffix ; ! "Angel"
+léki:léki Ia-II-Suffix ; ! "Younger sibling"
+kelasi:kelasi Ia-II-Suffix ; ! "School"
+kíti:kíti Ia-II-Suffix ; ! "Chair, throne"
+kóko:kóko Ia-II-Suffix ; ! "Grandparent"
+kómbo:kómbo Ia-II-Suffix ; ! "Broom"
+mama:mama Ia-II-Suffix ; ! "Mom"
+mbuta%-múntu:mbuta%-múntu Ia-II-Suffix ; ! "Guard"
+mbwá:mbwá Ia-II-Suffix ; ! "Dog"
+ndako:ndako Ia-II-Suffix ; ! "House"
+ndeko:ndeko Ia-II-Suffix ; ! "Sibling"
+ngando:ngando Ia-II-Suffix ; ! "Crocodile, transport controller"
+nganga:nganga Ia-II-Suffix ; ! "Expert, magician, healer"
+nkísi:nkísi Ia-II-Suffix ; ! "Amulet"
+nkolo:nkolo Ia-II-Suffix ; ! "Lord, owner"
+nókó:nókó Ia-II-Suffix ; ! "Uncle"
+nsómí:nsómí Ia-II-Suffix ; ! "Free person"
+ntoma:ntoma Ia-II-Suffix ; ! "Apostle"
+nzói:nzói Ia-II-Suffix ; ! "Bee"
+profete:profete Ia-II-Suffix ; ! "Prophet"
+sángó:sángó Ia-II-Suffix ; ! "Priest"
+sodá:sodá Ia-II-Suffix ; ! "Soldier"
+tata:tata Ia-II-Suffix ; ! "Dad"
+zábolo:zábolo Ia-II-Suffix ; ! "Demon"
+
+LEXICON III-IV-Stems
+miko:ko III-IV-Suffix ; ! No singular form
+mobali:bali III-IV-Suffix ; ! "Boy, man, husband"
+mobeko:beko III-IV-Suffix ; ! "Law, command"
+mobembo:bembo III-IV-Suffix ; ! "Travel, journey"
+mobú:bú III-IV-Suffix ; ! "Year"
+mobúlú:búlú III-IV-Suffix ; ! "Disorder"
+moi:i III-IV-Suffix ; ! "Sun, day" (Not clear that this can pluralize or is even class III)
+mokandá:kandá III-IV-Suffix ; ! "Book"
+mokano:kano III-IV-Suffix ; ! "Commitment"
+mokapo:kapo III-IV-Suffix ; ! "Section of law"
+mokila:kila III-IV-Suffix ; ! "Tail"
+mokili:kili III-IV-Suffix ; ! "Earth"
+mokolo:kolo III-IV-Suffix ; ! "Day"
+mokúwa:kúwa III-IV-Suffix ; ! "Bone"
+moléndé:léndé III-IV-Suffix ; ! "Determination, energy"
+molili:lili III-IV-Suffix ; ! "Nothing, darkness"
+molimo:limo III-IV-Suffix ; ! "Spirit, soul"
+molongó:longó III-IV-Suffix ; ! "Order"
+molóngó:lóngó III-IV-Suffix ; ! "World, international community"
+moluka:luka III-IV-Suffix ; ! "River"
+molúlú:lúlú III-IV-Suffix ; ! "Meet"
+mondélé:ndélé III-IV-Suffix ; ! "White man"
+mongóngó:ngóngó III-IV-Suffix ; ! "Throat, voice"
+monoko:noko III-IV-Suffix ; ! "Mouth"
+mopepe:pepe III-IV-Suffix ; ! "Wind"
+monyele:nyele III-IV-Suffix ; ! "East"
+monyókoli:nyókoli III-IV-Suffix ; ! "Torment"
+mosálá:sálá III-IV-Suffix ; ! "Work, occupation"
+mosíká:síká III-IV-Suffix ; ! "Far away"
+mosolo:solo III-IV-Suffix ; ! "Money"
+mosusu:susu III-IV-Suffix ; ! "Other" (See same entry in Class I, can apparently be both)
+motámbo:támbo III-IV-Suffix ; ! "Trap"
+motáné:táné III-IV-Suffix ; ! "Light color"
+motéma:téma III-IV-Suffix ; ! "Heart, strength of character"
+motíndo:tíndo III-IV-Suffix ; ! "Reason"
+motu:tu III-IV-Suffix ; ! "Head" (can also be motó)
+mótuka:tuka III-IV-Suffix ; ! "Car"
+moyíbi:yíbi III-IV-Suffix ; ! "Theft"
+mozindó:zindó III-IV-Suffix ; ! "Depth"
+
+LEXICON V-VI-Stems
+libála:bála V-VI-Suffix ; ! "Marriage"
+libanda:banda  V-VI-Suffix ; ! "Outisde"
+libángá:bángá V-VI-Suffix ; ! "Pebble, stone"
+libela:bela V-VI-Suffix ; ! "Eternity, forever"
+libóko:bóko V-VI-Suffix ; ! "Fireplace"
+libóndeli:bóndeli V-VI-Suffix ; ! "Prayer"
+libonza:bonza V-VI-Suffix ; ! "Gift"
+libota:bota V-VI-Suffix ; ! "Family, lineage"
+libulu:bulu V-VI-Suffix ; ! "Hole, well"
+lifuta:futa V-VI-Suffix ; ! "Salary"
+ligóródó:góródó V-VI-Suffix ; ! "Toad"
+likabo:kabo V-VI-Suffix ; ! "Offering, gift"
+likama:kama V-VI-Suffix ; ! "Incident"
+likambo:kambo V-VI-Suffix ; ! "Case, problem"
+likámwisi:kámwisi V-VI-Suffix ; ! "Miracle"
+likanisi:kanisi V-VI-Suffix ; ! "Thought"
+liki:ki V-VI-Suffix ; ! "Egg"
+likita:kita V-VI-Suffix ; ! "Meeting, assembly, conspiracy"
+likoki:koki V-VI-Suffix ; ! "The means, resources, the right"
+likoló:koló V-VI-Suffix ; ! "Sky, above"
+liloki:loki V-VI-Suffix ; ! "Demonology"
+liloba:loba V-VI-Suffix ; ! "Talk, speech (word)"
+limemya:memya V-VI-Suffix ; ! "Respect"
+limpiká:mpiká V-VI-Suffix ; ! "Worm"
+limpúlututú:limpúlututú V-VI-Suffix ; ! "Spider"
+lingolo:ngolo V-VI-Suffix ; ! "Mango"
+lingomba:ngomba V-VI-Suffix ; ! "Community"
+lino:no V-VI-Suffix ; ! "Tooth"
+lipa:pa V-VI-Suffix ; ! "Bread"
+lipandá:pandá V-VI-Suffix ; ! "Independence"
+lipata:pata V-VI-Suffix ; ! "Cloud"
+lisakoli:sakoli V-VI-Suffix ; ! "Declaration"
+lisálísí:sálísí V-VI-Suffix ; ! "Help"
+lisangá:sangá V-VI-Suffix ; ! "Meeting"
+lisángó:sángó V-VI-Suffix ; ! "Corn"
+lisapo:sapo V-VI-Suffix ; ! "Tale"
+lisúmu:súmu V-VI-Suffix ; ! "Sin, crime"
+lisungi:sungi V-VI-Suffix ; ! "Aid"
+litáma:táma V-VI-Suffix ; ! "Cheek"
+litéya:téya V-VI-Suffix ; ! "Lesson"
+litíti:títi V-VI-Suffix ; ! "Grass'
+litói:tói V-VI-Suffix ; ! "Ear"
+liwá:wá V-VI-Suffix ; ! "Death"
+liyebisi:yebisi V-VI-Suffix ; ! "Press"
+lizali:zali V-VI-Suffix ; ! "Existence"
+
+LEXICON VI-Only-Stems
+mabele:bele V-VI-Suffix ; ! "Sand, earth"
+mafúta:fúta V-VI-Suffix ; ! "Oil"
+malási:lási V-VI-Suffix ; ! "Perfume"
+maí:í V-VI-Suffix ; ! "Water"
+maí:mayí V-VI-Suffix ; ! Dir/LR
+makilá:kilá V-VI-Suffix ; ! "Blood"
+mambénga:mbénga V-VI-Suffix ; ! "Equator"
+mangwele:ngwele V-VI-Suffix ; ! "Vaccine"
+masúwa:súwa V-VI-Suffix ; ! "Ship"
+mayéle:yéle V-VI-Suffix ; ! "Intelligence"
+
+LEXICON VII-VIII-Stems
+ebale:bale VII-VIII-Suffix ; ! "River"
+ebandeli:bandeli VII-VIII-Suffix ; ! "Beginning"
+ebangá:bangá VII-VIII-Suffix ; ! "Wave"
+ebekú:bekú VII-VIII-Suffix ; ! "Chin"
+ebelo:belo VII-VIII-Suffix ; ! "Thigh"
+ekakoli:kakoli VII-VIII-Suffix ; ! "Article"
+ekelamo:kelamo VII-VIII-Suffix ;  ! "Living being"
+ekila:kila VII-VIII-Suffix ; ! "Abstinence"
+eklézia:klézia VII-VIII-Suffix ; ! "Church"
+eklézia:klézya VII-VIII-Suffix ; !  Dir/LR
+ekolo:kolo VII-VIII-Suffix ; !"Measuring unit, country," depending on tone
+ekomele:komele VII-VIII-Suffix ; ! "Pencil"
+elamba:lamba VII-VIII-Suffix ; ! "Costume, dress, garment"
+elanga:langa VII-VIII-Suffix ; ! "Garden"
+eleko:leko VII-VIII-Suffix ; ! "Period, time"
+elembo:lembo VII-VIII-Suffix ; ! "Symbol"
+elikya:likya VII-VIII-Suffix ; ! "Hope"
+elóko:lóko VII-VIII-Suffix ; ! "Thing, object"
+elɔ́kɔ:ɔ́kɔ  VII-VIII-Suffix ; ! This is elóko in 7-vowel orthography. Included so that words with ɔ́ can tokenize properly
+elongi:longi VII-VIII-Suffix ; ! "Face"
+engumba:ngumba VII-VIII-Suffix ; ! "City"
+epái:pái VII-VIII-Suffix ; ! "Place, location"
+esalelo:salelo VII-VIII-Suffix ; ! "Work material"
+esambiselo:sambiselo VII-VIII-Suffix ; ! "Court"
+esanga:sanga VII-VIII-Suffix ; ! "Island, lake"
+esengo:sengo VII-VIII-Suffix ; ! "Happiness"
+esíká:síká VII-VIII-Suffix ;! "Location"
+esóbé:sóbé VII-VIII-Suffix ; ! "Savannah, desert"
+esóngó:sóngó VII-VIII-Suffix ; ! "Opposition"
+etando:tando VII-VIII-Suffix ; ! "Flat surface"
+etápe:tápe VII-VIII-Suffix ; ! "Branch"
+etebu:tebu VII-VIII-Suffix ; ! Unknown
+eténi:téni VII-VIII-Suffix ; ! "Piece"
+etímá:tímá VII-VIII-Suffix ; ! "Pond, lake"
+etumba:tumba VII-VIII-Suffix ; ! "Battle"
+etúmbu:túmbu VII-VIII-Suffix ; ! "Furnace, punishment"
+eyano:yano VII-VIII-Suffix ; ! "Answer"
+eyékwelo:yékwelo VII-VIII-Suffix ; ! "School"
+ezaleli:zaleli VII-VIII-Suffix ; ! "Conduct"
+ezibele:zibele VII-VIII-Suffix ; ! "Door, lid"
+
+LEXICON IX-X-Stems
+!! take m
+mángá:mángá IX-X-Suffix ; ! "Mango"
+mbálá:mbálá IX-X-Suffix ; ! "Tuber"
+mbángá:mbángá IX-X-Suffix ; ! "Jaw"
+mbele:mbele IX-X-Suffix ; ! "Procelain"
+mbelí:mbelí IX-X-Suffix ; ! "Knife"
+mbíla:mbíla IX-X-Suffix ; ! "Palm tree"
+mbóka:mbóka IX-X-Suffix ; ! "Village, country"
+mbongo:mbongo IX-X-Suffix ; ! "Money"
+mbótama:mbótama IX-X-Suffix ; ! "Birth"
+mbóte:mbóte IX-X-Suffix ; ! "Greetings"
+mbóto:mbóto IX-X-Suffix ; ! "Gamete"
+mbúla:mbúla IX-X-Suffix ; ! "Rain"
+mbuma:mbuma IX-X-Suffix ; ! "Fruit"
+mémé:mémé IX-X-Suffix ; ! "Sheep"
+mesa:mesa IX-X-Suffix ; ! "Table"
+mpáku:mpáku IX-X-Suffix ; ! "Tax"
+
+!! take n
+ndakisa:ndakisa IX-X-Suffix ; ! "Example"
+ndámbo:ndámbo IX-X-Suffix ; ! "Part"
+ndímo:ndímo IX-X-Suffix ; ! "Citrus fruit"
+ndingisa:ndingisa IX-X-Suffix ; ! "Authorization"
+ndóto:ndóto IX-X-Suffix ; ! "Dream, hallucination"
+ndúmba:ndúmba IX-X-Suffix ; ! "Prostitute"
+ndúnda:ndúnda IX-X-Suffix ; ! "Vegetable"
+ngámbo:ngámbo IX-X-Suffix ; ! "The other side"
+nganda:nganda IX-X-Suffix ; ! "Bar, restaurant"
+ngolu:ngolu IX-X-Suffix ; ! "Grace"
+ngómba:ngómba IX-X-Suffix ; ! "Mountain"
+ngonga:ngonga IX-X-Suffix ; ! "Bell"
+ngungi:ngungi IX-X-Suffix ; ! "Mosquito"
+nguya:nguya IX-X-Suffix ; ! "Inner strength"
+nkéma:nkéma IX-X-Suffix ; ! "Ape"
+nkita:nkita IX-X-Suffix ; ! "Economy, business"
+nkoi:nkoi IX-X-Suffix ; ! "Leopard"
+nkóli:nkóli IX-X-Suffix ; ! "Crocodile"
+nkóna:nkóna IX-X-Suffix ; ! "Seed"
+nkósi:nkósi IX-X-Suffix ; ! "Lion"
+ntáká:ntáká IX-X-Suffix ; ! "Miles" (more generally, distance)
+ntambwe:ntambwe IX-X-Suffix ; ! "Cheetah"
+nyama:nyama IX-X-Suffix ; ! "Animal, tapeworm"
+nyaú:nyaú IX-X-Suffix ; ! "Cat"
+nyoka:nyoka IX-X-Suffix ; ! "Snake"
+nzala:nzala IX-X-Suffix ; ! "Hunger"
+nzelá:nzelá IX-X-Suffix ; ! "Street, road, opening"
+nzémbo:nzémbo IX-X-Suffix ; ! "Song"
+nzeté:nzeté IX-X-Suffix ; ! "Tree, wood"
+nzoku:nzoku IX-X-Suffix ; ! "Elephant"
+nzóto:nzóto IX-X-Suffix ; ! "Body"
+
+!!! Never takes n/m
+LEXICON IX-X-a-Stems
+balé:balé IX-X-Suffix ; ! "Ball"
+batísimo:batísimo IX-X-Suffix ; ! "Baptism"
+bozó:bozó IX-X-Suffix ; ! "Care"
+búku:búku IX-X-Suffix ; ! "Book"
+butú:butú IX-X-Suffix ; ! "Night"
+bwátu:bwátu IX-X-Suffix ; ! "Dugout canoe, boat" (guessing this is class IX?)
+fétí:fétí IX-X-Suffix ; ! "Party"
+kemi:kemi IX-X-Suffix ; ! "Chemistry"
+kosákosá:kosákosá IX-X-Suffix ; ! "Shrimp"
+kurúze:kurúze IX-X-Suffix ; ! "Cross"
+maládi:maládi IX-X-Suffix ; ! "Disease"
+pálaki:pálaki IX-X-Suffix ; ! "Plate"
+porte:porte IX-X-Suffix ; ! "Door"
+sanza:sanza IX-X-Suffix ; ! "Moon, month"
+sekelé:sekelé IX-X-Suffix ; ! "Secret"
+séléká:séléká IX-X-Suffix ; ! "In truth"
+simetiere:simetiere IX-X-Suffix ; ! "Cemetary" (unsure if acutally class IX)
+sukali:sukali IX-X-Suffix ; ! "Sugar"
+vile:vile IX-X-Suffix ; ! "City"
+víno:víno IX-X-Suffix ; ! "Wine"
+víno:vinu IX-X-Suffix ; ! "Wine" Dir/LR
+zélo:zélo IX-X-Suffix ; ! "Sand"
+zólo:zólo IX-X-Suffix ; ! "Nose"
+
+!!! Can take n/m or not
+LEXICON IX-X-b-Stems
+!! Can take m or not
+mpámba:pámba IX-X-Suffix ; ! "Nothing"
+mpási:pási IX-X-Suffix ; ! "Suffering"
+mpembéni:pembéni IX-X-Suffix ; ! "Close"
+mpókwa:pókwa IX-X-Suffix ; ! "Twilight, evening"
+mpongí:pongí IX-X-Suffix ; ! "Sleep"
+mpósá:pósá IX-X-Suffix ; ! "Envy"
+
+!! Can take n or not
+nkándá:kándá IX-X-Suffix ; ! "Anger"
+nkáké:káké IX-X-Suffix ; ! "Thunder"
+nkímyá:kímyá IX-X-Suffix ; ! "Calm"
+nkímyá:imia IX-X-Suffix ; ! "Calm" Dir/LR
+nkínga:kínga IX-X-Suffix ; ! "Bicycle"
+nkómbó:kómbó IX-X-Suffix ; ! "Name"
+nsangó:sangó IX-X-Suffix ; ! "Information"
+nsima:sima IX-X-Suffix ; ! "Behind" (often followed by na for preposition-like usage)
+nsé:sé IX-X-Suffix ; ! "The ground"
+nsinga:singa IX-X-Suffix ; ! "Wire"
+nsómo:sómo IX-X-Suffix ; ! "Terror"
+nsóni:sóni IX-X-Suffix ; ! "Shame"
+nsúka:súka IX-X-Suffix ; ! "Target, end"
+ntálo:tálo IX-X-Suffix ; ! "Number"
+ntángo:tángo IX-X-Suffix ; ! "Time"
+ntóngó:tóngó IX-X-Suffix ; ! "Morning"
+ntina:tina IX-X-Suffix ; ! "Reason, cause"
+ntembe:tembe IX-X-Suffix ; ! "Doubt"
+ntolí:tolí IX-X-Suffix ; ! "Advice"
+ntólo:tólo IX-X-Suffix ; ! "Torso"
+nzámba:zámba IX-X-Suffix ; ! "Forest"
+
+LEXICON XI-VI-Stems
+lobebo:bebo XI-VI-Suffix ; ! "Lip"
+lobíko:bíko XI-VI-Suffix ; ! "Life, existence"
+loboko:boko XI-VI-Suffix ; ! "Arm"
+lofundu:fundu XI-VI-Suffix ; ! "Vanity"
+lokásá:kásá XI-VI-Suffix ; ! "Leaf, page"
+lokolo:kolo XI-VI-Suffix ; ! "Foot, leg"
+lokúmu:kúmu XI-VI-Suffix ; ! "Glory, honor, respect"
+lokutá:kutá XI-VI-Suffix ; ! "Lie"
+lóla:la XI-VI-Suffix ; ! "Paradise"
+loléndo:léndo XI-VI-Suffix ; ! "Pride"
+loléngé:léngé XI-VI-Suffix ; ! "Method"
+londende:ndende XI-VI-Suffix ; ! Translated waves, not sure if this is actually class XI but the prefix matches...
+lopángo:pángo XI-VI-Suffix ; ! "Residential parcel"
+
+LEXICON XIV-Stems
+bobé:bé XIV-Suffix ; ! Evil, ugliness
+bobóto:bóto XIV-Suffix ; ! "Friendship"
+bokási:kási XIV-Suffix ; ! "Power"
+bokono:kono XIV-Suffix ; ! "Illness"
+bolaí:laí XIV-Suffix ; ! "Length"
+bolámu:lámu XIV-Suffix ; ! "Kindness"
+bolingo:lingo XIV-Suffix ; ! "Love, friendship"
+boloko:loko XIV-Suffix ; ! "Prison, lack of freedom"
+bokóló:kóló XIV-Suffix ; ! "Adulthood"
+bokulaka:kulaka XIV-Suffix ; ! "Direction, rule"
+bolúmbú:lúmbú XIV-Suffix ; ! "Nudity"
+bomengo:mengo XIV-Suffix ; ! "Wealth"
+bómoí:moí XIV-Suffix ; ! "Life, existence"
+bomoto:moto XIV-Suffix ; ! "Human personality"
+bonéne:néne XIV-Suffix ; ! "Size, height"
+bondeko:ndeko XIV-Suffix ; ! "Friendship"
+bondoki:ndoki XIV-Suffix ; ! "Witchcraft"
+bongó:ngó XIV-Suffix ; ! "Brain"
+bopekisi:pekisi XIV-Suffix ; ! "Prohibition"
+bonsomi:nsomi XIV-Suffix ; ! "Freedom"
+bosántu:sántu XIV-Suffix ; ! "Holiness"
+bosémbo:sémbo XIV-Suffix ; ! "Truth, peace, justic, goodness"
+bosó:bosó XIV-Suffix ; ! "In front of"
+bosolo:solo XIV-Suffix ; ! "Truth"
+botutu:tutu XIV-Suffix ; ! "Curse, bad luck"
+boúmbu:úmbu XIV-Suffix ; ! "Slavery"
+boúmeli:úmeli XIV-Suffix ; ! "Duration"
+boyíké:yíké XIV-Suffix ; ! "Many"
+bozóba:zóba XIV-Suffix ; ! "Ignorance, stupidity"
+bozitó:zitó XIV-Suffix ; ! "Fatness"
+bozwi:zwi XIV-Suffix ; ! "Possession"
+
+LEXICON XV-Stems
+kolinga:linga XV-Suffix ; ! "To love"
+kotála:tála XV-Suffix ; ! "To watch"
+
+LEXICON ProperNouns
+Abel:Abel ProperNoun-Suffix ; ! "Abel"
+Abraham:Abraham ProperNoun-Suffix ; ! "Abraham"
+Adam:Adam ProperNoun-Suffix ; ! "Adam
+Afrika:Afrika ProperNoun-Suffix ; ! "Africa"
+Alama:Alama ProperNoun-Suffix ; ! "Alma"
+Amerika:Amerika ProperNoun-Suffix ; ! "America"
+Angola:Angola ProperNoun-Suffix ; ! "Angola"
+Antioshe:Antioshe ProperNoun-Suffix ; ! "Antioch"
+Asaf:Asaf ProperNoun-Suffix ; ! "Asaph"
+Asulia:Asulia ProperNoun-Suffix ; ! "Assyria"
+Azia:Azia ProperNoun-Suffix ; ! "Asia"
+Barnabas:Barnabas ProperNoun-Suffix ; ! "Barnabas"
+Bayuda:Bayuda ProperNoun-Suffix ; ! "Judaism" (?)
+Birmani:Birmani ProperNoun-Suffix ; ! "Myanmar"
+Brazzaville:Brazzaville ProperNoun-Suffix ; ! "Brazzaville"
+Burundi:Burundi ProperNoun-Suffix ; ! "Burundi"
+Cain:Cain ProperNoun-Suffix ; ! "Cain"
+Ciluba:Ciluba ProperNoun-Suffix ; ! "Ciluba"
+Congo:Congo ProperNoun-Suffix ; ! "Congo"
+David:David ProperNoun-Suffix ; ! "David"
+Demokratiki:Demokratiki ProperNoun-Suffix ; ! "Democratic"
+Edene:Edene ProperNoun-Suffix ; ! "Eden"
+Efeze:Efeze ProperNoun-Suffix ; ! "Ephesians"
+Ejipte:Ejipte ProperNoun-Suffix ; ! "Egypt"
+Elamani:Elamani ProperNoun-Suffix ; ! "Helaman"
+Eliya:Eliya ProperNoun-Suffix ; ! "Elijah"
+Erode:Erode ProperNoun-Suffix ; ! "Herod"
+Eropa:Eropa ProperNoun-Suffix ; ! "Europe"
+Eva:Eva ProperNoun-Suffix ; ! "Eve"
+Ezaya:Ezaya ProperNoun-Suffix ; ! "Isaiah"
+Falansia:Falansia ProperNoun-Suffix ; ! "France"
+Gabon:Gabon ProperNoun-Suffix ; ! "Gabon"
+Galilé:Galilé ProperNoun-Suffix ; ! "Galilee"
+Gihona:Gihona ProperNoun-Suffix ; ! "Gihon"
+Farizé:ba%-Farizé ProperNoun-Suffix ; ! "Pharisees"
+Filipe:Filipe ProperNoun-Suffix ; ! "Phillip"
+Hawila:Hawila ProperNoun-Suffix ; ! "Havilah"
+Hidekele:Hidekele ProperNoun-Suffix ; ! "Hiddekel"
+India:India ProperNoun-Suffix ; ! "India"
+Israel:Israel ProperNoun-Suffix ; ! "Israel"
+Jake:Jake ProperNoun-Suffix ; ! "Jake"
+Joseph:Joseph ProperNoun-Suffix ; ! "Joseph"
+Jozef:Jozef ProperNoun-Suffix ; ! "Joseph"
+Kabila:Kabila ProperNoun-Suffix ; ! "Kabila"
+Katanga:Katanga ProperNoun-Suffix ; ! "Katanga"
+Kenya:Kenya ProperNoun-Suffix ; ! "Kenya"
+Kikongo:Kikongo ProperNoun-Suffix ; ! "Kikongo"
+Kinsasa:Kinsasa ProperNoun-Suffix ; ! "Kinshasa"
+kiswahili:kiswahili ProperNoun-Suffix ; !
+Klisto:Klisto ProperNoun-Suffix ; ! "Christ"
+Kongo:Kongo ProperNoun-Suffix ; ! "Congo"
+Korente:Korente ProperNoun-Suffix ; ! "Corinth"
+Kristo:Kristo ProperNoun-Suffix ; ! "Christ"
+Kusi:Kusi ProperNoun-Suffix ; ! "Ethiopia"
+Lamani:Lamani ProperNoun-Suffix ; ! "Laman"
+Lehi:Lehi ProperNoun-Suffix ; ! "Lehi"
+lifalanse:lifalanse ProperNoun-Suffix ; ! "France"
+Lingala:Lingala ProperNoun-Suffix ; ! "Lingala"
+Luanda:Luanda ProperNoun-Suffix ; ! "Luanda"
+Maria:Maria ProperNoun-Suffix ; ! "Mary"
+Mark:Mark ProperNoun-Suffix ; ! "Mark"
+Mat:Mat ProperNoun-Suffix ; ! "Matt"
+Matie:Matie ProperNoun-Suffix ; ! "Matthew"
+Mesia:Mesia ProperNoun-Suffix ; ! "Messiah"
+Moize:Moize ProperNoun-Suffix ; ! "Moses"
+Nazaret:Nazaret ProperNoun-Suffix ; ! "Nazareth"
+Nefi:Nefi ProperNoun-Suffix ; ! "Nefi"
+Nkolo:Nkolo ProperNoun-Suffix ; ! "Lord"
+Noé:Noé ProperNoun-Suffix ; ! "Noah"
+Nzambe:Nzambe ProperNoun-Suffix ; ! "God, Lord"
+Pake:Pake ProperNoun-Suffix ; ! "Passover"
+Pelata:Pelata ProperNoun-Suffix ; ! "Euphrates"
+Pólo:Pólo ProperNoun-Suffix ; ! "Paul"
+Piere:Piere ProperNoun-Suffix ; ! "Peter"
+Pierre:Pierre ProperNoun-Suffix ; ! "Pierre"
+Pilate:Pilate ProperNoun-Suffix ; ! "Pilate"
+Pisoni:Pisoni ProperNoun-Suffix ; ! "Pison"
+Republiki:Republiki ProperNoun-Suffix ; ! "Republic"
+Rome:Rome ProperNoun-Suffix ; ! "Romans"
+Rwanda:Rwanda ProperNoun-Suffix ; ! "Rwanda"
+Sadusé:ba%-Sadusé ProperNoun-Suffix ; ! "Sadducees"
+Sam:Sam ProperNoun-Suffix ; ! "Sam"
+Satan:Satan ProperNoun-Suffix ; ! "Satan"
+Saul:Saul ProperNoun-Suffix ; ! "Saul"
+Simon:Simon ProperNoun-Suffix ; ! "Simon"
+Sion:Sion ProperNoun-Suffix ; ! "Sion"
+Tanzania:Tanzania ProperNoun-Suffix ; ! "Tanzania"
+Timote:Timote ProperNoun-Suffix ; ! "Timothy"
+Tshiluba:Tshiluba ProperNoun-Suffix ; ! "Tshiluba"
+Uganda:Uganda ProperNoun-Suffix ; ! "Uganda"
+Wikipedia:Wikipedia ProperNoun-Suffix ; ! "Wikipedia"
+Yakobo:Yakobo ProperNoun-Suffix ; ! "James"
+Yawe:Yawe ProperNoun-Suffix ; ! "God"
+Yelusaleme:Yelusaleme ProperNoun-Suffix ; ! "Jerusalem" (Book of Mormon)
+Yeruzalem:Yeruzalem ProperNoun-Suffix ; ! "Jerusalem" (New Testament)
+Yesu:Yesu ProperNoun-Suffix ; ! "Jesus"
+Yézu:Yézu ProperNoun-Suffix ; ! "Jesus"
+Yisalaele:Yisalaele ProperNoun-Suffix ; ! "Israel"
+Yoane:Yoane ProperNoun-Suffix ; ! "John"
+Yuda:Yuda ProperNoun-Suffix ; ! "Judah"
+Yudas:Yudas ProperNoun-Suffix ; ! "Judas"
+Zaíre:Zaíre ProperNoun-Suffix ; ! "Zaire"
+Zalayemila:Zalayemila ProperNoun-Suffix ; ! ?
+
+!=============================================================================!
+!                               Verbs                                         !
+!=============================================================================!
+
+LEXICON Verb-Stems
+Verb-Stems-Irregular ;
+kobaka:bak Verb-Suffix ; ! "To pose"
+kobanda:band Verb-Suffix ; ! "To begin"
+kobánda:bánd Verb-Suffix ; ! "To attach, sew"
+kobánga:báng Verb-Suffix ; ! "To be scared"
+kobánza:bánz Verb-Suffix ; ! "To think, believe, remember"
+kobáta:bát Verb-Suffix ; ! "To watch"
+kobéba:béb Verb-Suffix ; ! "To damage"
+kobéla:bél Verb-Suffix ; ! "To cook"
+kobéléla:bélél Verb-Suffix ; ! "To hail"
+kobenga:beng Verb-Suffix ; ! "To follow"
+kobénga:béng Verb-Suffix ; ! "To call, name"
+kobéta:bét Verb-Suffix ; ! "To beat,rain"
+kobianga:biang Verb-Suffix ; ! "To call"
+kobíka:bík Verb-Suffix ; ! "To be saved"
+kobima:bim Verb-Suffix ; ! "To go out, appear"
+koboma:bom Verb-Suffix ; ! "To kill"
+kobonga:bong Verb-Suffix ; ! "To improve oneself"
+kobúka:búk Verb-Suffix ; ! "To break"
+kobwáka:bwák Verb-Suffix ; ! "To throw"
+kolimwa:limw Verb-Suffix ; ! "To disappear" (lexicaled reversive extension)
+kobómba:bómb Verb-Suffix ; ! "To hide"
+kobonda:bond Verb-Suffix ; ! "To separate in smaller prits, explain, expose"
+kobóta:bót Verb-Suffix ; ! "To give birth"
+koboya:boy Verb-Suffix ; ! "To refuse, disdain, deny, drop"
+kobuáka:buák Verb-Suffix ; ! "To throw"
+kobunda:bund Verb-Suffix ; ! "To fight"
+kofánda:fánd Verb-Suffix ; ! "To sit, stay, live"
+kofinga:fing Verb-Suffix ; ! "To insult"
+kofúnda:fúnd Verb-Suffix ; ! "To accuse"
+koganga:gang Verb-Suffix ; ! "To shout"
+kogumba:gumb Verb-Suffix ; ! "To bend"
+kokaba:kab Verb-Suffix ; ! "To give, donate"
+kokakola:kakol Verb-Suffix ; ! "To negotiate a bargain"
+kokamata:kamat Verb-Suffix ; ! "To take"
+kokámwa:kámw Verb-Suffix ; ! "To be surprised, amazed"
+kokána:kán Verb-Suffix ; ! "To decide"
+kokanga:kang Verb-Suffix ; ! "To close, catch, grab"
+kokáta:kát Verb-Suffix ; ! "To cut, hang up, shave"
+kokauka:kauk Verb-Suffix ; ! "To dry"
+kokéba:kéb Verb-Suffix ; ! "To pay attention"
+kokela:kel Verb-Suffix ; ! "To generate, give live, create, invent"
+kokesena:kesen Verb-Suffix ; ! "To compare"
+kokíma:kím Verb-Suffix ; ! "To avoid, run, run away"
+kokita:kit Verb-Suffix ; ! "To land"
+kokoba:kob Verb-Suffix ; ! "To advance"
+kokoka:kok Verb-Suffix ; ! "To be able"
+kokóla:kól Verb-Suffix ; ! "To grow, increase, ripe, mature:
+kokóma:kóm Verb-Suffix ; ! "To arrive, happen, become, start to"
+kokonza:konz Verb-Suffix ; ! "To monopolize, occupy by force"
+kokósa:kós Verb-Suffix ; ! "To lie, fool"
+kokóta:kót Verb-Suffix ; ! "To enter"
+kokufa:kuf Verb-Suffix ; ! "To die, fail"
+kokukula:kukul Verb-Suffix ; ! "To dismantle, remove"
+kokuma:kum Verb-Suffix ; ! "To win"
+kokumba:kumb Verb-Suffix ; ! "To drive, pilot, transport, carry"
+kokunda:kund Verb-Suffix ; ! "To bury"
+kokúta:kút Verb-Suffix ; ! "To find"
+kokwa:kw Verb-Suffix ; ! "To take, snatch, catch, capture, recover"
+kokweya:kwe Verb-Suffix ; ! See kokwéya Dir/LR
+kokwéya:kwéy Verb-Suffix ; ! "To fall"
+kolaka:lak Verb-Suffix ; ! "To warn, predict, advise"
+kolámba:lámb Verb-Suffix ; ! "To prepare (dinner)"
+kolanda:land Verb-Suffix ; ! "To follow"
+kolánga:láng Verb-Suffix ; ! "To get drunk"
+kolela:lel Verb-Suffix ; ! "To cry"
+koleka:lek Verb-Suffix ; ! "To pass, exceed"
+kolemba:lemb Verb-Suffix ; ! "To be tired"
+kolenda:lend Verb-Suffix ; ! "To be able to"
+kolikya:liky Verb-Suffix ; ! "To hope"
+kolímba:límb Verb-Suffix ; ! "To reach"
+kolinga:ling Verb-Suffix ; ! "To love, want desire"
+koloba:lob Verb-Suffix ; ! "To speak"
+kolokota:lokot Verb-Suffix ; ! "To pick up"
+kolónga:lóng Verb-Suffix ; ! "To defeat, win"
+kolota:lot Verb-Suffix ; ! "To dream, think"
+koluka:luk Verb-Suffix ; ! "To search"
+koluta:lut Verb-Suffix ; ! "To excel"
+komata:mat Verb-Suffix ; ! "To climb"
+komeka:mek Verb-Suffix ; ! "To try, test, taste"
+komela:mel Verb-Suffix ; ! "To drink"
+komema:mem Verb-Suffix ; ! "To wear, carry, transport"
+komóna:món Verb-Suffix ; ! "To see"
+kondima:ndim Verb-Suffix ; ! "To accept, admit, believe"
+koniata:niat Verb-Suffix ; ! "To trample"
+koninga:ning Verb-Suffix ; ! "To shake"
+kongala:ngal Verb-Suffix ; ! "To speak loud"
+konyánga:nyáng Verb-Suffix ; ! "To plan a plot"
+kopakola:pakol Verb-Suffix ; ! "To put on oil"
+kopalangana:palangan Verb-Suffix ; ! "To disperse, spread, diffuse"
+kopanza:panz Verb-Suffix ; ! "To spread"
+kopekisa:pekis Verb-Suffix ; ! "To prohibit, forbid, prevent"
+kopema:pem Verb-Suffix ; ! "To breathe"
+kopésa:pés Verb-Suffix ; ! "To give, distribute
+kopíma:pím Verb-Suffix ; ! "To refuse"
+koyéba:yéb Verb-Suffix ; ! "To know"
+kopambola:pambol Verb-Suffix ; ! "To bless, transfer good influences"
+kopola:pol Verb-Suffix ; ! "To get wet, soak (caus.)"
+kopona:pon Verb-Suffix ; ! "To choose"
+kosakola:sakol Verb-Suffix ; ! "To proclaim"
+kosála:sál Verb-Suffix ; ! "To work"
+kosalema:salem Verb-Suffix ; ! "To happen"
+kosamba:samb Verb-Suffix ; ! "To plead (a case), appear in court"
+kosanga:sang Verb-Suffix ; ! "To meet"
+kosánza:sánz Verb-Suffix ; ! "To vomit"
+koseka:sek Verb-Suffix ; ! "To laugh"
+kosenga:seng Verb-Suffix ; ! "To ask"
+kosepela:sepel Verb-Suffix ; ! "To rejoice, enjoy, have fun"
+kosikola:sikol Verb-Suffix ; ! "To recite, liberate, deliver, remove"
+kosila:sil Verb-Suffix ; ! "To finish, terminate"
+kosilika:silik Verb-Suffix ; ! "To get angry"
+kosímba:símb Verb-Suffix ; ! "To hold"
+kosolola:solol Verb-Suffix ; ! "To discuss, chat"
+kososola:sosol Verb-Suffix ; ! "To analyze"
+kosúka:súk Verb-Suffix ; ! "To reach the end"
+kotála:tál Verb-Suffix ; ! "To watch"
+kotámba:támb Verb-Suffix ; ! "To advance, go forward"
+kotánga:táng Verb-Suffix ; ! "To read, count, study"
+koteka:tek Verb-Suffix ; ! "To sell, sell out"
+kotélema:télem Verb-Suffix ; ! "To stand up, halt"
+koteya:tey Verb-Suffix ; ! "To teach"
+kotíka:tík Verb-Suffix ; ! "To leave"
+kotima:tim Verb-Suffix ; ! "To plow"
+kotinda:tind Verb-Suffix ; ! "To ship, send"
+kotoka:tok Verb-Suffix ; ! "To pour"
+kotomboka:tombok Verb-Suffix ; ! "To rebel"
+kotónda:tónd Verb-Suffix ; ! "To saturate"
+kotosa:tos Verb-Suffix ; ! "To obey"
+kotuka:tuk Verb-Suffix ; ! "Abuse"
+kotúna:tún Verb-Suffix ; ! "To ask"
+koúma:úm Verb-Suffix ; ! "To take a long time"
+koúta:út Verb-Suffix ; ! Alternative form of kowúta
+kovánda:vánd Verb-Suffix ; ! Alternative form of kofánda
+kowúta:wút Verb-Suffix ; ! "To come"
+koyamba:yamb Verb-Suffix ; ! "To welcome"
+konyata:nyat Verb-Suffix ; ! "To trample"
+koyekola:yekol Verb-Suffix ; ! "To learn"
+koyemba:yemb Verb-Suffix ; ! "To sing"
+koyiba:yib Verb-Suffix ; ! "To steal"
+koyika:yik Verb-Suffix ; ! "Increase, multiply"
+koyimayima:yimayim Verb-Suffix ; ! "To complian"
+koyina:yin Verb-Suffix ; ! "To hate"
+koyoka:yok Verb-Suffix ; ! "To understand, listen, hear"
+kozánga:záng Verb-Suffix ; ! "To miss"
+kozela:zel Verb-Suffix ; ! "To wait"
+kozinga:zing Verb-Suffix ; ! "To tie up, cross, warp"
+kozua:zu Verb-Suffix ; ! "To earn, get, take, receive"
+kozwa:zw Verb-Suffix ; ! Alternate form of kozua
+kozónga:zóng Verb-Suffix ; ! "To return, go back"
+
+kolia:li Verb-Suffix ; ! "To eat"
+kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
+kotia:ti Verb-Suffix ; ! "To put," may have irregular form but used regularly in corpus
+
+kozala:zal Verb-Suffix ; ! Copula, must also analyze as aux verb
+kozala:zal Aux-Verb-Suffix ;
+
+LEXICON Verb-Stems-Irregular
+koya:y Verb-Irreg1-Suffix ; ! "To come"
+koya:ye Verb-Irreg2-Suffix ; !
+%[%-imp%]koya:yak Verb-InfImp-Suffix ; ! Irregular irregular imperative. The incorrect imperative from above entry is removed using CG
+
+kowâ:w Verb-Irreg1-Suffix ;  ! "To die"
+kowâ:we Verb-Irreg2-Suffix ;
+
+kolia:le Verb-Irreg2-Suffix ; ! See kolia
+
+!=============================================================================!
+!                           Everything Else                                   !
+!=============================================================================!
+
+LEXICON Adjective-Stems
+moké:ké Adjective-Var-Suffix ; ! "Small"
+mokúsé:kúsé Adjective-Var-Suffix ; ! "Short"
+molaí:laí Adjective-Var-Suffix ; ! "Long"
+monéne:néne Adjective-Var-Suffix ; ! "Big"
+
+banso:banso Adjective-InVar-Suffix ; ! "All"
+bobele:bobele Adjective-InVar-Suffix ; ! "Only"
+bololo:bololo Adjective-InVar-Suffix ; ! "Bitter, sour"
+mabé:mabé Adjective-InVar-Suffix ; ! "Bad"
+makási:makási Adjective-InVar-Suffix ; ! "Strong"
+malámu:malámu Adjective-InVar-Suffix ; ! "Good"
+mobésu:mobésu Adjective-InVar-Suffix ; ! "Raw"
+mobimba:mobimba Adjective-InVar-Suffix ; ! "All, whole"
+mwá:mwá Adjective-InVar-Suffix ; ! Generally means "small," "some," etc.
+mwíndo:mwíndo Adjective-InVar-Suffix ; ! "Black, African"
+ntei:ntei Adjective-InVar-Suffix ; ! "Middle, central"
+kitóko:kitóko Adjective-InVar-Suffix ; ! "Beautiful"
+pémbé:pémbé Adjective-InVar-Suffix ; ! "White"
+pémbé:mpémbé Adjective-InVar-Suffix ; ! "White" Dir/LR
+pene:pene Adjective-InVar-Suffix ; ! "Close to"
+polele:polele Adjective-InVar-Suffix ; ! "Open, clear"
+seko:seko Adjective-InVar-Suffix ; ! "Eternal"
+sika:sika Adjective-InVar-Suffix ; ! "New"
+solo:solo Adjective-InVar-Suffix ; ! "True"
+yambo:yambo Adjective-InVar-Suffix ; ! "First"
+
+LEXICON Pronouns
+ngáí:ngáí PRON-Ngai ; ! "I"
+yó:yó PRON-Yo ; ! "You"
+yé:yé PRON-Ye ; ! "He"
+bísó:bísó PRON-Biso ; ! "We"
+bínó:bínó PRON-Bino ; ! "You" (pl)
+bangó:bangó PRON-Bango ; ! "They"
+
+yangó:yangó PRON-Yango ; ! Can be both demonstrative and inanimate personal
+óyo:óyo PRON-Oyo ;
+baóyo:baóyo PRON-Baoyo ;
+wâná:wâná PRON-Wana ;
+náni:náni PRON-Nani ;
+banáni:banáni PRON-Banani ;
+níni:níni PRON-Nini ;
+
+! See https://fr.wiktionary.org/wiki/%C3%B3yo#Lingala
+! Apparently "óyo" can agree in noun class, but this is contrary to mosto grammars (see
+! Meeuswis, 2010). These will analyze with some tags since they appear in some literature, but
+! probably would not want to generate these. Can revisit and add more robust support if that turns
+! out not to be the case.
+óyo%<cl1%>%<pl%>:baye PRON-Oyo ; !
+óyo%<cl3%>%<sg%>:moye PRON-Oyo ; !
+óyo%<cl3%>%<pl%>:miye PRON-Oyo ; !
+óyo%<cl5%>%<sg%>:liye PRON-Oyo ; !
+óyo%<cl5%>%<pl%>:maye PRON-Oyo ; !
+óyo%<cl7%>%<sg%>:eye PRON-Oyo ; !
+óyo%<cl7%>%<pl%>:biye PRON-Oyo ; !
+óyo%<cl9%>%<pl%>:iye PRON-Oyo ; !
+óyo%<cl11%>%<sg%>:loye PRON-Oyo ; !
+óyo%<cl14%>%<sg%>:boye PRON-Oyo ; !
+
+! See https://fr.wiktionary.org/wiki/yang%C3%B3
+! Apparently "yangó" can agree in noun class, but this is contrary to mosto grammars (see
+! Meeuswis, 2010). These will analyze with some tags since they appear in some literature, but
+! probably would not want to generate these. Can revisit and add more robust support if that turns
+! out not to be the case.
+yangó%<cl3%>%<sg%>:mwangó PRON-Yango; 
+yangó%<cl3%>%<pl%>:myangó PRON-Yango ;
+yangó%<cl5%>%<sg%>:lyangó PRON-Yango ;
+yangó%<cl5%>%<pl%>:mangó PRON-Yango ;
+yangó%<cl7%>%<pl%>:byangó PRON-Yango ;
+yangó:%<cl11%>%<sg%>lwangó PRON-Yango ;
+yangó%<cl14%>%<sg%>:bwangó PRON-Yango ;
+
+LEXICON Prepositions
+káti Prep-Suffix ; ! Inside, between
+lokola:lokola Prep-Suffix ; ! "Like, as"
+na:na Prep-Suffix ; ! Many translations
+o:o Prep-Suffix ; ! Used in Book of Mormon
+tii:tii Prep-Suffix ;  ! "Up, until"
+tii:téé Prep-Suffix ; ! "Up, until" (see tii above) Dir/LR
+
+LEXICON Conjunctions
+bongo:bongo Conj-Coord-Suffix ; ! "So"
+kasi:kasi Conj-Coord-Suffix ; ! "But"
+mpé:mpé Conj-Coord-Suffix ; ! "And"
+mpó:mpó Conj-Coord-Suffix ; ! "For"
+na:na Conj-Coord-Suffix ; ! "And"
+pámba%+te:pámba% te Conj-Coord-Suffix ; ! "Because"
+pe:pe Conj-Coord-Suffix ; ! "And"
+po:po Conj-Coord-Suffix ; ! "For"
+to:to Conj-Coord-Suffix ; ! "Or"
+zambi:zambi Conj-Coord-Suffix ; ! "For, because"
+soko:soko Conj-Subord-Suffix ; ! "If"
+soki:soki Conj-Subord-Suffix ; ! "If" (alternative spelling)
+ete:ete Conj-Subord-Suffix ; ! "That"
+tii:tii Conj-Coord-Suffix ; ! "Until"
+
+LEXICON Connective
+ya:ya Conn-Suffix ;
+
+! See https://fr.wiktionary.org/wiki/ya#Lingala
+! Apparently "ya" can agree in noun class, but this is contrary to mosto grammars (see
+! Meeuswis, 2010). These will analyze with some tags since they appear in some literature, but
+! probably would not want to generate these. Can revisit and add more robust support if that turns
+! out not to be the case.
+ya%<cl1%>%<sg%>:wa Conn-Suffix ;
+ya%<cl1%>%<pl%>:ba Conn-Suffix ;
+ya%<cl3%>%<sg%>:mwa Conn-Suffix ;
+mya%<cl3%>%<pl%>:mya Conn-Suffix ;
+ya%<cl5%>%<sg%>:lya Conn-Suffix ;
+ya%<cl5%>%<pl%>:ma Conn-Suffix ;
+ya%<cl7%>%<pl%>:bya Conn-Suffix ;
+ya%<cl11%>%<sg%>:la Conn-Suffix ;
+ya%<cl14%>%<sg%>:bwa Conn-Suffix ;
+
+LEXICON Adverb
+atá:atá Adverb-Suffix ; ! "Even"
+atako:atako Adverb-Suffix ; ! "Even if"
+áwa:áwa Adverb-Suffix ; ! "Here"
+bandá:bandá Adverb-Suffix ; ! "Since"
+bobele:bobele Adverb-Suffix ; ! "Only"
+boye:boye Adverb-Suffix ; ! "Like this"
+ee:ee Adverb-Suffix ; ! "Yes"
+elongó:elongó Adverb-Suffix ; ! "Yes"
+iyo:iyo Adverb-Suffix ; ! "Yes"
+káka:káka Adverb-Suffix ; ! "Only"
+kala:kala Adverb-Suffix ; ! "Once upon a time"
+kuna:kuna Adverb-Suffix ; ! "There"
+kútu:kútu Adverb-Suffix ; ! "Rather, moreover"
+lelo:lelo Adverb-Suffix ; ! "Today"
+lisúsu:lisúsu Adverb-Suffix ; ! "Again"
+mbele:mbele Adverb-Suffix ; ! "Then" (only if soki "if" precedes it)
+mpenzá:mpenzá Adverb-Suffix ; ! "Really"
+nanu:nanu Adverb-Suffix ; ! "Already"
+neti:neti Adverb-Suffix ; ! "As if"
+noki:noki Adverb-Suffix ; ! "Quickly"
+nzokande:nzokande Adverb-Suffix ; ! "However"
+penzá:penzá Adverb-Suffix ; ! "Really, very"
+penepene:penepene Adverb-Suffix ; ! "Very close"
+sikawa:sikawa Adverb-Suffix ; ! "Now" (sikoyo is a synonym)
+sik'oyo:sik'oyo Adverb-Suffix ; ! "Now, immediately"
+wápi:wápi Adverb-Suffix ; ! "Where?"
+
+LEXICON YesNo
+te:te Neg-Suffix ; ! Unclear if this should be te or té.
+
+LEXICON Numerals
+mókó%<num%>%<ord%>:mókó COMMON-Suffix ; ! "One" (has different cardinal form)
+libosó%<num%>%<card%>:libosó COMMON-Suffix ; ! "First"
+míbalé:míbalé Numeral-Suffix ; ! "Two"
+mísáto:mísáto Numeral-Suffix ; ! "Three
+mínei:mínei Numeral-Suffix ; ! "Four"
+mítáno:mítáno Numeral-Suffix ; ! "Five"
+motóbá:motóba Numeral-Suffix ; ! "Six"
+sambo:sambo Numeral-Suffix ; ! "Seven"
+mwambe:mwambe Numeral-Suffix ; ! "Eight"
+libwá:libwá Numeral-Suffix ; ! "Nine"
+zómi:zómi Numeral-Suffix ; ! "Ten"
+túkú:túkú Numeral-Suffix ; ! "A ten"
+kámá:kámá Numeral-Suffix ; ! "A hundred"
+
+LEXICON Quantifiers
+ebelé:ebelé Quant-Suffix ; ! "Many"
+míngi:míngi Quant-Suffix ; ! "A lot of"
+moké:moké Quant-Suffix ; ! "A bit, few"
+nyónso:nyónso Quant-Suffix ; ! "Each, all"
+
+LEXICON FocusMarkers
+ndé:ndé Focus-Suffix ; ! "Focus marker with 'copula capacity'"
+
+LEXICON Interjections
+aleluya:aleluya Interjection-Suffix ; ! "Hallelujah"
+
+LEXICON LoanWords
+bapolice%<n%>%<pl%>:bapolice COMMON-Suffix ; ! "Police"
+!de%<pr%>:de COMMON-Suffix ; ! "Of" (French)
+!des%<pr%>des COMMON-Suffix ; ! "Of" (French)
+!du%<pr%>:du COMMON-Suffix ; ! "Of" (French)
+mersi%<n%>%<sg%>:mersi COMMON-Suffix ; ! "Thanks"
+région%<n%>%<sg%>:région COMMON-Suffix ; ! "Region"
+politiki%<n%>%<sg%>:politiki COMMON-Suffix ; ! "Policy"
+
+LEXICON Irregular
+! Class 1 mwa to ba
+%[%-sg%]mwana:mwana I-II-Suffix ; ! "Child"
+%[%-pl%]mwana:bana I-II-Suffix ;
+%[%-sg%]mwasi:mwasi I-II-Suffix ; ! "Girl, daughter, wife"
+%[%-pl%]mwasi:basi I-II-Suffix ;
+
+! Class 1 plural only
+%[%-pl%]banzambe:banzambe I-II-Suffix ; ! "Gods"
+
+! Class 5 li to mi instead of ma when root starts with i
+%[%-sg%]liso:liso V-VI-Suffix ; ! "Eye"
+%[%-pl%]liso:miso V-VI-Suffix ;
+
+! Class 7 no singular
+%[%-pl%]bilei:bilei VII-VIII-Suffix ; ! "Food"
+
+! Class 11 lo to nd
+%[%-sg%]loléngé:loléngé XI-VI-Suffix ; ! "Method"
+%[%-pl%]loléngé:ndéngé XI-VI-Suffix ; 
+
+! Class 11 lo to ns
+%[%-sg%]losámbo:losámbo XI-VI-Suffix ; ! "Prayer"
+%[%-pl%]losámbo:nsámbo XI-VI-Suffix ;
+
+! Class 11 lo to m
+%[%-sg%]lobángu:lobángu XI-VI-Suffix ; ! "Speed"
+%[%-pl%]lobángu:mbángu XI-VI-Suffix ;
+
+! Class 11 lo to n
+%[%-sg%]lokóta:lokóta XI-VI-Suffix ; ! "Language"
+%[%-pl%]lokóta:nkóta XI-VI-Suffix ;
+%[%-pl%]lokásá:nkásá XI-VI-Suffix ; ! Dir/LR
+
+! Class 14 bw
+%[%-sg%]bwányá:bwányá XIV-Suffix ; ! "Wisdom"
+
+
+LEXICON Tentative
+mauti%<prn%>%<rel%>:mauti COMMON-Suffix ; ! Translated "which", so guess a relative pronoun. Need to confirm.
+boye%<prn%>%<dem%>:boye COMMON-Suffix ; ! "Often takes the translation "this" before a quote, so guessing this can act as a demonstrative pronoun.
+asi%<vaux%>:asi COMMON-Suffix ; ! "Seems to come before verbs sometimes. Unclear exactly how it affects meaning" See https://glosbe.com/ln/en/asi
+bosi%<vaux%>:bosi COMMON-Suffix ; ! Also seems to come before verbs sometimes. Unclear exactly how it affects meaning.
+esi%<vaux%>:esi COMMON-Suffix ; ! "Seems to come before verbs sometimes. Unclear exactly how it affects meaning"
+
+LEXICON Punctuation
+
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%<guio%>:%- # ;
+%—%<guio%>:%— # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+%'%<apos%>:%' # ;
+%"%<sent%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+\%<sent%>:\ # ;
+/%<sent%>:/ # ;
+
+
+! Resources:
+! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Lexicon
+! http://wiki.apertium.org/wiki/Lttoolbox_and_lexc
+! http://wiki.apertium.org/wiki/Apertium-specific_conventions_for_lexc
+! https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
+! http://hfst.sourceforge.net/
+! http://www.cis.upenn.edu/~cis639/docs/lexc.html
+! http://wiki.apertium.org/wiki/Hfst
+

@@ -1,0 +1,27 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../lin.autogen.hfst
+    Morph: ../lin.automorf.hfst
+Tests:
+  Commonwords:
+    o<pr>: o
+    mpé<cngcoo>: mpe
+    nsɔ<unk>: nsɔ
+    mpé<cngcoo>: Mpe
+    nyɔ<unk>: nyɔ
+    to<cngcoo>: to
+    te<neg>: te
+    mi<unk>: mi
+    mpé<cngcoo>: mpé
+    ete<unk>: ete
+    wa<unk>: wa
+    mwa<unk>: mwa
+    lya<unk>: lya
+    Nzambe<unk>: Nzambe
+    nkema<unk>: nkema
+    te<neg>: tɛ
+    li<unk>: li
+    esalemaki<unk>: esalemaki
+    likolo<unk>: likolo
+    té<unk>: té
