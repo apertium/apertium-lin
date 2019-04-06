@@ -15,7 +15,7 @@ Multichar_Symbols
 %<conn%>    ! Connective (various uses)
 %<cnjcoo%>  ! Coordinating Conjunction
 %<cnjsub%>  ! Subordinating Conjunction
-%<v%>       ! Verb
+%<vblex%>   ! Verb
 %<ij%>      ! Interjection
 %<foc%>     ! Focus marker
 
@@ -65,15 +65,19 @@ Multichar_Symbols
 %<dem%>    ! Demonstrative
 %<rel%>    ! Relative pronoun
 %<itg%>    ! Interrogative pronoun
+%<ind%>    ! Indefinite
 
 %<det%>    ! Determiner
-%<qnt%>  ! Quantifier
+%<qnt%>    ! Quantifier
 
 ! Noun-specific morphology
 %<abs%>     ! Abstract form of non-abstract noun
 %<def%>     ! Definite plural
 %<inst%>    ! Instantiated abstract noun
-%<prop%>    ! Proper noun
+%<np%>      ! Proper noun
+%<ant%>     ! Anthroponym
+%<top%>     ! Toponym
+%<al%>      ! Altres, misc proper nouns
 
 ! Noun-class morphology
 %<cl1%>     ! Class 1 noun
@@ -128,10 +132,10 @@ Multichar_Symbols
 %<guio%>      ! Hyphen
 %<cm%>        ! Comma
 %<apos%>      ! Apostrophe
-%<rquot%>     ! Quote marker (right hand side) 
-%<lquot%>     ! Quote marker (left hand side) 
-%<rpar%>      ! Parenthetical marker (right hand side) 
-%<lpar%>      ! Parenthetical marker (left hand side) 
+%<rquot%>     ! Quote marker (right hand side)
+%<lquot%>     ! Quote marker (left hand side)
+%<rpar%>      ! Parenthetical marker (right hand side)
+%<lpar%>      ! Parenthetical marker (left hand side)
 
 ! Other symbols
 %>      ! Morpheme boundary
@@ -327,9 +331,14 @@ LEXICON XIV-Suffix
 LEXICON XV-Suffix
 %[%+sg%]%<n%>%<cl15%>%<sg%>: COMMON-Suffix ;
 
-LEXICON ProperNoun-Suffix
-%<n%>%<prop%>: COMMON-Suffix ;
+LEXICON Anthroponym-Suffix
+%<np%>%<ant%>: COMMON-Suffix ;
 
+LEXICON Toponym-Suffix
+%<np%>%<top%>: COMMON-Suffix ;
+
+LEXICON MiscProper-Suffix
+%<np%>%<al%>: COMMON-Suffix ;
 
 !=============================================================================!
 !                         Verb Morphotactics                                  !
@@ -363,19 +372,19 @@ LEXICON VerbRef-Inf
 
 LEXICON Verb-Suffix
 Verb-Rad-Ex ;
-%<v%>:%> Verb-TAM-Suffix ;
+%<vblex%>:%> Verb-TAM-Suffix ;
 
 LEXICON Aux-Verb-Suffix
 %<vaux%>: Verb-TAM-Suffix ;
 
 LEXICON Verb-Rad-Ex
-%<v%>%<appl%>:%>el%> Verb-Rad-Ex2 ;
-%<v%>%<caus%>:%>is%> Verb-Rad-Ex2 ;
-%<v%>%<recip%>:%>an%> Verb-Rad-Ex2 ;
-%<v%>%<rev%>:%>w%> Verb-Rad-Ex2 ;
-%<v%>%<stat%>:%>al%> Verb-Rad-Ex2 ;
-%<v%>%<pass%>:%>am%> Verb-Rad-Ex2 ;
-%<v%>%<caus%>%<rev%>:%>ol%> Verb-TAM-Suffix ;
+%<vblex%>%<appl%>:%>el%> Verb-Rad-Ex2 ;
+%<vblex%>%<caus%>:%>is%> Verb-Rad-Ex2 ;
+%<vblex%>%<recip%>:%>an%> Verb-Rad-Ex2 ;
+%<vblex%>%<rev%>:%>w%> Verb-Rad-Ex2 ;
+%<vblex%>%<stat%>:%>al%> Verb-Rad-Ex2 ;
+%<vblex%>%<pass%>:%>am%> Verb-Rad-Ex2 ;
+%<vblex%>%<caus%>%<rev%>:%>ol%> Verb-TAM-Suffix ;
 
 LEXICON Verb-Rad-Ex2
 Verb-TAM-Suffix ;
@@ -399,10 +408,10 @@ Verb-Fut-Ref-Suffix ;
 Verb-InfImp-Suffix ;
 
 LEXICON Verb-Irreg1-Suffix
-%<v%>:%> Verb-TAM-Irreg1-Suffix ;
+%<vblex%>:%> Verb-TAM-Irreg1-Suffix ;
 
 LEXICON Verb-Irreg2-Suffix
-%<v%>:%> Verb-TAM-Irreg2-Suffix ;
+:%> Verb-TAM-Irreg2-Suffix ;
 
 ! Takes the "normal" root in the future, infinitive, and imperative
 LEXICON Verb-TAM-Irreg1-Suffix
@@ -455,7 +464,7 @@ LEXICON Verb-URP-Suffix
 %[%+p3%]%[%+pl%]%[%+aa%]%<urp%>%<p3%>%<pl%>%<aa%>:ákí COMMON-Suffix ;
 %[%+p3%]%[%+nn%]%<urp%>%<p3%>%<sp%>%<nn%>:ákí COMMON-Suffix ;
 
-LEXICON Verb-DPRES-Suffix 
+LEXICON Verb-DPRES-Suffix
 %[%+p1%]%[%+sg%]%[%+aa%]%<dpres%>%<p1%>%<sg%>%<aa%>:á COMMON-Suffix ;
 %[%+p2%]%[%+sg%]%[%+aa%]%<dpres%>%<p2%>%<sg%>%<aa%>:á COMMON-Suffix ;
 %[%+p3%]%[%+sg%]%[%+aa%]%<dpres%>%<p3%>%<sg%>%<aa%>:á COMMON-Suffix ;
@@ -464,7 +473,7 @@ LEXICON Verb-DPRES-Suffix
 %[%+p3%]%[%+pl%]%[%+aa%]%<dpres%>%<p3%>%<pl%>%<aa%>:á COMMON-Suffix ;
 %[%+p3%]%[%+nn%]%<dpres%>%<p3%>%<sp%>%<nn%>:á COMMON-Suffix ;
 
-LEXICON Verb-Fut-Suffix 
+LEXICON Verb-Fut-Suffix
 %[%+p1%]%[%+sg%]%[%+aa%]%[%+fut%]%<fut%>%<p1%>%<sg%>%<aa%>:a COMMON-Suffix ;
 %[%+p2%]%[%+sg%]%[%+aa%]%[%+fut%]%<fut%>%<p2%>%<sg%>%<aa%>:a COMMON-Suffix ;
 %[%+p3%]%[%+sg%]%[%+aa%]%[%+fut%]%<fut%>%<p3%>%<sg%>%<aa%>:a COMMON-Suffix ;
@@ -507,7 +516,7 @@ LEXICON Verb-URP-Ref-Suffix
 %[%+p3%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<urp%>%<p3%>%<pl%>%<aa%>:ákí COMMON-Suffix ;
 %[%+p3%]%[%+nn%]%[%+ref%]%<refl%>%<urp%>%<p3%>%<sp%>%<nn%>:ákí COMMON-Suffix ;
 
-LEXICON Verb-DPRES-Ref-Suffix 
+LEXICON Verb-DPRES-Ref-Suffix
 %[%+p1%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p1%>%<sg%>%<aa%>:á COMMON-Suffix ;
 %[%+p2%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p2%>%<sg%>%<aa%>:á COMMON-Suffix ;
 %[%+p3%]%[%+sg%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p3%>%<sg%>%<aa%>:á COMMON-Suffix ;
@@ -516,7 +525,7 @@ LEXICON Verb-DPRES-Ref-Suffix
 %[%+p3%]%[%+pl%]%[%+aa%]%[%+ref%]%<refl%>%<dpres%>%<p3%>%<pl%>%<aa%>:á COMMON-Suffix ;
 %[%+p3%]%[%+nn%]%[%+ref%]%<refl%>%<dpres%>%<p3%>%<sp%>%<nn%>:á COMMON-Suffix ;
 
-LEXICON Verb-Fut-Ref-Suffix 
+LEXICON Verb-Fut-Ref-Suffix
 %[%+p1%]%[%+sg%]%[%+aa%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p1%>%<sg%>%<aa%>:a COMMON-Suffix ;
 %[%+p2%]%[%+sg%]%[%+aa%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p2%>%<sg%>%<aa%>:a COMMON-Suffix ;
 %[%+p3%]%[%+sg%]%[%+aa%]%[%+fut%]%[%+ref%]%<refl%>%<fut%>%<p3%>%<sg%>%<aa%>:a COMMON-Suffix ;
@@ -651,6 +660,8 @@ moto:to I-II-Suffix ; ! "Person"
 moúmbu:úmbu I-II-Suffix ; ! "Slave"
 moyembi:yembi I-II-Suffix ; ! "Singer"
 moyíbi:yíbi I-II-Suffix ; ! "Thief"
+lisano:sano I-II-Suffix ; ! "Game"
+botuna:tuna I-II-Suffix ; ! "Question"
 
 LEXICON Ia-II-Stems
 anjelu:anjelu Ia-II-Suffix ; ! "Angel"
@@ -677,6 +688,7 @@ sángó:sángó Ia-II-Suffix ; ! "Priest"
 sodá:sodá Ia-II-Suffix ; ! "Soldier"
 tata:tata Ia-II-Suffix ; ! "Dad"
 zábolo:zábolo Ia-II-Suffix ; ! "Demon"
+lininisa:ninisa Ia-II-Suffix ; ! "Window"
 
 LEXICON III-IV-Stems
 miko:ko III-IV-Suffix ; ! No singular form
@@ -793,7 +805,7 @@ ekolo:kolo VII-VIII-Suffix ; !"Measuring unit, country," depending on tone
 ekomele:komele VII-VIII-Suffix ; ! "Pencil"
 elamba:lamba VII-VIII-Suffix ; ! "Costume, dress, garment"
 elanga:langa VII-VIII-Suffix ; ! "Garden"
-eleko:leko VII-VIII-Suffix ; ! "Period, time"
+eleko:leko VII-VIII-Suffix ; ! "Period, time, weather"
 elembo:lembo VII-VIII-Suffix ; ! "Symbol"
 elikya:likya VII-VIII-Suffix ; ! "Hope"
 elóko:lóko VII-VIII-Suffix ; ! "Thing, object"
@@ -896,7 +908,7 @@ vile:vile IX-X-Suffix ; ! "City"
 víno:víno IX-X-Suffix ; ! "Wine"
 víno:vinu IX-X-Suffix ; ! "Wine" Dir/LR
 zélo:zélo IX-X-Suffix ; ! "Sand"
-zólo:zólo IX-X-Suffix ; ! "Nose"
+ndeke:ndeke IX-X-Suffix ; ! "Bird"
 
 !!! Can take n/m or not
 LEXICON IX-X-b-Stems
@@ -984,109 +996,111 @@ kolinga:linga XV-Suffix ; ! "To love"
 kotála:tála XV-Suffix ; ! "To watch"
 
 LEXICON ProperNouns
-Abel:Abel ProperNoun-Suffix ; ! "Abel"
-Abraham:Abraham ProperNoun-Suffix ; ! "Abraham"
-Adam:Adam ProperNoun-Suffix ; ! "Adam
-Afrika:Afrika ProperNoun-Suffix ; ! "Africa"
-Alama:Alama ProperNoun-Suffix ; ! "Alma"
-Amerika:Amerika ProperNoun-Suffix ; ! "America"
-Angola:Angola ProperNoun-Suffix ; ! "Angola"
-Antioshe:Antioshe ProperNoun-Suffix ; ! "Antioch"
-Asaf:Asaf ProperNoun-Suffix ; ! "Asaph"
-Asulia:Asulia ProperNoun-Suffix ; ! "Assyria"
-Azia:Azia ProperNoun-Suffix ; ! "Asia"
-Barnabas:Barnabas ProperNoun-Suffix ; ! "Barnabas"
-Bayuda:Bayuda ProperNoun-Suffix ; ! "Judaism" (?)
-Birmani:Birmani ProperNoun-Suffix ; ! "Myanmar"
-Brazzaville:Brazzaville ProperNoun-Suffix ; ! "Brazzaville"
-Burundi:Burundi ProperNoun-Suffix ; ! "Burundi"
-Cain:Cain ProperNoun-Suffix ; ! "Cain"
-Ciluba:Ciluba ProperNoun-Suffix ; ! "Ciluba"
-Congo:Congo ProperNoun-Suffix ; ! "Congo"
-David:David ProperNoun-Suffix ; ! "David"
-Demokratiki:Demokratiki ProperNoun-Suffix ; ! "Democratic"
-Edene:Edene ProperNoun-Suffix ; ! "Eden"
-Efeze:Efeze ProperNoun-Suffix ; ! "Ephesians"
-Ejipte:Ejipte ProperNoun-Suffix ; ! "Egypt"
-Elamani:Elamani ProperNoun-Suffix ; ! "Helaman"
-Eliya:Eliya ProperNoun-Suffix ; ! "Elijah"
-Erode:Erode ProperNoun-Suffix ; ! "Herod"
-Eropa:Eropa ProperNoun-Suffix ; ! "Europe"
-Eva:Eva ProperNoun-Suffix ; ! "Eve"
-Ezaya:Ezaya ProperNoun-Suffix ; ! "Isaiah"
-Falansia:Falansia ProperNoun-Suffix ; ! "France"
-Gabon:Gabon ProperNoun-Suffix ; ! "Gabon"
-Galilé:Galilé ProperNoun-Suffix ; ! "Galilee"
-Gihona:Gihona ProperNoun-Suffix ; ! "Gihon"
-Farizé:ba%-Farizé ProperNoun-Suffix ; ! "Pharisees"
-Filipe:Filipe ProperNoun-Suffix ; ! "Phillip"
-Hawila:Hawila ProperNoun-Suffix ; ! "Havilah"
-Hidekele:Hidekele ProperNoun-Suffix ; ! "Hiddekel"
-India:India ProperNoun-Suffix ; ! "India"
-Israel:Israel ProperNoun-Suffix ; ! "Israel"
-Jake:Jake ProperNoun-Suffix ; ! "Jake"
-Joseph:Joseph ProperNoun-Suffix ; ! "Joseph"
-Jozef:Jozef ProperNoun-Suffix ; ! "Joseph"
-Kabila:Kabila ProperNoun-Suffix ; ! "Kabila"
-Katanga:Katanga ProperNoun-Suffix ; ! "Katanga"
-Kenya:Kenya ProperNoun-Suffix ; ! "Kenya"
-Kikongo:Kikongo ProperNoun-Suffix ; ! "Kikongo"
-Kinsasa:Kinsasa ProperNoun-Suffix ; ! "Kinshasa"
-kiswahili:kiswahili ProperNoun-Suffix ; !
-Klisto:Klisto ProperNoun-Suffix ; ! "Christ"
-Kongo:Kongo ProperNoun-Suffix ; ! "Congo"
-Korente:Korente ProperNoun-Suffix ; ! "Corinth"
-Kristo:Kristo ProperNoun-Suffix ; ! "Christ"
-Kusi:Kusi ProperNoun-Suffix ; ! "Ethiopia"
-Lamani:Lamani ProperNoun-Suffix ; ! "Laman"
-Lehi:Lehi ProperNoun-Suffix ; ! "Lehi"
-lifalanse:lifalanse ProperNoun-Suffix ; ! "France"
-Lingala:Lingala ProperNoun-Suffix ; ! "Lingala"
-Luanda:Luanda ProperNoun-Suffix ; ! "Luanda"
-Maria:Maria ProperNoun-Suffix ; ! "Mary"
-Mark:Mark ProperNoun-Suffix ; ! "Mark"
-Mat:Mat ProperNoun-Suffix ; ! "Matt"
-Matie:Matie ProperNoun-Suffix ; ! "Matthew"
-Mesia:Mesia ProperNoun-Suffix ; ! "Messiah"
-Moize:Moize ProperNoun-Suffix ; ! "Moses"
-Nazaret:Nazaret ProperNoun-Suffix ; ! "Nazareth"
-Nefi:Nefi ProperNoun-Suffix ; ! "Nefi"
-Nkolo:Nkolo ProperNoun-Suffix ; ! "Lord"
-Noé:Noé ProperNoun-Suffix ; ! "Noah"
-Nzambe:Nzambe ProperNoun-Suffix ; ! "God, Lord"
-Pake:Pake ProperNoun-Suffix ; ! "Passover"
-Pelata:Pelata ProperNoun-Suffix ; ! "Euphrates"
-Pólo:Pólo ProperNoun-Suffix ; ! "Paul"
-Piere:Piere ProperNoun-Suffix ; ! "Peter"
-Pierre:Pierre ProperNoun-Suffix ; ! "Pierre"
-Pilate:Pilate ProperNoun-Suffix ; ! "Pilate"
-Pisoni:Pisoni ProperNoun-Suffix ; ! "Pison"
-Republiki:Republiki ProperNoun-Suffix ; ! "Republic"
-Rome:Rome ProperNoun-Suffix ; ! "Romans"
-Rwanda:Rwanda ProperNoun-Suffix ; ! "Rwanda"
-Sadusé:ba%-Sadusé ProperNoun-Suffix ; ! "Sadducees"
-Sam:Sam ProperNoun-Suffix ; ! "Sam"
-Satan:Satan ProperNoun-Suffix ; ! "Satan"
-Saul:Saul ProperNoun-Suffix ; ! "Saul"
-Simon:Simon ProperNoun-Suffix ; ! "Simon"
-Sion:Sion ProperNoun-Suffix ; ! "Sion"
-Tanzania:Tanzania ProperNoun-Suffix ; ! "Tanzania"
-Timote:Timote ProperNoun-Suffix ; ! "Timothy"
-Tshiluba:Tshiluba ProperNoun-Suffix ; ! "Tshiluba"
-Uganda:Uganda ProperNoun-Suffix ; ! "Uganda"
-Wikipedia:Wikipedia ProperNoun-Suffix ; ! "Wikipedia"
-Yakobo:Yakobo ProperNoun-Suffix ; ! "James"
-Yawe:Yawe ProperNoun-Suffix ; ! "God"
-Yelusaleme:Yelusaleme ProperNoun-Suffix ; ! "Jerusalem" (Book of Mormon)
-Yeruzalem:Yeruzalem ProperNoun-Suffix ; ! "Jerusalem" (New Testament)
-Yesu:Yesu ProperNoun-Suffix ; ! "Jesus"
-Yézu:Yézu ProperNoun-Suffix ; ! "Jesus"
-Yisalaele:Yisalaele ProperNoun-Suffix ; ! "Israel"
-Yoane:Yoane ProperNoun-Suffix ; ! "John"
-Yuda:Yuda ProperNoun-Suffix ; ! "Judah"
-Yudas:Yudas ProperNoun-Suffix ; ! "Judas"
-Zaíre:Zaíre ProperNoun-Suffix ; ! "Zaire"
-Zalayemila:Zalayemila ProperNoun-Suffix ; ! ?
+Abel:Abel Anthroponym-Suffix ; ! "Abel"
+Abraham:Abraham Anthroponym-Suffix ; ! "Abraham"
+Adam:Adam Anthroponym-Suffix ; ! "Adam
+Afrika:Afrika Toponym-Suffix ; ! "Africa"
+Alama:Alama Anthroponym-Suffix ; ! "Alma"
+Amerika:Amerika Toponym-Suffix ; ! "America"
+Angola:Angola Toponym-Suffix ; ! "Angola"
+Antioshe:Antioshe Toponym-Suffix ; ! "Antioch"
+Asaf:Asaf Anthroponym-Suffix ; ! "Asaph"
+Asulia:Asulia Toponym-Suffix ; ! "Assyria"
+Azia:Azia Toponym-Suffix ; ! "Asia"
+Barnabas:Barnabas Anthroponym-Suffix ; ! "Barnabas"
+Bayuda:Bayuda MiscProper-Suffix ; ! "Judaism" (?)
+Birmani:Birmani Toponym-Suffix ; ! "Myanmar"
+Brazzaville:Brazzaville Toponym-Suffix ; ! "Brazzaville"
+Burundi:Burundi Toponym-Suffix ; ! "Burundi"
+Cain:Cain Anthroponym-Suffix ; ! "Cain"
+Ciluba:Ciluba MiscProper-Suffix ; ! "Ciluba"
+Congo:Congo Toponym-Suffix ; ! "Congo"
+Charle:Charle Anthroponym-Suffix ; ! "Charlie"
+David:David Anthroponym-Suffix ; ! "David"
+Demokratiki:Demokratiki MiscProper-Suffix ; ! "Democratic"
+Edene:Edene Anthroponym-Suffix ; ! "Eden"
+Efeze:Efeze MiscProper-Suffix ; ! "Ephesians"
+Ejipte:Ejipte Toponym-Suffix ; ! "Egypt"
+Elamani:Elamani Anthroponym-Suffix ; ! "Helaman"
+Eliya:Eliya Anthroponym-Suffix ; ! "Elijah"
+Erode:Erode Anthroponym-Suffix ; ! "Herod"
+Eropa:Eropa Toponym-Suffix ; ! "Europe"
+Eva:Eva Anthroponym-Suffix ; ! "Eve"
+Ezaya:Ezaya Anthroponym-Suffix ; ! "Isaiah"
+Falansia:Falansia Toponym-Suffix ; ! "France"
+Gabon:Gabon Toponym-Suffix ; ! "Gabon"
+Galilé:Galilé Toponym-Suffix ; ! "Galilee"
+Gihona:Gihona Toponym-Suffix ; ! "Gihon"
+Gracia:Gracia Anthroponym-Suffix ; ! "Grace"
+Farizé:ba%-Farizé Toponym-Suffix ; ! "Pharisees"
+Filipe:Filipe Anthroponym-Suffix ; ! "Phillip"
+Hawila:Hawila Anthroponym-Suffix ; ! "Havilah"
+Hidekele:Hidekele Anthroponym-Suffix ; ! "Hiddekel"
+India:India Toponym-Suffix ; ! "India"
+Israel:Israel Anthroponym-Suffix ; ! "Israel"
+Jake:Jake Anthroponym-Suffix ; ! "Jake"
+Joseph:Joseph Anthroponym-Suffix ; ! "Joseph"
+Jozef:Jozef Anthroponym-Suffix ; ! "Joseph"
+Kabila:Kabila Anthroponym-Suffix ; ! "Kabila"
+Katanga:Katanga Toponym-Suffix ; ! "Katanga"
+Kenya:Kenya Toponym-Suffix ; ! "Kenya"
+Kikongo:Kikongo Toponym-Suffix ; ! "Kikongo"
+Kinsasa:Kinsasa Toponym-Suffix ; ! "Kinshasa"
+kiswahili:kiswahili Toponym-Suffix ; !
+Klisto:Klisto Anthroponym-Suffix ; ! "Christ"
+Kongo:Kongo Toponym-Suffix ; ! "Congo"
+Korente:Korente Toponym-Suffix ; ! "Corinth"
+Kristo:Kristo Anthroponym-Suffix ; ! "Christ"
+Kusi:Kusi Toponym-Suffix ; ! "Ethiopia"
+Lamani:Lamani Anthroponym-Suffix ; ! "Laman"
+Lehi:Lehi Anthroponym-Suffix ; ! "Lehi"
+lifalanse:lifalanse Toponym-Suffix ; ! "France"
+Lingala:Lingala Toponym-Suffix ; ! "Lingala"
+Luanda:Luanda Toponym-Suffix ; ! "Luanda"
+Maria:Maria Anthroponym-Suffix ; ! "Mary"
+Mark:Mark Anthroponym-Suffix ; ! "Mark"
+Mat:Mat Anthroponym-Suffix ; ! "Matt"
+Matie:Matie Anthroponym-Suffix ; ! "Matthew"
+Mesia:Mesia Anthroponym-Suffix ; ! "Messiah"
+Moize:Moize Anthroponym-Suffix ; ! "Moses"
+Nazaret:Nazaret Toponym-Suffix ; ! "Nazareth"
+Nefi:Nefi Anthroponym-Suffix ; ! "Nefi"
+Nkolo:Nkolo Anthroponym-Suffix ; ! "Lord"
+Noé:Noé Anthroponym-Suffix ; ! "Noah"
+Nzambe:Nzambe Anthroponym-Suffix ; ! "God, Lord"
+Pake:Pake MiscProper-Suffix ; ! "Passover"
+Pelata:Pelata Toponym-Suffix ; ! "Euphrates"
+Pólo:Pólo Anthroponym-Suffix ; ! "Paul"
+Piere:Piere Anthroponym-Suffix ; ! "Peter"
+Pierre:Pierre Toponym-Suffix ; ! "Pierre"
+Pilate:Pilate Anthroponym-Suffix ; ! "Pilate"
+Pisoni:Pisoni Toponym-Suffix ; ! "Pison"
+Republiki:Republiki Toponym-Suffix ; ! "Republic"
+Rome:Rome Toponym-Suffix ; ! "Romans"
+Rwanda:Rwanda Toponym-Suffix ; ! "Rwanda"
+Sadusé:ba%-Sadusé Toponym-Suffix ; ! "Sadducees"
+Sam:Sam Anthroponym-Suffix ; ! "Sam"
+Satan:Satan Anthroponym-Suffix ; ! "Satan"
+Saul:Saul Anthroponym-Suffix ; ! "Saul"
+Simon:Simon Anthroponym-Suffix ; ! "Simon"
+Sion:Sion Toponym-Suffix ; ! "Sion"
+Tanzania:Tanzania Toponym-Suffix ; ! "Tanzania"
+Timote:Timote Anthroponym-Suffix ; ! "Timothy"
+Tshiluba:Tshiluba Toponym-Suffix ; ! "Tshiluba"
+Uganda:Uganda Toponym-Suffix ; ! "Uganda"
+Wikipedia:Wikipedia Toponym-Suffix ; ! "Wikipedia"
+Zaki:Zaki Anthroponym-Suffix ; ! "James"
+Yawe:Yawe Anthroponym-Suffix ; ! "God"
+Yelusaleme:Yelusaleme Toponym-Suffix ; ! "Jerusalem" (Book of Mormon)
+Yeruzalem:Yeruzalem Toponym-Suffix ; ! "Jerusalem" (New Testament)
+Yesu:Yesu Anthroponym-Suffix ; ! "Jesus"
+Yézu:Yézu Anthroponym-Suffix ; ! "Jesus"
+Yisalaele:Yisalaele Toponym-Suffix ; ! "Israel"
+Yoane:Yoane Anthroponym-Suffix ; ! "John"
+Yuda:Yuda Anthroponym-Suffix ; ! "Judah"
+Yudas:Yudas Anthroponym-Suffix ; ! "Judas"
+Zaíre:Zaíre Toponym-Suffix ; ! "Zaire"
+Zalayemila:Zalayemila MiscProper-Suffix ; ! ?
 
 !=============================================================================!
 !                               Verbs                                         !
@@ -1193,7 +1207,7 @@ kopambola:pambol Verb-Suffix ; ! "To bless, transfer good influences"
 kopola:pol Verb-Suffix ; ! "To get wet, soak (caus.)"
 kopona:pon Verb-Suffix ; ! "To choose"
 kosakola:sakol Verb-Suffix ; ! "To proclaim"
-kosála:sál Verb-Suffix ; ! "To work"
+kosála:sál Verb-Suffix ; ! "To work, do"
 kosalema:salem Verb-Suffix ; ! "To happen"
 kosamba:samb Verb-Suffix ; ! "To plead (a case), appear in court"
 kosanga:sang Verb-Suffix ; ! "To meet"
@@ -1238,10 +1252,14 @@ koyina:yin Verb-Suffix ; ! "To hate"
 koyoka:yok Verb-Suffix ; ! "To understand, listen, hear"
 kozánga:záng Verb-Suffix ; ! "To miss"
 kozela:zel Verb-Suffix ; ! "To wait"
-kozinga:zing Verb-Suffix ; ! "To tie up, cross, warp"
+koinga:ing Verb-Suffix ; ! "To tie up, cross, warp"
 kozua:zu Verb-Suffix ; ! "To earn, get, take, receive"
 kozwa:zw Verb-Suffix ; ! Alternate form of kozua
 kozónga:zóng Verb-Suffix ; ! "To return, go back"
+kosakana:sakana Verb-Suffix ; ! "To play"
+kokende:kend Verb-Suffix ; ! "To go"
+koyanola:yanola Verb-Suffix ; ! "To reply, answer"
+kolala:lala Verb-Suffix ; ! "To sleep, nap"
 
 kolia:li Verb-Suffix ; ! "To eat"
 kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
@@ -1269,7 +1287,6 @@ moké:ké Adjective-Var-Suffix ; ! "Small"
 mokúsé:kúsé Adjective-Var-Suffix ; ! "Short"
 molaí:laí Adjective-Var-Suffix ; ! "Long"
 monéne:néne Adjective-Var-Suffix ; ! "Big"
-
 banso:banso Adjective-InVar-Suffix ; ! "All"
 bobele:bobele Adjective-InVar-Suffix ; ! "Only"
 bololo:bololo Adjective-InVar-Suffix ; ! "Bitter, sour"
@@ -1290,6 +1307,11 @@ seko:seko Adjective-InVar-Suffix ; ! "Eternal"
 sika:sika Adjective-InVar-Suffix ; ! "New"
 solo:solo Adjective-InVar-Suffix ; ! "True"
 yambo:yambo Adjective-InVar-Suffix ; ! "First"
+mpembéni:mpembéni Adjective-InVar-Suffix ; ! "Close"
+kala:kala Adjective-InVar-Suffix ; ! "Old"
+molungé:molungé Adjective-InVar-Suffix ; ! "Warm, hot"
+malílí:malílí Adjective-InVar-Suffix ; ! "Cold"
+esengo:esengo Adjective-InVar-Suffix ; ! "Happy"
 
 LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
@@ -1328,7 +1350,7 @@ níni:níni PRON-Nini ;
 ! Meeuswis, 2010). These will analyze with some tags since they appear in some literature, but
 ! probably would not want to generate these. Can revisit and add more robust support if that turns
 ! out not to be the case.
-yangó%<cl3%>%<sg%>:mwangó PRON-Yango; 
+yangó%<cl3%>%<sg%>:mwangó PRON-Yango;
 yangó%<cl3%>%<pl%>:myangó PRON-Yango ;
 yangó%<cl5%>%<sg%>:lyangó PRON-Yango ;
 yangó%<cl5%>%<pl%>:mangó PRON-Yango ;
@@ -1386,28 +1408,37 @@ bandá:bandá Adverb-Suffix ; ! "Since"
 bobele:bobele Adverb-Suffix ; ! "Only"
 boye:boye Adverb-Suffix ; ! "Like this"
 ee:ee Adverb-Suffix ; ! "Yes"
-elongó:elongó Adverb-Suffix ; ! "Yes"
+té:té Adverb-Suffix ; ! "No"
+elongó:elongó Adverb-Suffix ; ! "Together"
 iyo:iyo Adverb-Suffix ; ! "Yes"
 káka:káka Adverb-Suffix ; ! "Only"
 kala:kala Adverb-Suffix ; ! "Once upon a time"
 kuna:kuna Adverb-Suffix ; ! "There"
+awa:awa Adverb-Suffix ; ! "Here"
 kútu:kútu Adverb-Suffix ; ! "Rather, moreover"
 lelo:lelo Adverb-Suffix ; ! "Today"
+lobi:lobi Adverb-Suffix ; ! "Yesterday"
 lisúsu:lisúsu Adverb-Suffix ; ! "Again"
 mbele:mbele Adverb-Suffix ; ! "Then" (only if soki "if" precedes it)
 mpenzá:mpenzá Adverb-Suffix ; ! "Really"
 nanu:nanu Adverb-Suffix ; ! "Already"
 neti:neti Adverb-Suffix ; ! "As if"
 noki:noki Adverb-Suffix ; ! "Quickly"
-nzokande:nzokande Adverb-Suffix ; ! "However"
+malembe:malembe Adverb-Suffix ; ! "Slowly"
+kasi:kasi Adverb-Suffix ; ! "However"
 penzá:penzá Adverb-Suffix ; ! "Really, very"
 penepene:penepene Adverb-Suffix ; ! "Very close"
 sikawa:sikawa Adverb-Suffix ; ! "Now" (sikoyo is a synonym)
 sik'oyo:sik'oyo Adverb-Suffix ; ! "Now, immediately"
 wápi:wápi Adverb-Suffix ; ! "Where?"
+tangó:tangó Adverb-Suffix ; ! "When?"
+nsima:nsima Adverb-Suffix ; ! "Behind"
+boyé:boyé Adverb-Suffix ; ! "Thus, so"
+nsé:nsé Adverb-Suffix ; ! "Under"
+malámu:malámu Adverb-Suffix ; ! "Well"
 
 LEXICON YesNo
-te:te Neg-Suffix ; ! Unclear if this should be te or té.
+té:té Neg-Suffix ; ! "No"
 
 LEXICON Numerals
 mókó%<num%>%<ord%>:mókó COMMON-Suffix ; ! "One" (has different cardinal form)
@@ -1464,7 +1495,7 @@ LEXICON Irregular
 
 ! Class 11 lo to nd
 %[%-sg%]loléngé:loléngé XI-VI-Suffix ; ! "Method"
-%[%-pl%]loléngé:ndéngé XI-VI-Suffix ; 
+%[%-pl%]loléngé:ndéngé XI-VI-Suffix ;
 
 ! Class 11 lo to ns
 %[%-sg%]losámbo:losámbo XI-VI-Suffix ; ! "Prayer"
@@ -1524,4 +1555,3 @@ LEXICON Punctuation
 ! http://hfst.sourceforge.net/
 ! http://www.cis.upenn.edu/~cis639/docs/lexc.html
 ! http://wiki.apertium.org/wiki/Hfst
-
