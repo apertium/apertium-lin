@@ -23,7 +23,7 @@ Sx:0 /<= _ ;
        Sy:0 :* _ ;
    where Sy in ( %[%-abs%] %[%-def%] %[%-inst%] %[%-fut%] %[%-ref%] %[%-sg%] %[%-pl%])
          Sx in ( %[%+abs%] %[%+def%] %[%+inst%] %[%+fut%] %[%+ref%] %[%+sg%] %[%+pl%])
-matched ; 
+matched ;
 
 
 
@@ -37,4 +37,3 @@ matched ;
 !Fx:0 <=> _ :* Fx:0 ;
 !         Fx:0 :* _ ;
 !     where Fx in Features ;
-
