@@ -660,8 +660,6 @@ moto:to I-II-Suffix ; ! "Person"
 moúmbu:úmbu I-II-Suffix ; ! "Slave"
 moyembi:yembi I-II-Suffix ; ! "Singer"
 moyíbi:yíbi I-II-Suffix ; ! "Thief"
-lisano:sano I-II-Suffix ; ! "Game"
-botuna:tuna I-II-Suffix ; ! "Question"
 
 LEXICON Ia-II-Stems
 anjelu:anjelu Ia-II-Suffix ; ! "Angel"
@@ -688,7 +686,6 @@ sángó:sángó Ia-II-Suffix ; ! "Priest"
 sodá:sodá Ia-II-Suffix ; ! "Soldier"
 tata:tata Ia-II-Suffix ; ! "Dad"
 zábolo:zábolo Ia-II-Suffix ; ! "Demon"
-lininisa:ninisa Ia-II-Suffix ; ! "Window"
 
 LEXICON III-IV-Stems
 miko:ko III-IV-Suffix ; ! No singular form
@@ -730,6 +727,7 @@ motu:tu III-IV-Suffix ; ! "Head" (can also be motó)
 mótuka:tuka III-IV-Suffix ; ! "Car"
 moyíbi:yíbi III-IV-Suffix ; ! "Theft"
 mozindó:zindó III-IV-Suffix ; ! "Depth"
+motuna:tuna III-IV-Suffix ; ! "Question"
 
 LEXICON V-VI-Stems
 libála:bála V-VI-Suffix ; ! "Marriage"
@@ -777,6 +775,8 @@ litói:tói V-VI-Suffix ; ! "Ear"
 liwá:wá V-VI-Suffix ; ! "Death"
 liyebisi:yebisi V-VI-Suffix ; ! "Press"
 lizali:zali V-VI-Suffix ; ! "Existence"
+lininisa:ninisa V-VI-Suffix ; ! "Window"
+lisano:sano V-VI-Suffix ; ! "Game"
 
 LEXICON VI-Only-Stems
 mabele:bele V-VI-Suffix ; ! "Sand, earth"
@@ -1018,7 +1018,6 @@ Congo:Congo Toponym-Suffix ; ! "Congo"
 Charle:Charle Anthroponym-Suffix ; ! "Charlie"
 David:David Anthroponym-Suffix ; ! "David"
 Demokratiki:Demokratiki MiscProper-Suffix ; ! "Democratic"
-Edene:Edene Anthroponym-Suffix ; ! "Eden"
 Efeze:Efeze MiscProper-Suffix ; ! "Ephesians"
 Ejipte:Ejipte Toponym-Suffix ; ! "Egypt"
 Elamani:Elamani Anthroponym-Suffix ; ! "Helaman"
