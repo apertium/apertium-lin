@@ -18,4 +18,5 @@
 /config.in
 /config
 /*.prob
-/*.hfst
+/lin.autogen.hfst
+/lin.automorf.hfst
