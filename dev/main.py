@@ -108,9 +108,86 @@ def nouns_final():
                     o.write(out)
     print(c, 'words')
 
-nouns_final()
+def nouns_to_bidix():
+    c = 0
+    with open('nouns.txt', 'r') as d:
+        with open('nouns_bidix.txt', 'a+') as f:
+            for line in d:
+                line = line.split()
+
+                #cl7
+                if 'VII-VIII-Suffix' in line:
+                    for word in line[4:]: # words with multiple translations
+                        out = '<e><p><l>' + word.lower().replace('"', '').replace(',', '') + '<s n="n"/></l><r>' + line[0].split(':')[0] + '<s n="n"/><s n="cl7"/></r></p></e>\n'
+                        f.write(out)
+                
+                #cl1
+                if 'I-II-Suffix' in line:
+                    for word in line[4:]: # words with multiple translations
+                        out = '<e><p><l>' + word.lower().replace('"', '').replace(',', '') + '<s n="n"/></l><r>' + line[0].split(':')[0] + '<s n="n"/><s n="cl1"/></r></p></e>\n'
+                        f.write(out)
+
+                #cl1a
+                if 'Ia-II-Suffix' in line:
+                    for word in line[4:]: # words with multiple translations
+                        out = '<e><p><l>' + word.lower().replace('"', '').replace(',', '') + '<s n="n"/></l><r>' + line[0].split(':')[0] + '<s n="n"/><s n="cl1a"/></r></p></e>\n'
+                        f.write(out)
+
+                #cl3
+                if 'III-IV-Suffix' in line:
+                    for word in line[4:]: # words with multiple translations
+                        out = '<e><p><l>' + word.lower().replace('"', '').replace(',', '') + '<s n="n"/></l><r>' + line[0].split(':')[0] + '<s n="n"/><s n="cl3"/></r></p></e>\n'
+                        f.write(out)
+
+                #cl5
+                if 'V-VI-Suffix' in line:
+                    for word in line[4:]: # words with multiple translations
+                        out = '<e><p><l>' + word.lower().replace('"', '').replace(',', '') + '<s n="n"/></l><r>' + line[0].split(':')[0] + '<s n="n"/><s n="cl5"/></r></p></e>\n'
+                        f.write(out)
 
 
+                #cl9
+                if 'IX-X-Suffix' in line:
+                    for word in line[4:]: # words with multiple translations
+                        out = '<e><p><l>' + word.lower().replace('"', '').replace(',', '') + '<s n="n"/></l><r>' + line[0].split(':')[0] + '<s n="n"/><s n="cl9"/></r></p></e>\n'
+                        f.write(out)
+
+                #cl11
+                if 'XI-VI-Suffix' in line:
+                    for word in line[4:]: # words with multiple translations
+                        out = '<e><p><l>' + word.lower().replace('"', '').replace(',', '') + '<s n="n"/></l><r>' + line[0].split(':')[0] + '<s n="n"/><s n="cl11"/></r></p></e>\n'
+                        f.write(out)
+
+                #cl14
+                if 'XIV-Suffix' in line:
+                    for word in line[4:]: # words with multiple translations
+                        out = '<e><p><l>' + word.lower().replace('"', '').replace(',', '') + '<s n="n"/></l><r>' + line[0].split(':')[0] + '<s n="n"/><s n="cl14"/></r></p></e>\n'
+                        f.write(out)
+
+                #proper nouns
+                if 'Anthroponym-Suffix' in line or 'Toponym-Suffix' in line or 'MiscProper-Suffix' in line:
+                    for word in line[4:]: # words with multiple translations
+                        out = '<e><p><l>' + word.replace('"', '').replace(',', '') + '<s n="np"/></l><r>' + line[0].split(':')[0] + '<s n="np"/></r></p></e>\n'
+                        f.write(out)
+
+                
+
+    print(c,'lines added')
+
+
+def verbs_to_bidix():
+    with open('verbs.txt', 'r') as d:
+        with open('verbs_bidix.txt', 'a+') as f:
+            for line in d:
+                line = line.split()
+
+                for word in line[5:]:
+                    out = '<e><p><l>' + word.lower().replace(',','').replace('"', '') + '<s n="vblex"/></l><r>' + line[0].split(':')[0] + '<s n="vblex"/></r></p></e>\n'
+                    f.write(out)
+
+verbs_to_bidix()
+
+    
 
 
     
