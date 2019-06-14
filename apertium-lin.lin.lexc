@@ -1685,13 +1685,15 @@ koínga:íng Verb-Suffix ; ! "To tie up, cross, warp"
 kozúa:zú Verb-Suffix ; ! "To earn, get, take, receive"
 kozwa:zw Verb-Suffix ; ! Alternate form of kozua
 kozónga:zóng Verb-Suffix ; ! "To return, go back"
-kokɛndɛ:kɛnd Verb-Suffix ; ! "To go"
 koyánola:yánol Verb-Suffix ; ! "To reply, answer"
 kolála:lál Verb-Suffix ; ! "To sleep, nap"
-
 kolia:li Verb-Suffix ; ! "To eat"
-kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
 kotia:ti Verb-Suffix ; ! "To put," may have irregular form but used regularly in corpus
+
+koyâ:y Verb-Suffix ; ! "To come"
+kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
+
+kokɛndɛ:kɛnd Verb-Suffix ; ! "To go"
 
 kozala:zal Verb-Suffix ; ! Copula, must also analyze as aux verb
 kozala:zal Aux-Verb-Suffix ;
@@ -1700,9 +1702,6 @@ LEXICON Verb-Stems-Irregular
 koya:y Verb-Irreg1-Suffix ; ! "To come"
 koya:ye Verb-Irreg2-Suffix ; !
 %[%-imp%]koya:yak Verb-InfImp-Suffix ; ! Irregular irregular imperative. The incorrect imperative from above entry is removed using CG
-
-kowâ:w Verb-Irreg1-Suffix ;  ! "To die"
-kowâ:we Verb-Irreg2-Suffix ;
 
 kolia:le Verb-Irreg2-Suffix ; ! See kolia
 
@@ -1718,8 +1717,9 @@ monéne:néne Adjective-Var-Suffix ; ! "Big"
 banso:banso Adjective-InVar-Suffix ; ! "All"
 bobele:bobele Adjective-InVar-Suffix ; ! "Only"
 bololo:bololo Adjective-InVar-Suffix ; ! "Bitter, sour"
+ngai:ngai Adjective-InVar-Suffix ; ! "Sour"
 mabé:mabé Adjective-InVar-Suffix ; ! "Bad"
-makási:makási Adjective-InVar-Suffix ; ! "Strong"
+makási:makási Adjective-InVar-Suffix ; ! "Strong, hard, difficult"
 malámu:malámu Adjective-InVar-Suffix ; ! "Good"
 mobésu:mobésu Adjective-InVar-Suffix ; ! "Raw"
 mobimba:mobimba Adjective-InVar-Suffix ; ! "All, whole"
@@ -1740,6 +1740,21 @@ kala:kala Adjective-InVar-Suffix ; ! "Old"
 molungé:molungé Adjective-InVar-Suffix ; ! "Warm, hot"
 malílí:malílí Adjective-InVar-Suffix ; ! "Cold"
 esengo:esengo Adjective-InVar-Suffix ; ! "Happy"
+mosíká:síká Adjective-Var-Suffix ; ! "Far"
+bonzido:bonzido Adjective-InVar-Suffix ; ! "Deep"
+mpío:mpío Adjective-InVar-Suffix ; ! "Cold"
+petwa:petwa Adjective-InVar-Suffix ; ! "Clean"
+molémbu:lémbu Adjective-Var-Suffix ; ! "Easy, weak"
+moíndo:moíndo Adjective-InVar-Suffix ; ! "Black, dark"
+bulo:bulo Adjective-InVar-Suffix ; ! "Blue"
+libáta:libáta Adjective-InVar-Suffix ; ! "Bald"
+noki:noki Adjective-InVar-Suffix ; ! "Quick"
+sambá:sambá Adjective-InVar-Suffix ; ! "Correct"
+yaya:yaya Adjective-InVar-Suffix ; ! "Elder"
+téla:téla Adjective-InVar-Suffix ; ! "Ripe"
+sudi:sudi Adjective-InVar-Suffix ; ! "South"
+nordi:nordi Adjective-InVar-Suffix ; ! "North"
+séí:séí Adjective-InVar-Suffix ; ! "Comfortable"
 
 LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
@@ -1750,12 +1765,12 @@ bínó:bínó PRON-Bino ; ! "You" (pl)
 bangó:bangó PRON-Bango ; ! "They"
 
 yangó:yangó PRON-Yango ; ! Can be both demonstrative and inanimate personal
-óyo:óyo PRON-Oyo ;
+óyo:óyo PRON-Oyo ; ! "This one"
 baóyo:baóyo PRON-Baoyo ;
-wâná:wâná PRON-Wana ;
-náni:náni PRON-Nani ;
+wâná:wâná PRON-Wana ; ! "That one"
+náni:náni PRON-Nani ; ! "Who?"
 banáni:banáni PRON-Banani ;
-níni:níni PRON-Nini ;
+níni:níni PRON-Nini ; ! "What?"
 
 ! See https://fr.wiktionary.org/wiki/%C3%B3yo#Lingala
 ! Apparently "óyo" can agree in noun class, but this is contrary to mosto grammars (see
@@ -1800,7 +1815,7 @@ kasi:kasi Conj-Coord-Suffix ; ! "But"
 mpé:mpé Conj-Coord-Suffix ; ! "And"
 mpó:mpó Conj-Coord-Suffix ; ! "For"
 na:na Conj-Coord-Suffix ; ! "And"
-pámba%+te:pámba% te Conj-Coord-Suffix ; ! "Because"
+!pámba%+te:pámba% te Conj-Coord-Suffix ; ! "Because"
 pe:pe Conj-Coord-Suffix ; ! "And"
 po:po Conj-Coord-Suffix ; ! "For"
 to:to Conj-Coord-Suffix ; ! "Or"
@@ -1864,6 +1879,8 @@ nsima:nsima Adverb-Suffix ; ! "Behind"
 boyé:boyé Adverb-Suffix ; ! "Thus, so"
 nsé:nsé Adverb-Suffix ; ! "Under"
 malámu:malámu Adverb-Suffix ; ! "Well"
+kalakala:kalakala Adverb-Suffix ; ! "Also"
+mpé:mpé Adverb-Suffix ; ! "Also"
 
 LEXICON YesNo
 té:té Neg-Suffix ; ! "No"
