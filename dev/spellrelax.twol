@@ -1,46 +1,68 @@
 Alphabet
 
+ !A Á Â Ǎ B Ç D E É Ê Ě Ɛ Ɛ́ Ɛ̂ Ɛ̌ Ä F G H I Í Î Ǐ J Ž K L M N Ň O Ó Ô Ǒ Ö Ɔ Ɔ́ Ɔ̂ Ɔ̌ P Q R S Ş T U Ú Û Ǔ Ü W X Y Ý Z
+ !a á â ǎ b ç d e é ê ě ɛ ɛ́ ɛ̂ ɛ̌ ä f g h i í î ǐ j ž k l m n ň o ó ô ǒ ö ɔ ɔ́ ɔ̂ ɔ̌ p q r s ş t u ú û ǔ ü w x y ý z
  A Á Â Ǎ B Ç D E É Ê Ě Ɛ Ɛ́ Ɛ̂ Ɛ̌ Ä F G H I Í Î Ǐ J Ž K L M N Ň O Ó Ô Ǒ Ö Ɔ Ɔ́ Ɔ̂ Ɔ̌ P Q R S Ş T U Ú Û Ǔ Ü W X Y Ý Z
- a á â ǎ b ç d e é ê ě ɛ ɛ́ ɛ̂ ɛ̌ ä f g h i í î ǐ j ž k l m n ň o ó ô ǒ ö ɔ ɔ́ ɔ̂ ɔ̌ p q r s ş t u ú û ǔ ü w x y ý z
+ a á b ç d e é é ɛ f g h i í j k l m n o ó ɔ p q r s t u ú w x y z ́
 
- a:a á:a á:á 
- â:a â:â
- ǎ:a ǎ:ǎ
 
- e:e é:e é:é
- ê:e ê:ê
- ě:e ě:ě
+! a:a á:a á:á 
+! â:a â:â
+! ǎ:a ǎ:ǎ
 
- é:é
+! e:e é:e é:é
+! ê:e ê:ê
+! ě:e ě:ě
 
- i:i í:i í:í
- î:i î:î
- ǐ:i ǐ:ǐ
+! é:é
+! 0:́
+! í:i
+! ɛ:e
 
- o:o ó:o ó:ó
- ô:o ô:ô
- ǒ:o ǒ:ǒ
+! i:i í:i í:í
+! î:i î:î
+! ǐ:i ǐ:ǐ
 
- u:u ú:u ú:ú
- û:u û:û
- ǔ:u ǔ:ǔ
+! o:o ó:o ó:ó
+! ô:o ô:ô
+! ǒ:o ǒ:ǒ
 
- e:ɛ E:Ɛ
- é:ɛ́ É:Ɛ́
- ê:ɛ̂ Ê:Ɛ̂
- ě:ɛ̌ Ě:Ɛ̌
+! u:u ú:u ú:ú
+! û:u û:û
+! ǔ:u ǔ:ǔ
 
- o:ɔ O:Ɔ
- ó:ɔ́ Ó:Ɔ́
- ô:ɔ̂ Ô:Ɔ̂
- ǒ:ɔ̌ Ǒ:Ɔ̌
+! e:ɛ E:Ɛ
+! é:ɛ́ É:Ɛ́
+! ê:ɛ̂ Ê:Ɛ̂
+! ě:ɛ̌ Ě:Ɛ̌
 
- 
+! o:ɔ O:Ɔ
+! ó:ɔ́ Ó:Ɔ́
+! ô:ɔ̂ Ô:Ɔ̂
+! ǒ:ɔ̌ Ǒ:Ɔ̌
 
- O:O 
+ á:a í:i é:e ó:o ú:u
+! a:a i:i e:e o:o u:u
+! á:á í:í é:é ó:ó ú:ú
+! é:é
+
+
+ ɛ:e ɔ:o
+
+
+! O:O 
 ;
 
 Rules
 
 "Spell relax"
 a => _ ;
+
+!"Treat characters with combining acute as combined characters"
+!Vx:Vy <=> _ ́: ;
+!      where Vx in ( á é í ó ú )
+!            Vy in ( a e i o u )
+!      matched ;
+
+!"No combining accute"
+!́:0 <=> _ .#. ;
