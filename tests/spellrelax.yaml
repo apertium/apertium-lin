@@ -1,0 +1,21 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../lin.autogen.hfst
+    Morph: ../lin.automorf.hfst
+
+Tests:
+  "[spellrelax] ways of reading ɔ́: ɔ́ ɔ ó ó o":
+    kolɔ́ta<vblex><inf>: "kolɔ́ta"
+    kolɔ́ta<vblex><inf>: "kolɔta"
+    kolɔ́ta<vblex><inf>: "kolóta"
+    kolɔ́ta<vblex><inf>: "kolóta"
+    kolɔ́ta<vblex><inf>: "kolota"
+
+  "[spellrelax] old stuff":
+    bómoí<n><sg><cl14>: bɔmɔi
+    etebu<n><sg><cl7>: ɛtɛbu
+    lokúmu<n><sg><cl11><inst>: balokumu
+    mokolo<n><sg><cl3>: mɔkɔlɔ
+    nzelá<n><sg><cl9>: nzela
+    óyo<prn><dem><sg>: oyo
