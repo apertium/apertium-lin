@@ -3,7 +3,7 @@ Alphabet
  !A Á Â Ǎ B Ç D E É Ê Ě Ɛ Ɛ́ Ɛ̂ Ɛ̌ Ä F G H I Í Î Ǐ J Ž K L M N Ň O Ó Ô Ǒ Ö Ɔ Ɔ́ Ɔ̂ Ɔ̌ P Q R S Ş T U Ú Û Ǔ Ü W X Y Ý Z
  !a á â ǎ b ç d e é ê ě ɛ ɛ́ ɛ̂ ɛ̌ ä f g h i í î ǐ j ž k l m n ň o ó ô ǒ ö ɔ ɔ́ ɔ̂ ɔ̌ p q r s ş t u ú û ǔ ü w x y ý z
  A Á Â Ǎ B Ç D E É Ê Ě Ɛ Ɛ́ Ɛ̂ Ɛ̌ Ä F G H I Í Î Ǐ J Ž K L M N Ň O Ó Ô Ǒ Ö Ɔ Ɔ́ Ɔ̂ Ɔ̌ P Q R S Ş T U Ú Û Ǔ Ü W X Y Ý Z
- a á b ç d e é é ɛ f g h i í j k l m n o ó ɔ p q r s t u ú w x y z ́
+ a á b ç d e é é ɛ f g h i í j k l m n o ǒ ó ɔ p q r s t u ú w x y z ́
 
 
 ! a:a á:a á:á 
@@ -26,6 +26,7 @@ Alphabet
 ! o:o ó:o ó:ó
 ! ô:o ô:ô
 ! ǒ:o ǒ:ǒ
+ o:ǒ
 
 ! u:u ú:u ú:ú
 ! û:u û:û
@@ -53,6 +54,10 @@ Alphabet
  ́:́
  ́:0
  0:́
+
+ ̌:̌
+ ̌:0
+! 0:̌
 
 ! O:O 
 ;
