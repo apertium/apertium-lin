@@ -48,10 +48,11 @@ Alphabet
 
 
  ɛ:e ɔ:o
- ɛ:é ɔ:ó  ! FIXME: this should be more specific, see rule below
+! ɛ:é ɔ:ó  ! FIXME: this should be more specific, see rule below
 
  ́:́
  ́:0
+ 0:́
 
 ! O:O 
 ;
@@ -70,9 +71,39 @@ a => _ ;
 !"No combining accute"
 !́:0 <=> _ ;
 
-! FIXME: this should replace the more general rule above
+
+!  kolóta for kolɔ́ta
+!@ k o l ɔ:ó ́:0 t a
+"Treat ó and é as ɔ and ɛ (before combining acute)"
+Vx:Vy => _ ́:0 ;
+      where Vx in ( ɛ ɔ )
+            Vy in ( é ó )
+      matched ;
+!X k o l ó:ɔ 0:́ t a
+! FIXME: this should replace the more general statement above
 !"Treat ó and é as ɔ and ɛ (before combining acute)"
-!Vx:Vy <=> _ 0:́ ;
+!Vx:Vy => _ 0:́ ;
+!      where Vx in ( é ó )
+!            Vy in ( ɛ ɔ )
+!      matched ;
+
+!"Allow addition of combining acute after ɛ ɔ"
+!́:0 <=> Vx:Vy _ ;
+!    where Vx in ( ɛ ɔ )
+!          Vy in ( é ó )
+!    matched ;
+
+! kolota for kolɔ́ta
+!@ k o l ɔ:o ́:0 t a
+!@ k o l ɔ:o ́:́ t a
+!"Treat o and e as ɔ́ and ɛ́"
+!Vx:Vy <=> _ ́:0 ;
 !      where Vx in ( ɛ ɔ )
-!            Vy in ( é ó )
+!            Vy in ( e o )
+!      matched ;
+!X k o l o:ɔ 0:́ t a
+!"Treat o and e as ɔ́ and ɛ́"
+!Vx:Vy <=> _ 0:́ ;
+!      where Vx in ( e o )
+!            Vy in ( ɛ ɔ )
 !      matched ;
