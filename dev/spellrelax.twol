@@ -48,7 +48,10 @@ Alphabet
 
 
  ɛ:e ɔ:o
+ ɛ:é ɔ:ó  ! FIXME: this should be more specific, see rule below
 
+ ́:́
+ ́:0
 
 ! O:O 
 ;
@@ -65,4 +68,11 @@ a => _ ;
 !      matched ;
 
 !"No combining accute"
-!́:0 <=> _ .#. ;
+!́:0 <=> _ ;
+
+! FIXME: this should replace the more general rule above
+!"Treat ó and é as ɔ and ɛ (before combining acute)"
+!Vx:Vy <=> _ 0:́ ;
+!      where Vx in ( ɛ ɔ )
+!            Vy in ( é ó )
+!      matched ;
