@@ -3,16 +3,18 @@ Alphabet
  !A Á Â Ǎ B Ç D E É Ê Ě Ɛ Ɛ́ Ɛ̂ Ɛ̌ Ä F G H I Í Î Ǐ J Ž K L M N Ň O Ó Ô Ǒ Ö Ɔ Ɔ́ Ɔ̂ Ɔ̌ P Q R S Ş T U Ú Û Ǔ Ü W X Y Ý Z
  !a á â ǎ b ç d e é ê ě ɛ ɛ́ ɛ̂ ɛ̌ ä f g h i í î ǐ j ž k l m n ň o ó ô ǒ ö ɔ ɔ́ ɔ̂ ɔ̌ p q r s ş t u ú û ǔ ü w x y ý z
  A Á Â Ǎ B Ç D E É Ê Ě Ɛ Ɛ́ Ɛ̂ Ɛ̌ Ä F G H I Í Î Ǐ J Ž K L M N Ň O Ó Ô Ǒ Ö Ɔ Ɔ́ Ɔ̂ Ɔ̌ P Q R S Ş T U Ú Û Ǔ Ü W X Y Ý Z
- a á b ç d e é é ɛ f g h i í j k l m n o ó ɔ p q r s t u ú w x y z ́
+ a á b ç d e é é ɛ f g h i í j k l m n o ǒ ó ɔ p q r s t u ú w x y z ́
 
 
 ! a:a á:a á:á 
 ! â:a â:â
 ! ǎ:a ǎ:ǎ
+ a:ǎ a:â
 
 ! e:e é:e é:é
 ! ê:e ê:ê
 ! ě:e ě:ě
+ e:ê e:ě
 
 ! é:é
 ! 0:́
@@ -22,14 +24,17 @@ Alphabet
 ! i:i í:i í:í
 ! î:i î:î
 ! ǐ:i ǐ:ǐ
+ i:î
 
 ! o:o ó:o ó:ó
 ! ô:o ô:ô
 ! ǒ:o ǒ:ǒ
+ o:ǒ o:ô
 
 ! u:u ú:u ú:ú
 ! û:u û:û
 ! ǔ:u ǔ:ǔ
+ u:û
 
 ! e:ɛ E:Ɛ
 ! é:ɛ́ É:Ɛ́
@@ -48,10 +53,18 @@ Alphabet
 
 
  ɛ:e ɔ:o
- ɛ:é ɔ:ó  ! FIXME: this should be more specific, see rule below
+! ɛ:é ɔ:ó  ! FIXME: this should be more specific, see rule below
 
  ́:́
  ́:0
+ 0:́
+
+ ̌:̌
+ ̌:0
+! 0:̌
+
+ ̂:̂
+ ̂:0
 
 ! O:O 
 ;
@@ -70,9 +83,39 @@ a => _ ;
 !"No combining accute"
 !́:0 <=> _ ;
 
-! FIXME: this should replace the more general rule above
+
+!  kolóta for kolɔ́ta
+!@ k o l ɔ:ó ́:0 t a
+"Treat ó and é as ɔ and ɛ (before combining acute)"
+Vx:Vy => _ ́:0 ;
+      where Vx in ( ɛ ɔ )
+            Vy in ( é ó )
+      matched ;
+!X k o l ó:ɔ 0:́ t a
+! FIXME: this should replace the more general statement above
 !"Treat ó and é as ɔ and ɛ (before combining acute)"
-!Vx:Vy <=> _ 0:́ ;
+!Vx:Vy => _ 0:́ ;
+!      where Vx in ( é ó )
+!            Vy in ( ɛ ɔ )
+!      matched ;
+
+!"Allow addition of combining acute after ɛ ɔ"
+!́:0 <=> Vx:Vy _ ;
+!    where Vx in ( ɛ ɔ )
+!          Vy in ( é ó )
+!    matched ;
+
+! kolota for kolɔ́ta
+!@ k o l ɔ:o ́:0 t a
+!@ k o l ɔ:o ́:́ t a
+!"Treat o and e as ɔ́ and ɛ́"
+!Vx:Vy <=> _ ́:0 ;
 !      where Vx in ( ɛ ɔ )
-!            Vy in ( é ó )
+!            Vy in ( e o )
+!      matched ;
+!X k o l o:ɔ 0:́ t a
+!"Treat o and e as ɔ́ and ɛ́"
+!Vx:Vy <=> _ 0:́ ;
+!      where Vx in ( e o )
+!            Vy in ( ɛ ɔ )
 !      matched ;
