@@ -777,7 +777,7 @@ mokano:kano III-IV-Suffix ; ! "Commitment"
 mokapo:kapo III-IV-Suffix ; ! "Section of law"
 mokila:kila III-IV-Suffix ; ! "Tail"
 mokili:kili III-IV-Suffix ; ! "Earth"
-mokolo:kolo III-IV-Suffix ; ! "Day"
+mokɔlɔ:kɔlɔ III-IV-Suffix ; ! "Day"
 mokúwa:kúwa III-IV-Suffix ; ! "Bone"
 moléndé:léndé III-IV-Suffix ; ! "Determination, energy"
 molili:lili III-IV-Suffix ; ! "Nothing, darkness"
@@ -987,7 +987,7 @@ ekelamo:kelamo VII-VIII-Suffix ;  ! "Living being"
 ekila:kila VII-VIII-Suffix ; ! "Abstinence"
 eklézia:klézia VII-VIII-Suffix ; ! "Church"
 eklézia:klézya VII-VIII-Suffix ; !  Dir/LR
-ekolo:kolo VII-VIII-Suffix ; !"Measuring unit, country," depending on tone
+ekólo:kólo VII-VIII-Suffix ; !"Measuring unit, country," depending on tone
 ekomele:komele VII-VIII-Suffix ; ! "Pencil"
 elambá:lambá VII-VIII-Suffix ; ! "Costume, dress, garment"
 elanga:langa VII-VIII-Suffix ; ! "Garden"
@@ -1067,7 +1067,7 @@ nzelá:nzelá IX-X-Suffix ; ! "Street, road, opening"
 nzémbo:nzémbo IX-X-Suffix ; ! "Song"
 nzeté:nzeté IX-X-Suffix ; ! "Tree, wood"
 nzoku:nzoku IX-X-Suffix ; ! "Elephant"
-nzóto:nzóto IX-X-Suffix ; ! "Body"
+nzɔ́to:nzɔ́to IX-X-Suffix ; ! "Body"
 
 !!! Never takes n/m
 LEXICON IX-X-a-Stems
@@ -1084,7 +1084,7 @@ kurúze:kurúze IX-X-Suffix ; ! "Cross"
 maládi:maládi IX-X-Suffix ; ! "Disease"
 pálaki:pálaki IX-X-Suffix ; ! "Plate"
 porte:porte IX-X-Suffix ; ! "Door"
-sanza:sanza IX-X-Suffix ; ! "Moon, month"
+sánzá:sánzá IX-X-Suffix ; ! "Moon, month"
 sekelé:sekelé IX-X-Suffix ; ! "Secret"
 séléká:séléká IX-X-Suffix ; ! "In truth"
 simetiere:simetiere IX-X-Suffix ; ! "Cemetary" (unsure if acutally class IX)
@@ -1184,9 +1184,9 @@ LEXICON ProperNouns
 Abel:Abel Anthroponym-Suffix ; ! "Abel"
 Abraham:Abraham Anthroponym-Suffix ; ! "Abraham"
 Adam:Adam Anthroponym-Suffix ; ! "Adam
-Afrika:Afrika Toponym-Suffix ; ! "Africa"
+Afríka:Afríka Toponym-Suffix ; ! "Africa"
 Alama:Alama Anthroponym-Suffix ; ! "Alma"
-Amerika:Amerika Toponym-Suffix ; ! "America"
+Ameríka:Ameríka Toponym-Suffix ; ! "America"
 Angola:Angola Toponym-Suffix ; ! "Angola"
 Antioshe:Antioshe Toponym-Suffix ; ! "Antioch"
 Asaf:Asaf Anthroponym-Suffix ; ! "Asaph"
@@ -1208,7 +1208,7 @@ Ejipte:Ejipte Toponym-Suffix ; ! "Egypt"
 Elamani:Elamani Anthroponym-Suffix ; ! "Helaman"
 Eliya:Eliya Anthroponym-Suffix ; ! "Elijah"
 Erode:Erode Anthroponym-Suffix ; ! "Herod"
-Eropa:Eropa Toponym-Suffix ; ! "Europe"
+Erópa:Erópa Toponym-Suffix ; ! "Europe"
 Eva:Eva Anthroponym-Suffix ; ! "Eve"
 Ezaya:Ezaya Anthroponym-Suffix ; ! "Isaiah"
 Falansia:Falansia Toponym-Suffix ; ! "France"
@@ -1228,18 +1228,18 @@ Jozef:Jozef Anthroponym-Suffix ; ! "Joseph"
 Kabila:Kabila Anthroponym-Suffix ; ! "Kabila"
 Katanga:Katanga Toponym-Suffix ; ! "Katanga"
 Kenya:Kenya Toponym-Suffix ; ! "Kenya"
-Kikongo:Kikongo Toponym-Suffix ; ! "Kikongo"
-Kinsasa:Kinsasa Toponym-Suffix ; ! "Kinshasa"
+Kikongó:Kikongó Toponym-Suffix ; ! "Kikongo"
+Kinsásá:Kinsásá Toponym-Suffix ; ! "Kinshasa"
 kiswahili:kiswahili Toponym-Suffix ; !
 Klisto:Klisto Anthroponym-Suffix ; ! "Christ"
-Kongo:Kongo Toponym-Suffix ; ! "Congo"
+Kongó:Kongó Toponym-Suffix ; ! "Congo"
 Korente:Korente Toponym-Suffix ; ! "Corinth"
 Kristo:Kristo Anthroponym-Suffix ; ! "Christ"
 Kusi:Kusi Toponym-Suffix ; ! "Ethiopia"
 Lamani:Lamani Anthroponym-Suffix ; ! "Laman"
 Lehi:Lehi Anthroponym-Suffix ; ! "Lehi"
-lifalanse:lifalanse Toponym-Suffix ; ! "France"
-Lingala:Lingala Toponym-Suffix ; ! "Lingala"
+Lifalansé:Lifalansé Toponym-Suffix ; ! "France"
+Lingála:Lingála Toponym-Suffix ; ! "Lingala"
 Luanda:Luanda Toponym-Suffix ; ! "Luanda"
 Maria:Maria Anthroponym-Suffix ; ! "Mary"
 Mark:Mark Anthroponym-Suffix ; ! "Mark"
@@ -1642,7 +1642,6 @@ kosála:sál Verb-Suffix ; ! "To work, do"
 kosálema:sálem Verb-Suffix ; ! "To happen"
 kosámba:sámb Verb-Suffix ; ! "To plead (a case), appear in court"
 kosánga:sáng Verb-Suffix ; ! "To meet"
-kosánza:sánz Verb-Suffix ; ! "To vomit"
 kosɛka:sɛk Verb-Suffix ; ! "To laugh"
 kosɛ́nga:sɛ́ng Verb-Suffix ; ! "To ask"
 kosepela:sepel Verb-Suffix ; ! "To rejoice, enjoy, have fun"
@@ -1729,7 +1728,7 @@ ntei:ntei Adjective-InVar-Suffix ; ! "Middle, central"
 kitóko:kitóko Adjective-InVar-Suffix ; ! "Beautiful"
 pémbé:pémbé Adjective-InVar-Suffix ; ! "White"
 pémbé:mpémbé Adjective-InVar-Suffix ; ! "White" Dir/LR
-pene:pene Adjective-InVar-Suffix ; ! "Close to"
+pɛnɛ:pɛnɛ Adjective-InVar-Suffix ; ! "Close to"
 polele:polele Adjective-InVar-Suffix ; ! "Open, clear"
 seko:seko Adjective-InVar-Suffix ; ! "Eternal"
 sika:sika Adjective-InVar-Suffix ; ! "New"
@@ -1803,7 +1802,7 @@ yangó%<cl14%>%<sg%>:bwangó PRON-Yango ;
 
 LEXICON Prepositions
 káti Prep-Suffix ; ! Inside, between
-lokola:lokola Prep-Suffix ; ! "Like, as"
+lokóla:lokóla Prep-Suffix ; ! "Like, as"
 na:na Prep-Suffix ; ! Many translations
 o:o Prep-Suffix ; ! Used in Book of Mormon
 tii:tii Prep-Suffix ;  ! "Up, until"
@@ -1813,9 +1812,9 @@ LEXICON Conjunctions
 bongo:bongo Conj-Coord-Suffix ; ! "So"
 kasi:kasi Conj-Coord-Suffix ; ! "But"
 mpé:mpé Conj-Coord-Suffix ; ! "And"
-mpó:mpó Conj-Coord-Suffix ; ! "For"
+mpɔ:mpɔ Conj-Coord-Suffix ; ! "For"
 na:na Conj-Coord-Suffix ; ! "And"
-!pámba%+te:pámba% te Conj-Coord-Suffix ; ! "Because"
+pámba%+te:pámba% te Conj-Coord-Suffix ; ! "Because"
 pe:pe Conj-Coord-Suffix ; ! "And"
 po:po Conj-Coord-Suffix ; ! "For"
 to:to Conj-Coord-Suffix ; ! "Or"
@@ -1827,6 +1826,7 @@ tii:tii Conj-Coord-Suffix ; ! "Until"
 
 LEXICON Connective
 ya:ya Conn-Suffix ;
+o:o Conn-Suffix ; ! No exact meaning.
 
 ! See https://fr.wiktionary.org/wiki/ya#Lingala
 ! Apparently "ya" can agree in noun class, but this is contrary to mosto grammars (see
@@ -1881,6 +1881,7 @@ nsé:nsé Adverb-Suffix ; ! "Under"
 malámu:malámu Adverb-Suffix ; ! "Well"
 kalakala:kalakala Adverb-Suffix ; ! "Also"
 mpé:mpé Adverb-Suffix ; ! "Also"
+míngi:míngi Adverb-Suffix ; ! "Too"
 
 LEXICON YesNo
 té:té Neg-Suffix ; ! "No"
@@ -1904,7 +1905,7 @@ LEXICON Quantifiers
 ebelé:ebelé Quant-Suffix ; ! "Many"
 míngi:míngi Quant-Suffix ; ! "A lot of"
 moké:moké Quant-Suffix ; ! "A bit, few"
-nyónso:nyónso Quant-Suffix ; ! "Each, all"
+nyɔ́nsɔ:nyɔ́nsɔ Quant-Suffix ; ! "Each, all"
 
 LEXICON FocusMarkers
 ndé:ndé Focus-Suffix ; ! "Focus marker with 'copula capacity'"
@@ -1951,7 +1952,7 @@ LEXICON Irregular
 %[%-pl%]lobángu:mbángu XI-VI-Suffix ;
 
 ! Class 11 lo to n
-%[%-sg%]lokóta:lokóta XI-VI-Suffix ; ! "Language"
+%[%-sg%]lokótá:lokótá XI-VI-Suffix ; ! "Language, dialect"
 %[%-pl%]lokóta:nkóta XI-VI-Suffix ;
 %[%-pl%]lokásá:nkásá XI-VI-Suffix ; ! Dir/LR
 
