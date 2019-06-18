@@ -6,7 +6,7 @@ Alphabet
  a á b ç d e é é ɛ f g h i í j k l m n o ǒ ó ɔ p q r s t u ú w x y z ́
 
 
-! a:a á:a á:á 
+! a:a á:a á:á
 ! â:a â:â
 ! ǎ:a ǎ:ǎ
  a:ǎ a:â
@@ -16,7 +16,7 @@ Alphabet
 ! ě:e ě:ě
  e:ê e:ě
 
-! é:é
+! é:é
 ! 0:́
 ! í:i
 ! ɛ:e
@@ -44,7 +44,7 @@ Alphabet
 ! o:ɔ O:Ɔ
 ! ó:ɔ́ Ó:Ɔ́
 ! ô:ɔ̂ Ô:Ɔ̂
-! ǒ:ɔ̌ Ǒ:Ɔ̌
+! ǒ:ɔ̌ Ǒ:Ɔ̌
 
  á:a í:i é:e ó:o ú:u
 ! a:a i:i e:e o:o u:u
@@ -66,7 +66,7 @@ Alphabet
  ̂:̂
  ̂:0
 
-! O:O 
+! O:O
 ;
 
 Rules

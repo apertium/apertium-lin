@@ -659,8 +659,8 @@ mosɛnjí:sɛnjí I-II-Suffix ; ! "Native"
 molúki:lúki I-II-Suffix ; ! "Paddler"
 motómbí:tómbí I-II-Suffix ; ! "Porter"
 mokangámí:kangámí I-II-Suffix ; ! "Prisoner"
-mokuli:kuli I-II-Suffix ; ! "Mokuli"
-motómí:tómí I-II-Suffix ; ! "Motomi"
+mokuli:kuli I-II-Suffix ; ! "Receiver"
+motómí:tómí I-II-Suffix ; ! "Sender"
 mobateli:bateli I-II-Suffix ; ! "Guard, Protector"
 mosáli:sáli I-II-Suffix ; ! "Labourer, worker"
 monyalí:nyalí I-II-Suffix ; ! "Sister-in-law"
@@ -1310,7 +1310,6 @@ koséba:séb Verb-Suffix ; ! "To sharpen"
 kopombwa:pombw Verb-Suffix ; ! "To skip"
 kosílisa:sílis Verb-Suffix ; ! "To finish, complete, accomplish"
 kosukola:sukol Verb-Suffix ; ! "To wash, bathe, shower"
-kokoma:kom Verb-Suffix ; ! "To write, mark"
 kotúna:tún Verb-Suffix ; ! "To ask,interrogate"
 kojelinginya:jelinginy Verb-Suffix ; ! "To whirl"
 kofíba:fíb Verb-Suffix ; ! "To lick"
@@ -1377,7 +1376,7 @@ koyamba:yamb Verb-Suffix ; ! "To receive, adopt, believe, accept, agree"
 koámba:ámb Verb-Suffix ; ! "To adopt"
 kosímbísa:símbís Verb-Suffix ; ! "To restrain, help(me), simbisa"
 konúngisa:núngis Verb-Suffix ; ! "To suckle"
-kolámba:lámb Verb-Suffix ; ! "To cook"
+kolámba:lámb Verb-Suffix ; ! "To cook, prepare(dinner)"
 kosálisa:sális Verb-Suffix ; ! "To employ"
 kotákola:tákol Verb-Suffix ; ! "To collect, recruit"
 kotɔ́nɔ:tɔ́n Verb-Suffix ; ! "To collect"
@@ -1586,7 +1585,7 @@ kokita:kit Verb-Suffix ; ! "To land"
 kokoba:kob Verb-Suffix ; ! "To advance"
 kokoka:kok Verb-Suffix ; ! "To be able"
 kokóla:kól Verb-Suffix ; ! "To grow, increase, ripe, mature:
-kokoma:kom Verb-Suffix ; ! "To arrive, happen, become, start to"
+kokoma:kom Verb-Suffix ; ! "To arrive, happen, become, write, start to"
 kokónza:kónz Verb-Suffix ; ! "To monopolize, occupy by force"
 kokósa:kós Verb-Suffix ; ! "To lie, fool"
 kokɔ́ta:kɔ́t Verb-Suffix ; ! "To enter"
@@ -1600,7 +1599,6 @@ kokwâ:kw Verb-Suffix ; ! "To take, snatch, catch, capture, recover"
 kokwéya:kwéy Verb-Suffix ; ! See kokwéya Dir/LR
 kokwéya:kwéy Verb-Suffix ; ! "To fall"
 kolaka:lak Verb-Suffix ; ! "To warn, predict, advise"
-kolámba:lámb Verb-Suffix ; ! "To prepare (dinner)"
 kolanda:land Verb-Suffix ; ! "To follow"
 kolánga:láng Verb-Suffix ; ! "To get drunk"
 kolela:lel Verb-Suffix ; ! "To cry, whine"
@@ -1755,6 +1753,7 @@ sudi:sudi Adjective-InVar-Suffix ; ! "South"
 nordi:nordi Adjective-InVar-Suffix ; ! "North"
 séí:séí Adjective-InVar-Suffix ; ! "Comfortable"
 
+
 LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
 yó:yó PRON-Yo ; ! "You"
@@ -1826,7 +1825,7 @@ tii:tii Conj-Coord-Suffix ; ! "Until"
 
 LEXICON Connective
 ya:ya Conn-Suffix ;
-o:o Conn-Suffix ; ! No exact meaning.
+o:o Conn-Suffix ; ! No exact meaning
 
 ! See https://fr.wiktionary.org/wiki/ya#Lingala
 ! Apparently "ya" can agree in noun class, but this is contrary to mosto grammars (see
@@ -1851,7 +1850,7 @@ bandá:bandá Adverb-Suffix ; ! "Since"
 bobele:bobele Adverb-Suffix ; ! "Only"
 boye:boye Adverb-Suffix ; ! "Like this"
 ee:ee Adverb-Suffix ; ! "Yes"
-té:té Adverb-Suffix ; ! "No"
+tɛ́:tɛ́ Adverb-Suffix ; ! "No"
 elongó:elongó Adverb-Suffix ; ! "Together"
 iyo:iyo Adverb-Suffix ; ! "Yes"
 káka:káka Adverb-Suffix ; ! "Only"
@@ -1884,7 +1883,7 @@ mpé:mpé Adverb-Suffix ; ! "Also"
 míngi:míngi Adverb-Suffix ; ! "Too"
 
 LEXICON YesNo
-té:té Neg-Suffix ; ! "No"
+tɛ́:tɛ́ Neg-Suffix ; ! "No"
 
 LEXICON Numerals
 mókó%<num%>%<ord%>:mókó COMMON-Suffix ; ! "One" (has different cardinal form)
