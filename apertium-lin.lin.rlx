@@ -3,7 +3,7 @@ DELIMITERS = "<.>" "<;>" "<,>" "<:>";
 
 # We can define sets for common tag clusters
 
-LIST V = v ;
+LIST V = vblex ;
 LIST VAux = vaux ;
 LIST NotV = n adj prn adv pr conn cnjcoo cnjsub det neg;
 LIST Adj = adj ;
@@ -51,4 +51,3 @@ REMOVE (v imp intns) IF (0 ("koya" imp)) ;
 # http://kevindonnelly.org.uk/2010/05/constraint-grammar-tutorial/
 # http://wiki.apertium.org/wiki/Constraint_Grammar
 # http://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
-
