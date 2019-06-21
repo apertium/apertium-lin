@@ -32,6 +32,10 @@ Multichar_Symbols
 %<p2%>      ! Second person
 %<p3%>      ! Third person
 
+! Gender morphology
+%<m%>      ! Maculin
+%<f%>      ! Feminine
+
 ! Animacy morphology
 %<aa%>      ! Animate
 %<nn%>      ! Inanimate
@@ -331,11 +335,14 @@ LEXICON XIV-Suffix
 LEXICON XV-Suffix
 %[%+sg%]%<n%>%<cl15%>%<sg%>: COMMON-Suffix ;
 
-LEXICON Anthroponym-Suffix
-%<np%>%<ant%>: COMMON-Suffix ;
+LEXICON Anthroponym-F-Suffix
+%<np%>%<ant%>%<f%>%<sg%>: COMMON-Suffix ;
+
+LEXICON Anthroponym-M-Suffix
+%<np%>%<ant%>%<m%>%<sg%>: COMMON-Suffix ;
 
 LEXICON Toponym-Suffix
-%<np%>%<top%>: COMMON-Suffix ;
+%<np%>%<top%>%<sg%>: COMMON-Suffix ;
 
 LEXICON MiscProper-Suffix
 %<np%>%<al%>: COMMON-Suffix ;
@@ -1182,112 +1189,112 @@ kolinga:linga XV-Suffix ; ! "To love"
 kotála:tála XV-Suffix ; ! "To watch"
 
 LEXICON ProperNouns
-Abel:Abel Anthroponym-Suffix ; ! "Abel"
-Abraham:Abraham Anthroponym-Suffix ; ! "Abraham"
-Adam:Adam Anthroponym-Suffix ; ! "Adam
+Abel:Abel Anthroponym-M-Suffix ; ! "Abel"
+Abraham:Abraham Anthroponym-M-Suffix ; ! "Abraham"
+Adam:Adam Anthroponym-M-Suffix ; ! "Adam
 Afríka:Afríka Toponym-Suffix ; ! "Africa"
-Alama:Alama Anthroponym-Suffix ; ! "Alma"
+Alama:Alama Anthroponym-M-Suffix ; ! "Alma"
 Ameríka:Ameríka Toponym-Suffix ; ! "America"
 Angola:Angola Toponym-Suffix ; ! "Angola"
 Antioshe:Antioshe Toponym-Suffix ; ! "Antioch"
-Asaf:Asaf Anthroponym-Suffix ; ! "Asaph"
+Asaf:Asaf Anthroponym-M-Suffix ; ! "Asaph"
 Asulia:Asulia Toponym-Suffix ; ! "Assyria"
 Azía:Azía Toponym-Suffix ; ! "Asia"
-Barnabas:Barnabas Anthroponym-Suffix ; ! "Barnabas"
+Barnabas:Barnabas Anthroponym-M-Suffix ; ! "Barnabas"
 Bayuda:Bayuda MiscProper-Suffix ; ! "Judaism" (?)
 Birmani:Birmani Toponym-Suffix ; ! "Myanmar"
 Brazzaville:Brazzaville Toponym-Suffix ; ! "Brazzaville"
 Burundi:Burundi Toponym-Suffix ; ! "Burundi"
-Cain:Cain Anthroponym-Suffix ; ! "Cain"
+Cain:Cain Anthroponym-M-Suffix ; ! "Cain"
 Ciluba:Ciluba MiscProper-Suffix ; ! "Ciluba"
 Congo:Congo Toponym-Suffix ; ! "Congo"
-Charle:Charle Anthroponym-Suffix ; ! "Charlie"
-David:David Anthroponym-Suffix ; ! "David"
+Charle:Charle Anthroponym-M-Suffix ; ! "Charlie"
+David:David Anthroponym-M-Suffix ; ! "David"
 Demokratiki:Demokratiki MiscProper-Suffix ; ! "Democratic"
 Efeze:Efeze MiscProper-Suffix ; ! "Ephesians"
 Ejipte:Ejipte Toponym-Suffix ; ! "Egypt"
-Elamani:Elamani Anthroponym-Suffix ; ! "Helaman"
-Eliya:Eliya Anthroponym-Suffix ; ! "Elijah"
-Erode:Erode Anthroponym-Suffix ; ! "Herod"
+Elamani:Elamani Anthroponym-M-Suffix ; ! "Helaman"
+Eliya:Eliya Anthroponym-M-Suffix ; ! "Elijah"
+Erode:Erode Anthroponym-M-Suffix ; ! "Herod"
 Erópa:Erópa Toponym-Suffix ; ! "Europe"
-Eva:Eva Anthroponym-Suffix ; ! "Eve"
-Ezaya:Ezaya Anthroponym-Suffix ; ! "Isaiah"
+Eva:Eva Anthroponym-F-Suffix ; ! "Eve"
+Ezaya:Ezaya Anthroponym-M-Suffix ; ! "Isaiah"
 Falansia:Falansia Toponym-Suffix ; ! "France"
 Gabon:Gabon Toponym-Suffix ; ! "Gabon"
 Galilé:Galilé Toponym-Suffix ; ! "Galilee"
 Gihona:Gihona Toponym-Suffix ; ! "Gihon"
-Gracia:Gracia Anthroponym-Suffix ; ! "Grace"
+Gracia:Gracia Anthroponym-F-Suffix ; ! "Grace"
 Farizé:ba%-Farizé Toponym-Suffix ; ! "Pharisees"
-Filipe:Filipe Anthroponym-Suffix ; ! "Phillip"
-Hawila:Hawila Anthroponym-Suffix ; ! "Havilah"
-Hidekele:Hidekele Anthroponym-Suffix ; ! "Hiddekel"
+Filipe:Filipe Anthroponym-M-Suffix ; ! "Phillip"
+Hawila:Hawila Anthroponym-M-Suffix ; ! "Havilah"
+Hidekele:Hidekele Anthroponym-M-Suffix ; ! "Hiddekel"
 India:India Toponym-Suffix ; ! "India"
-Israel:Israel Anthroponym-Suffix ; ! "Israel"
-Jake:Jake Anthroponym-Suffix ; ! "Jake"
-Joseph:Joseph Anthroponym-Suffix ; ! "Joseph"
-Jozef:Jozef Anthroponym-Suffix ; ! "Joseph"
-Kabila:Kabila Anthroponym-Suffix ; ! "Kabila"
+Israel:Israel Anthroponym-M-Suffix ; ! "Israel"
+Jake:Jake Anthroponym-M-Suffix ; ! "Jake"
+Joseph:Joseph Anthroponym-M-Suffix ; ! "Joseph"
+Jozef:Jozef Anthroponym-M-Suffix ; ! "Joseph"
+Kabila:Kabila Anthroponym-M-Suffix ; ! "Kabila"
 Katanga:Katanga Toponym-Suffix ; ! "Katanga"
 Kenya:Kenya Toponym-Suffix ; ! "Kenya"
 Kikongó:Kikongó Toponym-Suffix ; ! "Kikongo"
 Kinsásá:Kinsásá Toponym-Suffix ; ! "Kinshasa"
 kiswahili:kiswahili Toponym-Suffix ; !
-Klisto:Klisto Anthroponym-Suffix ; ! "Christ"
+Klisto:Klisto Anthroponym-M-Suffix ; ! "Christ"
 Kongó:Kongó Toponym-Suffix ; ! "Congo"
 Korente:Korente Toponym-Suffix ; ! "Corinth"
-Kristo:Kristo Anthroponym-Suffix ; ! "Christ"
+Kristo:Kristo Anthroponym-M-Suffix ; ! "Christ"
 Kusi:Kusi Toponym-Suffix ; ! "Ethiopia"
-Lamani:Lamani Anthroponym-Suffix ; ! "Laman"
-Lehi:Lehi Anthroponym-Suffix ; ! "Lehi"
+Lamani:Lamani Anthroponym-M-Suffix ; ! "Laman"
+Lehi:Lehi Anthroponym-F-Suffix ; ! "Lehi"
 Lifalansé:Lifalansé Toponym-Suffix ; ! "France"
 Swisi:Swisi Toponym-Suffix ; ! "Switzerland"
 Bɛ́lɛjika:Bɛ́lɛjika Toponym-Suffix ; ! "Belgium"
 Bɛ́ljika:Bɛ́ljika Toponym-Suffix ; ! "Belgium"
 Lingála:Lingála Toponym-Suffix ; ! "Lingala"
 Luanda:Luanda Toponym-Suffix ; ! "Luanda"
-Mariya:Mariya Anthroponym-Suffix ; ! "Mary"
-Zakariya:Zakariya Anthroponym-Suffix ; ! "Zechariah"
-Mark:Mark Anthroponym-Suffix ; ! "Mark"
-Mat:Mat Anthroponym-Suffix ; ! "Matt"
-Matie:Matie Anthroponym-Suffix ; ! "Matthew"
-Mesia:Mesia Anthroponym-Suffix ; ! "Messiah"
-Moize:Moize Anthroponym-Suffix ; ! "Moses"
+Mariya:Mariya Anthroponym-F-Suffix ; ! "Mary"
+Zakariya:Zakariya Anthroponym-M-Suffix ; ! "Zechariah"
+Mark:Mark Anthroponym-M-Suffix ; ! "Mark"
+Mat:Mat Anthroponym-M-Suffix ; ! "Matt"
+Matie:Matie Anthroponym-M-Suffix ; ! "Matthew"
+Mesia:Mesia Anthroponym-M-Suffix ; ! "Messiah"
+Moize:Moize Anthroponym-M-Suffix ; ! "Moses"
 Nazaret:Nazaret Toponym-Suffix ; ! "Nazareth"
-Nefi:Nefi Anthroponym-Suffix ; ! "Nefi"
-Nkolo:Nkolo Anthroponym-Suffix ; ! "Lord"
-Noé:Noé Anthroponym-Suffix ; ! "Noah"
-Nzambe:Nzambe Anthroponym-Suffix ; ! "God, Lord"
+Nefi:Nefi Anthroponym-M-Suffix ; ! "Nefi"
+Nkolo:Nkolo Anthroponym-M-Suffix ; ! "Lord"
+Noé:Noé Anthroponym-M-Suffix ; ! "Noah"
+Nzambe:Nzambe Anthroponym-M-Suffix ; ! "God, Lord"
 Pake:Pake MiscProper-Suffix ; ! "Passover"
 Pelata:Pelata Toponym-Suffix ; ! "Euphrates"
-Pólo:Pólo Anthroponym-Suffix ; ! "Paul"
-Piere:Piere Anthroponym-Suffix ; ! "Peter"
+Pólo:Pólo Anthroponym-M-Suffix ; ! "Paul"
+Piere:Piere Anthroponym-M-Suffix ; ! "Peter"
 Pierre:Pierre Toponym-Suffix ; ! "Pierre"
-Pilate:Pilate Anthroponym-Suffix ; ! "Pilate"
+Pilate:Pilate Anthroponym-M-Suffix ; ! "Pilate"
 Pisoni:Pisoni Toponym-Suffix ; ! "Pison"
 Republíki:Republíki Toponym-Suffix ; ! "Republic"
 Rome:Rome Toponym-Suffix ; ! "Romans"
 Rwanda:Rwanda Toponym-Suffix ; ! "Rwanda"
 Sadusé:ba%-Sadusé Toponym-Suffix ; ! "Sadducees"
-Sam:Sam Anthroponym-Suffix ; ! "Sam"
-Satan:Satan Anthroponym-Suffix ; ! "Satan"
-Saul:Saul Anthroponym-Suffix ; ! "Saul"
-Simon:Simon Anthroponym-Suffix ; ! "Simon"
+Sam:Sam Anthroponym-M-Suffix ; ! "Sam"
+Satan:Satan Anthroponym-M-Suffix ; ! "Satan"
+Saul:Saul Anthroponym-M-Suffix ; ! "Saul"
+Simon:Simon Anthroponym-M-Suffix ; ! "Simon"
 Sion:Sion Toponym-Suffix ; ! "Sion"
 Tanzania:Tanzania Toponym-Suffix ; ! "Tanzania"
-Timote:Timote Anthroponym-Suffix ; ! "Timothy"
+Timote:Timote Anthroponym-M-Suffix ; ! "Timothy"
 Tshiluba:Tshiluba Toponym-Suffix ; ! "Tshiluba"
 Uganda:Uganda Toponym-Suffix ; ! "Uganda"
 Wikipedia:Wikipedia Toponym-Suffix ; ! "Wikipedia"
-Zaki:Zaki Anthroponym-Suffix ; ! "James"
-Yawe:Yawe Anthroponym-Suffix ; ! "God"
+Zaki:Zaki Anthroponym-M-Suffix ; ! "James"
+Yawe:Yawe Anthroponym-M-Suffix ; ! "God"
 Yelusaleme:Yelusaleme Toponym-Suffix ; ! "Jerusalem" (Book of Mormon)
 Yeruzalem:Yeruzalem Toponym-Suffix ; ! "Jerusalem" (New Testament)
-Yesu:Yesu Anthroponym-Suffix ; ! "Jesus"
-Yézu:Yézu Anthroponym-Suffix ; ! "Jesus"
+Yesu:Yesu Anthroponym-M-Suffix ; ! "Jesus"
+Yézu:Yézu Anthroponym-M-Suffix ; ! "Jesus"
 Yisalaele:Yisalaele Toponym-Suffix ; ! "Israel"
-Yoane:Yoane Anthroponym-Suffix ; ! "John"
-Yuda:Yuda Anthroponym-Suffix ; ! "Judah"
-Yudas:Yudas Anthroponym-Suffix ; ! "Judas"
+Yoane:Yoane Anthroponym-M-Suffix ; ! "John"
+Yuda:Yuda Anthroponym-M-Suffix ; ! "Judah"
+Yudas:Yudas Anthroponym-M-Suffix ; ! "Judas"
 Zaíre:Zaíre Toponym-Suffix ; ! "Zaire"
 Zalayemila:Zalayemila MiscProper-Suffix ; ! ?
 
@@ -1588,7 +1595,7 @@ kokɛsɛna:kɛsɛn Verb-Suffix ; ! "To compare"
 kokíma:kím Verb-Suffix ; ! "To avoid, run, run away"
 kokita:kit Verb-Suffix ; ! "To land"
 kokoba:kob Verb-Suffix ; ! "To advance"
-kokoka:kok Verb-Suffix ; ! "To be able"
+kokoka:kok Verb-Suffix ; ! "To be able, can"
 kokóla:kól Verb-Suffix ; ! "To grow, increase, ripe, mature:
 kokoma:kom Verb-Suffix ; ! "To arrive, happen, become, write, start to"
 kokónza:kónz Verb-Suffix ; ! "To monopolize, occupy by force"
