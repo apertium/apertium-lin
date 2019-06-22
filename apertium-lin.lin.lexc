@@ -1595,7 +1595,6 @@ kokɛsɛna:kɛsɛn Verb-Suffix ; ! "To compare"
 kokíma:kím Verb-Suffix ; ! "To avoid, run, run away"
 kokita:kit Verb-Suffix ; ! "To land"
 kokoba:kob Verb-Suffix ; ! "To advance"
-kokoka:kok Verb-Suffix ; ! "To be able, can"
 kokóla:kól Verb-Suffix ; ! "To grow, increase, ripe, mature:
 kokoma:kom Verb-Suffix ; ! "To arrive, happen, become, write, start to"
 kokónza:kónz Verb-Suffix ; ! "To monopolize, occupy by force"
@@ -1702,10 +1701,13 @@ kotia:ti Verb-Suffix ; ! "To put," may have irregular form but used regularly in
 koyâ:y Verb-Suffix ; ! "To come"
 kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
 
-kokɛndɛ:kɛnd Verb-Suffix ; ! "To go"
+kokɛndɛ:kɛnd Verb-Suffix ; ! "To go" (not working for some reason)
 
+kokoka:kok Verb-Suffix ; ! "To be able, can"
 kozala:zal Verb-Suffix ; ! Copula, must also analyze as aux verb
 kozala:zal Aux-Verb-Suffix ;
+kokoka:kok Aux-Verb-Suffix ;
+kosɛngɛle:sɛngɛl Aux-Verb-Suffix ; ! "(I) must" should only be conjugated at p3
 
 LEXICON Verb-Stems-Irregular
 koya:y Verb-Irreg1-Suffix ; ! "To come"
