@@ -67,6 +67,7 @@ Multichar_Symbols
 ! Pronoun morpholgy
 %<pers%>   ! Personal pronoun
 %<dem%>    ! Demonstrative
+%<pos%>    ! Possessive
 %<rel%>    ! Relative pronoun
 %<itg%>    ! Interrogative pronoun
 %<ind%>    ! Indefinite
@@ -562,6 +563,25 @@ LEXICON PRON-Bino
 
 LEXICON PRON-Bango
 %<prn%>%<pers%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Pos-Ngai
+%<prn%>%<pos%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Pos-Yo
+%<prn%>%<pos%>%<p2%>%<sg%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Pos-Ye
+%<prn%>%<pos%>%<p3%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<pos%>%<p3%>%<sg%>%<nn%>: COMMON-Suffix ;
+
+LEXICON PRON-Pos-Biso
+%<prn%>%<pos%>%<p1%>%<pl%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Pos-Bino
+%<prn%>%<pos%>%<p2%>%<pl%>%<aa%>: COMMON-Suffix ;
+
+LEXICON PRON-Pos-Bango
+%<prn%>%<pos%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Yango
 %<prn%>%<pers%>%<p3%>%<sg%>%<nn%>: COMMON-Suffix ;
@@ -1776,6 +1796,13 @@ bísó:bísó PRON-Biso ; ! "We"
 bínó:bínó PRON-Bino ; ! "You" (pl)
 bangó:bangó PRON-Bango ; ! "They"
 
+ya%+ngáí:ya% ngáí PRON-Pos-Ngai ; ! "Mine, my"
+ya%+yó:ya% yó PRON-Pos-Yo ; ! "Yours, your"
+ya%+yé:ya% yé PRON-Pos-Ye ; ! "His, hers, its"
+ya%+bísó:ya% bísó PRON-Pos-Biso ; ! "Ours, our"
+ya%+bínó:ya% bínó PRON-Pos-Bino ; ! "Yours, your" (pl)
+ya%+bangó:ya% bangó PRON-Pos-Bango ; ! "Theirs, their"
+
 yangó:yangó PRON-Yango ; ! Can be both demonstrative and inanimate personal
 óyo:óyo PRON-Oyo ; ! "This one"
 baóyo:baóyo PRON-Baoyo ;
@@ -1813,6 +1840,7 @@ yangó%<cl7%>%<pl%>:byangó PRON-Yango ;
 yangó:%<cl11%>%<sg%>lwangó PRON-Yango ;
 yangó%<cl14%>%<sg%>:bwangó PRON-Yango ;
 
+
 LEXICON Prepositions
 káti Prep-Suffix ; ! Inside, between
 lokóla:lokóla Prep-Suffix ; ! "Like, as"
@@ -1841,14 +1869,15 @@ ete:ete Conj-Subord-Suffix ; ! "That"
 tii:tii Conj-Coord-Suffix ; ! "Until"
 
 LEXICON Connective
-ya:ya Conn-Suffix ;
+ya:ya Conn-Suffix ; 
 o:o Conn-Suffix ; ! No exact meaning
 
 ! See https://fr.wiktionary.org/wiki/ya#Lingala
-! Apparently "ya" can agree in noun class, but this is contrary to mosto grammars (see
-! Meeuswis, 2010). These will analyze with some tags since they appear in some literature, but
-! probably would not want to generate these. Can revisit and add more robust support if that turns
-! out not to be the case.
+! Also See http://www.lingref.com/cpp/acal/42/paper2778.pdf
+! The many forms of ya are used for 'noun-preposition' agreement
+! They are frequent in (old)Literature but uncommon in modern writings.
+! Their use will be limited for analysis only.
+
 ya%<cl1%>%<sg%>:wa Conn-Suffix ;
 ya%<cl1%>%<pl%>:ba Conn-Suffix ;
 ya%<cl3%>%<sg%>:mwa Conn-Suffix ;
