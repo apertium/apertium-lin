@@ -1172,7 +1172,7 @@ londende:ndende XI-VI-Suffix ; ! Translated waves, not sure if this is actually 
 lopángo:pángo XI-VI-Suffix ; ! "Residential parcel"
 
 LEXICON XIV-Stems
-bobé:bé XIV-Suffix ; ! Evil, ugliness
+bobé:bé XIV-Suffix ; ! "Evil, ugliness"
 bobóto:bóto XIV-Suffix ; ! "Friendship"
 bokási:kási XIV-Suffix ; ! "Power"
 bokono:kono XIV-Suffix ; ! "Illness"
@@ -1725,8 +1725,10 @@ kokɛndɛ:kɛnd Verb-Suffix ; ! "To go" (not working for some reason)
 
 kokoka:kok Verb-Suffix ; ! "To be able, can"
 kozala:zal Verb-Suffix ; ! Copula, must also analyze as aux verb
+
 kozala:zal Aux-Verb-Suffix ;
 kokoka:kok Aux-Verb-Suffix ;
+kolinga:ling Aux-Verb-"Suffix" ;
 kosɛngɛle:sɛngɛl Aux-Verb-Suffix ; ! "(I) must" should only be conjugated at p3
 
 LEXICON Verb-Stems-Irregular
@@ -1744,6 +1746,7 @@ LEXICON Adjective-Stems
 moké:ké Adjective-Var-Suffix ; ! "Small"
 mokúsé:kúsé Adjective-Var-Suffix ; ! "Short"
 molaí:laí Adjective-Var-Suffix ; ! "Long"
+molalanda:lalanda Adjective-Var-Suffix ; ! "Blind"
 monɛ́nɛ:nɛ́nɛ Adjective-Var-Suffix ; ! "Big"
 banso:banso Adjective-InVar-Suffix ; ! "All"
 bobele:bobele Adjective-InVar-Suffix ; ! "Only"
@@ -1778,6 +1781,7 @@ petwa:petwa Adjective-InVar-Suffix ; ! "Clean"
 molémbu:lémbu Adjective-Var-Suffix ; ! "Easy, weak"
 moíndo:moíndo Adjective-InVar-Suffix ; ! "Black, dark"
 bulo:bulo Adjective-InVar-Suffix ; ! "Blue"
+langí%+la%+káwa:langí% la% káwa Adjective-InVar-Suffix ; ! "Brown"
 libáta:libáta Adjective-InVar-Suffix ; ! "Bald"
 noki:noki Adjective-InVar-Suffix ; ! "Quick"
 sambá:sambá Adjective-InVar-Suffix ; ! "Correct"
@@ -1786,6 +1790,12 @@ téla:téla Adjective-InVar-Suffix ; ! "Ripe"
 sudi:sudi Adjective-InVar-Suffix ; ! "South"
 nordi:nordi Adjective-InVar-Suffix ; ! "North"
 séí:séí Adjective-InVar-Suffix ; ! "Comfortable"
+bómoí:bómoí Adjective-InVar-Suffix ; ! "Alive"
+ngáí%+mókó:ngáí% mókó Adjective-InVar-Suffix ; ! "Alone"
+soni:soni Adjective-InVar-Suffix ; ! "Ashamed"
+nsoni:nsoni Adjective-InVar-Suffix ; ! "Ashamed"
+nsomo:nsomo Adjective-InVar-Suffix ; ! "Awful"
+libata:libata Adjective-InVar-Suffix ; ! "Bald-headed"
 
 
 LEXICON Pronouns
@@ -1869,7 +1879,7 @@ ete:ete Conj-Subord-Suffix ; ! "That"
 tii:tii Conj-Coord-Suffix ; ! "Until"
 
 LEXICON Connective
-ya:ya Conn-Suffix ; 
+ya:ya Conn-Suffix ;
 o:o Conn-Suffix ; ! No exact meaning
 
 ! See https://fr.wiktionary.org/wiki/ya#Lingala
@@ -1878,15 +1888,15 @@ o:o Conn-Suffix ; ! No exact meaning
 ! They are frequent in (old)Literature but uncommon in modern writings.
 ! Their use will be limited for analysis only.
 
-ya%<cl1%>%<sg%>:wa Conn-Suffix ;
-ya%<cl1%>%<pl%>:ba Conn-Suffix ;
-ya%<cl3%>%<sg%>:mwa Conn-Suffix ;
-mya%<cl3%>%<pl%>:mya Conn-Suffix ;
-ya%<cl5%>%<sg%>:lya Conn-Suffix ;
-ya%<cl5%>%<pl%>:ma Conn-Suffix ;
-ya%<cl7%>%<pl%>:bya Conn-Suffix ;
-ya%<cl11%>%<sg%>:la Conn-Suffix ;
-ya%<cl14%>%<sg%>:bwa Conn-Suffix ;
+ya:wa Conn-Suffix ;
+ya:ba Conn-Suffix ;
+ya:mwa Conn-Suffix ;
+mya:mya Conn-Suffix ;
+ya:lya Conn-Suffix ;
+ya:ma Conn-Suffix ;
+ya:bya Conn-Suffix ;
+ya:la Conn-Suffix ;
+ya:bwa Conn-Suffix ;
 
 LEXICON Adverb
 atá:atá Adverb-Suffix ; ! "Even"
