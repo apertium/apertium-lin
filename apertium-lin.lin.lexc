@@ -740,6 +740,7 @@ sángó:sángó Ia-II-Suffix ; ! "Priest"
 sodá:sodá Ia-II-Suffix ; ! "Soldier"
 tata:tata Ia-II-Suffix ; ! "Dad"
 zábolo:zábolo Ia-II-Suffix ; ! "Demon"
+sanduku:sanduku Ia-II-Suffix ; ! "Box"
 
 LEXICON III-IV-Stems
 mosisa:sisa III-IV-Suffix ; ! "Artery, vein"
@@ -1723,12 +1724,12 @@ kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
 
 kokɛndɛ:kɛnd Verb-Suffix ; ! "To go" (not working for some reason)
 
-kokoka:kok Verb-Suffix ; ! "To be able, can"
+kokoka:kok Verb-Suffix ; ! "To be able, can, fit(clothes)"
 kozala:zal Verb-Suffix ; ! Copula, must also analyze as aux verb
 
 kozala:zal Aux-Verb-Suffix ;
-kokoka:kok Aux-Verb-Suffix ;
-kolinga:ling Aux-Verb-"Suffix" ;
+kokoka:kok Aux-Verb-Suffix ; ! "Can, may"
+kolinga:ling Aux-Verb-Suffix ; ! "Want, desire"
 kosɛngɛle:sɛngɛl Aux-Verb-Suffix ; ! "(I) must" should only be conjugated at p3
 
 LEXICON Verb-Stems-Irregular
@@ -1748,6 +1749,7 @@ mokúsé:kúsé Adjective-Var-Suffix ; ! "Short"
 molaí:laí Adjective-Var-Suffix ; ! "Long"
 molalanda:lalanda Adjective-Var-Suffix ; ! "Blind"
 monɛ́nɛ:nɛ́nɛ Adjective-Var-Suffix ; ! "Big"
+mobala:bola Adjective-Var-Suffix ; ! "Poor"
 banso:banso Adjective-InVar-Suffix ; ! "All"
 bobele:bobele Adjective-InVar-Suffix ; ! "Only"
 bololo:bololo Adjective-InVar-Suffix ; ! "Bitter, sour"
@@ -1781,7 +1783,7 @@ petwa:petwa Adjective-InVar-Suffix ; ! "Clean"
 molémbu:lémbu Adjective-Var-Suffix ; ! "Easy, weak"
 moíndo:moíndo Adjective-InVar-Suffix ; ! "Black, dark"
 bulo:bulo Adjective-InVar-Suffix ; ! "Blue"
-langí%+la%+káwa:langí% la% káwa Adjective-InVar-Suffix ; ! "Brown"
+langí% la% káwa:langí% la% káwa Adjective-InVar-Suffix ; ! "Brown"
 libáta:libáta Adjective-InVar-Suffix ; ! "Bald"
 noki:noki Adjective-InVar-Suffix ; ! "Quick"
 sambá:sambá Adjective-InVar-Suffix ; ! "Correct"
@@ -1791,12 +1793,14 @@ sudi:sudi Adjective-InVar-Suffix ; ! "South"
 nordi:nordi Adjective-InVar-Suffix ; ! "North"
 séí:séí Adjective-InVar-Suffix ; ! "Comfortable"
 bómoí:bómoí Adjective-InVar-Suffix ; ! "Alive"
-ngáí%+mókó:ngáí% mókó Adjective-InVar-Suffix ; ! "Alone"
+ngáí% mókó:ngáí% mókó Adjective-InVar-Suffix ; ! "Alone"
 soni:soni Adjective-InVar-Suffix ; ! "Ashamed"
 nsoni:nsoni Adjective-InVar-Suffix ; ! "Ashamed"
 nsomo:nsomo Adjective-InVar-Suffix ; ! "Awful"
 libata:libata Adjective-InVar-Suffix ; ! "Bald-headed"
-
+loko:loko Adjective-InVar-Suffix ; ! "Deaf"
+ekeseni:ekeseni Adjective-InVar-Suffix ; ! "Different"
+ngoi% ngoi:ngoi% ngoi Adjective-InVar-Suffix ; ! "Cowardly"
 
 LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
@@ -1806,12 +1810,12 @@ bísó:bísó PRON-Biso ; ! "We"
 bínó:bínó PRON-Bino ; ! "You" (pl)
 bangó:bangó PRON-Bango ; ! "They"
 
-ya%+ngáí:ya% ngáí PRON-Pos-Ngai ; ! "Mine, my"
-ya%+yó:ya% yó PRON-Pos-Yo ; ! "Yours, your"
-ya%+yé:ya% yé PRON-Pos-Ye ; ! "His, hers, its"
-ya%+bísó:ya% bísó PRON-Pos-Biso ; ! "Ours, our"
-ya%+bínó:ya% bínó PRON-Pos-Bino ; ! "Yours, your" (pl)
-ya%+bangó:ya% bangó PRON-Pos-Bango ; ! "Theirs, their"
+ya% ngáí:ya% ngáí PRON-Pos-Ngai ; ! "Mine, my"
+ya% yó:ya% yó PRON-Pos-Yo ; ! "Yours, your"
+ya% yé:ya% yé PRON-Pos-Ye ; ! "His, hers, its"
+ya% bísó:ya% bísó PRON-Pos-Biso ; ! "Ours, our"
+ya% bínó:ya% bínó PRON-Pos-Bino ; ! "Yours, your" (pl)
+ya% bangó:ya% bangó PRON-Pos-Bango ; ! "Theirs, their"
 
 yangó:yangó PRON-Yango ; ! Can be both demonstrative and inanimate personal
 óyo:óyo PRON-Oyo ; ! "This one"
@@ -1859,7 +1863,8 @@ o:o Prep-Suffix ; ! Used in Book of Mormon
 tii:tii Prep-Suffix ;  ! "Up, until"
 tii:téé Prep-Suffix ; ! "Up, until" (see tii above) Dir/LR
 libándá:libándá Prep-Suffix ; ! "Outside"
-libosó:libosó Prep-Suffix ; ! "Before, in front (of)"
+libosó:libosó Prep-Suffix ; ! "Before"
+libosó% ya:libosó% ya Prep-Suffix ; ! "In front of"
 yambo:yambo Prep-Suffix ; ! "Before"
 
 LEXICON Conjunctions
@@ -1868,7 +1873,7 @@ kasi:kasi Conj-Coord-Suffix ; ! "But"
 mpé:mpé Conj-Coord-Suffix ; ! "And"
 mpɔ:mpɔ Conj-Coord-Suffix ; ! "For"
 na:na Conj-Coord-Suffix ; ! "And"
-pámba%+te:pámba% te Conj-Coord-Suffix ; ! "Because"
+pámba% te:pámba% te Conj-Coord-Suffix ; ! "Because"
 pe:pe Conj-Coord-Suffix ; ! "And"
 po:po Conj-Coord-Suffix ; ! "For"
 to:to Conj-Coord-Suffix ; ! "Or"
@@ -1934,29 +1939,29 @@ nsé:nsé Adverb-Suffix ; ! "Under"
 malámu:malámu Adverb-Suffix ; ! "Well"
 mpé:mpé Adverb-Suffix ; ! "Also"
 likólo:likólo Adverb-Suffix ; ! "Upstairs, up"
-mikɔlɔ%+minso:mikɔlɔ% minso Adverb-Suffix ; ! "Always"
+mikɔlɔ% minso:mikɔlɔ% minso Adverb-Suffix ; ! "Always"
 libándá:libándá Adverb-Suffix ; ! "Outside"
-mikɔlɔ%+nyɔ́nsɔ:mikɔlɔ% nyɔ́nsɔ Adverb-Suffix ; ! "Everyday"
-mokɔlɔ%+mókó%+tɛ́:mokɔlɔ% mókó% tɛ́ Adverb-Suffix ; ! "Never"
-bisíká%+binso:bisíká% binso Adverb-Suffix ; ! "Everywhere"
-esíká%+esusu:esíká% esusu Adverb-Suffix ; ! "Elsewhere"
+mikɔlɔ% nyɔ́nsɔ:mikɔlɔ% nyɔ́nsɔ Adverb-Suffix ; ! "Everyday"
+mokɔlɔ% mókó% tɛ́:mokɔlɔ% mókó% tɛ́ Adverb-Suffix ; ! "Never"
+bisíká% binso:bisíká% binso Adverb-Suffix ; ! "Everywhere"
+esíká% esusu:esíká% esusu Adverb-Suffix ; ! "Elsewhere"
 yambo:yambo Adverb-Suffix ; ! "Before"
 libosó:libosó Adverb-Suffix ; ! "Before"
 bobele:bobele Adverb-Suffix ; ! "Only, permanently"
-lobi%+eleki:lobi% eleki Adverb-Suffix ; ! "Yesterday"
+lobi% eleki:lobi% eleki Adverb-Suffix ; ! "Yesterday"
 míngi:míngi Adverb-Suffix ; ! "Too, very"
 noki:noki Adverb-Suffix ; ! "Quickly, immediately"
 kalakala:kalakala Adverb-Suffix ; ! "Also, already"
 mbele:mbele Adverb-Suffix ; ! "Almost"
-ntóngó%+nyɔ́nsɔ:ntóngó% nyɔ́nsɔ Adverb-Suffix ; ! "Daily"
-mbala%+míngi:mbala% míngi Adverb-Suffix ; ! "Often"
-mbala%+mókó:mbala% mókó Adverb-Suffix ; ! "Once"
+ntóngó% nyɔ́nsɔ:ntóngó% nyɔ́nsɔ Adverb-Suffix ; ! "Daily"
+mbala% míngi:mbala% míngi Adverb-Suffix ; ! "Often"
+mbala% mókó:mbala% mókó Adverb-Suffix ; ! "Once"
 ekoki:ekoki Adverb-Suffix ; ! "Enough"
 nye:nye Adverb-Suffix ; ! "Quite"
 boni:boni Adverb-Suffix ; ! "How"
 ndé:ndé Adverb-Suffix ; ! "Therefore"
-na%+butú:na% butú Adverb-Suffix ; ! "Tonight"
-mbala%+míbalé:mbala% míbalé Adverb-Suffix ; ! "Twice"
+na% butú:na% butú Adverb-Suffix ; ! "Tonight"
+mbala% míbalé:mbala% míbalé Adverb-Suffix ; ! "Twice"
 
 
 
