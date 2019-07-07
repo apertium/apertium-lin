@@ -1822,7 +1822,7 @@ yangó:yangó PRON-Yango ; ! Can be both demonstrative and inanimate personal
 baóyo:baóyo PRON-Baoyo ;
 wâná:wâná PRON-Wana ; ! "That one"
 náni:náni PRON-Nani ; ! "Who?"
-banáni:banáni PRON-Banani ;
+banáni:banáni PRON-Banani ; ! "Who?" (pl)
 níni:níni PRON-Nini ; ! "What?"
 
 ! See https://fr.wiktionary.org/wiki/%C3%B3yo#Lingala
@@ -1962,6 +1962,8 @@ boni:boni Adverb-Suffix ; ! "How"
 ndé:ndé Adverb-Suffix ; ! "Therefore"
 na% butú:na% butú Adverb-Suffix ; ! "Tonight"
 mbala% míbalé:mbala% míbalé Adverb-Suffix ; ! "Twice"
+pona% nini:pona% nini Adverb-Suffix ; ! "Why?"
+ndenge% nini:ndenge% nini Adverb-Suffix ; ! "How?"
 
 
 
