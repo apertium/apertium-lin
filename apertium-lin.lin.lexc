@@ -35,6 +35,7 @@ Multichar_Symbols
 ! Gender morphology
 %<m%>      ! Maculin
 %<f%>      ! Feminine
+%<nt%>      ! Feminine
 
 ! Animacy morphology
 %<aa%>      ! Animate
@@ -161,6 +162,7 @@ NounPrefix ;
 ProperNouns ;
 VerbPersonNum-Prefix ;
 Pronouns ;
+Determiners;
 Prepositions ;
 Conjunctions ;
 Connective ;
@@ -566,22 +568,28 @@ LEXICON PRON-Bango
 
 LEXICON PRON-Pos-Ngai
 %<prn%>%<pos%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
 LEXICON PRON-Pos-Yo
 %<prn%>%<pos%>%<p2%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
 LEXICON PRON-Pos-Ye
 %<prn%>%<pos%>%<p3%>%<sg%>%<aa%>: COMMON-Suffix ;
 %<prn%>%<pos%>%<p3%>%<sg%>%<nn%>: COMMON-Suffix ;
+%<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
 LEXICON PRON-Pos-Biso
 %<prn%>%<pos%>%<p1%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
 LEXICON PRON-Pos-Bino
 %<prn%>%<pos%>%<p2%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
 LEXICON PRON-Pos-Bango
 %<prn%>%<pos%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
 LEXICON PRON-Yango
 %<prn%>%<pers%>%<p3%>%<sg%>%<nn%>: COMMON-Suffix ;
@@ -594,6 +602,7 @@ LEXICON PRON-Oyo
 %<prn%>%<rel%>: COMMON-Suffix ; ! If used as relative
 
 LEXICON PRON-Wana
+%<prn%>%<dem%>%<sg%>: COMMON-Suffix ; !
 %<det%>%<dem%>: COMMON-Suffix ;
 
 LEXICON PRON-Baoyo
@@ -608,6 +617,17 @@ LEXICON PRON-Banani
 LEXICON PRON-Nini
 %<prn%>%<itg%>%<sg%>%<nn%>: COMMON-Suffix ;
 %<prn%>%<itg%>%<pl%>%<nn%>: COMMON-Suffix ;
+
+LEXICON PRON-EM
+%<prn%>%<ind%>%<nt%>%<sg%>: COMMON-Suffix ;
+
+!=============================================================================!
+!                         Determiner Morphotactics                            !
+!=============================================================================!
+
+LEXICON Det-Pos
+%<det%>%<pos%>%<sp%>: COMMON-Suffix ;
+
 
 !=============================================================================!
 !                         Misc. Morphotactics                                 !
@@ -678,7 +698,6 @@ mosí:sí I-II-Suffix ; ! "Habitant"
 mosémboli:sémboli I-II-Suffix ; ! "Just man"
 mobekisi:bekisi I-II-Suffix ; ! "Judge, a just man"
 mobáli:báli I-II-Suffix ; ! "Husband"
-motu:tu I-II-Suffix ; ! "Man"
 motɛ́kisi:tɛ́kisi I-II-Suffix ; ! "Merchant"
 mobóti:bóti I-II-Suffix ; ! "Mother, person who gives birth"
 mokilo:kilo I-II-Suffix ; ! "Mother-in-law"
@@ -1617,7 +1636,8 @@ kokíma:kím Verb-Suffix ; ! "To avoid, run, run away"
 kokita:kit Verb-Suffix ; ! "To land"
 kokoba:kob Verb-Suffix ; ! "To advance"
 kokóla:kól Verb-Suffix ; ! "To grow, increase, ripe, mature:
-kokoma:kom Verb-Suffix ; ! "To arrive, happen, become, write, start to"
+!kokoma:kom Verb-Suffix ; ! "To arrive, happen, become, write, start to"
+komɛla:mɛl Verb-Suffix ; ! "To drink, swallow"
 kokónza:kónz Verb-Suffix ; ! "To monopolize, occupy by force"
 kokósa:kós Verb-Suffix ; ! "To lie, fool"
 kokɔ́ta:kɔ́t Verb-Suffix ; ! "To enter"
@@ -1649,7 +1669,6 @@ koluka:luk Verb-Suffix ; ! "To search, seek"
 kolútá:lút Verb-Suffix ; ! "To excel"
 komáta:mát Verb-Suffix ; ! "To climb"
 komeka:mek Verb-Suffix ; ! "To try, test,taste, attempt, persevere"
-komɛla:mɛl Verb-Suffix ; ! "To drink, swallow"
 komɛma:mɛm Verb-Suffix ; ! "To wear, carry, transport"
 komɔ́na:mɔ́n Verb-Suffix ; ! "To see"
 kondima:ndim Verb-Suffix ; ! "To accept, admit, believe"
@@ -1825,6 +1844,10 @@ náni:náni PRON-Nani ; ! "Who?"
 banáni:banáni PRON-Banani ; ! "Who?" (pl)
 níni:níni PRON-Nini ; ! "What?"
 
+elóko% mókó:elóko% mókó PRON-EM  ; ! "Something, one thing, anything"
+elóko% nyɔ́nsɔ:elóko% nyɔ́nsɔ PRON-EM; ! "Everything"
+
+
 ! See https://fr.wiktionary.org/wiki/%C3%B3yo#Lingala
 ! Apparently "óyo" can agree in noun class, but this is contrary to mosto grammars (see
 ! Meeuswis, 2010). These will analyze with some tags since they appear in some literature, but
@@ -1853,6 +1876,15 @@ yangó%<cl5%>%<pl%>:mangó PRON-Yango ;
 yangó%<cl7%>%<pl%>:byangó PRON-Yango ;
 yangó:%<cl11%>%<sg%>lwangó PRON-Yango ;
 yangó%<cl14%>%<sg%>:bwangó PRON-Yango ;
+
+LEXICON Determiners
+! In all of these, 'na' can be replaced by 'ya'
+na% ngáí:na% ngáí Det-Pos ; ! "My"
+na% yó:na% yó Det-Pos ; ! "Your"
+na% yé:na% yé Det-Pos ; ! "His, her, its"
+na% bísó:na% bísó Det-Pos ; ! "Our"
+na% bínó:na% bínó Det-Pos ; ! "Your" (pl)
+na% bangó:na% bangó Det-Pos ; ! "Their"
 
 
 LEXICON Prepositions
@@ -1916,7 +1948,7 @@ iyo:iyo Adverb-Suffix ; ! "Yes"
 káka:káka Adverb-Suffix ; ! "Only"
 kala:kala Adverb-Suffix ; ! "Once upon a time"
 kuna:kuna Adverb-Suffix ; ! "Over there"
-wana:wana Adverb-Suffix ; ! "There"
+wâná:wâná Adverb-Suffix ; ! "There"
 kútu:kútu Adverb-Suffix ; ! "Rather, moreover"
 lelo:lelo Adverb-Suffix ; ! "Today"
 lobi:lobi Adverb-Suffix ; ! "Yesterday, tomorrow" Same word
@@ -1964,8 +1996,6 @@ na% butú:na% butú Adverb-Suffix ; ! "Tonight"
 mbala% míbalé:mbala% míbalé Adverb-Suffix ; ! "Twice"
 pona% nini:pona% nini Adverb-Suffix ; ! "Why?"
 ndenge% nini:ndenge% nini Adverb-Suffix ; ! "How?"
-
-
 
 LEXICON YesNo
 tɛ́:tɛ́ Neg-Suffix ; ! "No"
