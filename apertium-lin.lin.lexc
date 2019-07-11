@@ -628,6 +628,8 @@ LEXICON PRON-EM
 LEXICON Det-Pos
 %<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
+LEXICON Det-Ind
+%<det%>%<ind%>%<sp%>: COMMON-Suffix ;
 
 !=============================================================================!
 !                         Misc. Morphotactics                                 !
@@ -726,7 +728,6 @@ moníngá:níngá I-II-Suffix ; ! "Friend"
 mopǎgánu:pǎgánu I-II-Suffix ; ! "Pangan"
 mopaya:paya I-II-Suffix ; ! "Visitor"
 mosántu:sántu I-II-Suffix ; ! "Saint"
-mosúsu:súsu I-II-Suffix ; ! "Other"
 moto:to I-II-Suffix ; ! "Person"
 mutu:tu I-II-Suffix ; ! "Person"
 moúmbu:úmbu I-II-Suffix ; ! "Slave"
@@ -1746,9 +1747,9 @@ kokɛndɛ:kɛnd Verb-Suffix ; ! "To go" (not working for some reason)
 kokoka:kok Verb-Suffix ; ! "To be able, can, fit(clothes)"
 kozala:zal Verb-Suffix ; ! Copula, must also analyze as aux verb
 
+! These 3 are the main Auxiliary verbs in Lingala
 kozala:zal Aux-Verb-Suffix ;
 kokoka:kok Aux-Verb-Suffix ; ! "Can, may"
-kolinga:ling Aux-Verb-Suffix ; ! "Want, desire"
 kosɛngɛle:sɛngɛl Aux-Verb-Suffix ; ! "(I) must" should only be conjugated at p3
 
 LEXICON Verb-Stems-Irregular
@@ -1878,6 +1879,8 @@ yangó:%<cl11%>%<sg%>lwangó PRON-Yango ;
 yangó%<cl14%>%<sg%>:bwangó PRON-Yango ;
 
 LEXICON Determiners
+mosúsu:mosúsu Det-Ind ; ! "Other"
+
 ! In all of these, 'na' can be replaced by 'ya'
 na% ngáí:na% ngáí Det-Pos ; ! "My"
 na% yó:na% yó Det-Pos ; ! "Your"
@@ -1925,15 +1928,15 @@ o:o Conn-Suffix ; ! No exact meaning
 ! They are frequent in (old)Literature but uncommon in modern writings.
 ! Their use will be limited for analysis only.
 
-ya:wa Conn-Suffix ;
-ya:ba Conn-Suffix ;
-ya:mwa Conn-Suffix ;
-mya:mya Conn-Suffix ;
-ya:lya Conn-Suffix ;
-ya:ma Conn-Suffix ;
-ya:bya Conn-Suffix ;
-ya:la Conn-Suffix ;
-ya:bwa Conn-Suffix ;
+ya%<cl1%>%<sg%>:wa Conn-Suffix ;
+ya%<cl1%>%<pl%>:ba Conn-Suffix ;
+ya%<cl3%>%<sg%>:mwa Conn-Suffix ;
+mya%<cl3%>%<pl%>:mya Conn-Suffix ;
+ya%<cl5%>%<sg%>:lya Conn-Suffix ;
+ya%<cl5%>%<pl%>:ma Conn-Suffix ;
+ya%<cl7%>%<pl%>:bya Conn-Suffix ;
+ya%<cl11%>%<sg%>:la Conn-Suffix ;
+ya%<cl14%>%<sg%>:bwa Conn-Suffix ;
 
 LEXICON Adverb
 atá:atá Adverb-Suffix ; ! "Even"
