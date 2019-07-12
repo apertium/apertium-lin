@@ -98,7 +98,7 @@ Multichar_Symbols
 
 ! Numeral Categories
 %<ord%> ! Ordinal
-%<ord%> ! Cardinal
+%<card%> ! Cardinal
 
 
 %[%+sg%]   ! Singular (noun prefix matching)
@@ -1345,6 +1345,7 @@ Zalayemila:Zalayemila MiscProper-Suffix ; ! ?
 
 LEXICON Verb-Stems
 Verb-Stems-Irregular ;
+kobonja% va:bonj% va Verb-Suffix ; ! "TEST"
 kokundwa:kundw Verb-Suffix ; ! "To rise"
 kobumba:bumb Verb-Suffix ; ! "To save, hide"
 kopasola:pasol Verb-Suffix ; ! "To cleave, break"
@@ -1901,6 +1902,8 @@ libándá:libándá Prep-Suffix ; ! "Outside"
 libosó:libosó Prep-Suffix ; ! "Before"
 libosó% ya:libosó% ya Prep-Suffix ; ! "In front of"
 yambo:yambo Prep-Suffix ; ! "Before"
+zingazinga:zingazinga Prep-Suffix ; ! "Around"
+nzinganzinga:nzinganzinga Prep-Suffix ; ! Dir/LR
 
 LEXICON Conjunctions
 bongo:bongo Conj-Coord-Suffix ; ! "So"
@@ -1948,7 +1951,8 @@ ee:ee Adverb-Suffix ; ! "Yes"
 tɛ́:tɛ́ Adverb-Suffix ; ! "No"
 elongó:elongó Adverb-Suffix ; ! "Together"
 iyo:iyo Adverb-Suffix ; ! "Yes"
-káka:káka Adverb-Suffix ; ! "Only"
+káka:káka Adverb-Suffix ; ! "Only, still"
+se:se Adverb-Suffix ; ! "Still"
 kala:kala Adverb-Suffix ; ! "Once upon a time"
 kuna:kuna Adverb-Suffix ; ! "Over there"
 wâná:wâná Adverb-Suffix ; ! "There"
@@ -1970,7 +1974,7 @@ wápi:wápi Adverb-Suffix ; ! "Where?"
 tangó:tangó Adverb-Suffix ; ! "When?"
 nsima:nsima Adverb-Suffix ; ! "Behind"
 boyé:boyé Adverb-Suffix ; ! "Thus, so"
-nsé:nsé Adverb-Suffix ; ! "Under"
+na% nsé:na% nsé Adverb-Suffix ; ! "Under"
 malámu:malámu Adverb-Suffix ; ! "Well"
 mpé:mpé Adverb-Suffix ; ! "Also"
 likólo:likólo Adverb-Suffix ; ! "Upstairs, up"
@@ -1999,6 +2003,8 @@ na% butú:na% butú Adverb-Suffix ; ! "Tonight"
 mbala% míbalé:mbala% míbalé Adverb-Suffix ; ! "Twice"
 pona% nini:pona% nini Adverb-Suffix ; ! "Why?"
 ndenge% nini:ndenge% nini Adverb-Suffix ; ! "How?"
+zingazinga:zingazinga Adverb-Suffix ; ! "Around"
+nzinganzinga:nzinganzinga Adverb-Suffix ; ! Dir/LR
 
 LEXICON YesNo
 tɛ́:tɛ́ Neg-Suffix ; ! "No"
