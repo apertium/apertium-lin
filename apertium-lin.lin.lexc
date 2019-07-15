@@ -392,7 +392,7 @@ LEXICON Verb-Rad-Ex
 %<vblex%>%<caus%>:%>is%> Verb-Rad-Ex2 ;
 %<vblex%>%<recip%>:%>an%> Verb-Rad-Ex2 ;
 %<vblex%>%<rev%>:%>w%> Verb-Rad-Ex2 ;
-%<vblex%>%<stat%>:%>al%> Verb-Rad-Ex2 ;
+!%<vblex%>%<stat%>:%>al%> Verb-Rad-Ex2 ; ! This form is used only for 2 verbs.
 %<vblex%>%<pass%>:%>am%> Verb-Rad-Ex2 ;
 %<vblex%>%<caus%>%<rev%>:%>ol%> Verb-TAM-Suffix ;
 
@@ -1892,9 +1892,9 @@ na% bangó:na% bangó Det-Pos ; ! "Their"
 
 
 LEXICON Prepositions
-káti Prep-Suffix ; ! Inside, between
-lokóla:lokóla Prep-Suffix ; ! "Like, as"
 na:na Prep-Suffix ; ! Many translations
+na% káti:na% káti Prep-Suffix ; ! Inside, between
+lokóla:lokóla Prep-Suffix ; ! "Like, as"
 o:o Prep-Suffix ; ! Used in Book of Mormon
 tii:tii Prep-Suffix ;  ! "Up, until"
 tii:téé Prep-Suffix ; ! "Up, until" (see tii above) Dir/LR
