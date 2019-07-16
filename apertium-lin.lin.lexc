@@ -1279,9 +1279,10 @@ Katanga:Katanga Toponym-Suffix ; ! "Katanga"
 Kenya:Kenya Toponym-Suffix ; ! "Kenya"
 Kikongó:Kikongó Toponym-Suffix ; ! "Kikongo"
 Kinsásá:Kinsásá Toponym-Suffix ; ! "Kinshasa"
+Kinshasa:Kinshasa Toponym-Suffix ; ! "Kinshasa"
 kiswahili:kiswahili Toponym-Suffix ; !
 Klisto:Klisto Anthroponym-M-Suffix ; ! "Christ"
-Kongó:Kongó Toponym-Suffix ; ! "Congo"
+Kɔ́ngɔ:Kɔ́ngɔ Toponym-Suffix ; ! "Congo"
 Korente:Korente Toponym-Suffix ; ! "Corinth"
 Kristo:Kristo Anthroponym-M-Suffix ; ! "Christ"
 Kusi:Kusi Toponym-Suffix ; ! "Ethiopia"
@@ -1304,10 +1305,11 @@ Nazaret:Nazaret Toponym-Suffix ; ! "Nazareth"
 Nefi:Nefi Anthroponym-M-Suffix ; ! "Nefi"
 Nkolo:Nkolo Anthroponym-M-Suffix ; ! "Lord"
 Noé:Noé Anthroponym-M-Suffix ; ! "Noah"
-Nzambe:Nzambe Anthroponym-M-Suffix ; ! "God, Lord"
+Nzámbe:Nzámbe Anthroponym-M-Suffix ; ! "God, Lord"
 Pake:Pake MiscProper-Suffix ; ! "Passover"
 Pelata:Pelata Toponym-Suffix ; ! "Euphrates"
 Pólo:Pólo Anthroponym-M-Suffix ; ! "Paul"
+Paul:Paul Anthroponym-M-Suffix ; ! "Paul"
 Piere:Piere Anthroponym-M-Suffix ; ! "Peter"
 Pierre:Pierre Toponym-Suffix ; ! "Pierre"
 Pilate:Pilate Anthroponym-M-Suffix ; ! "Pilate"
@@ -1328,6 +1330,7 @@ Uganda:Uganda Toponym-Suffix ; ! "Uganda"
 Wikipedia:Wikipedia Toponym-Suffix ; ! "Wikipedia"
 Zaki:Zaki Anthroponym-M-Suffix ; ! "James"
 Yawe:Yawe Anthroponym-M-Suffix ; ! "God"
+Santu:Santu Anthroponym-M-Suffix ; ! "Saint"
 Yelusaleme:Yelusaleme Toponym-Suffix ; ! "Jerusalem" (Book of Mormon)
 Yeruzalem:Yeruzalem Toponym-Suffix ; ! "Jerusalem" (New Testament)
 Yesu:Yesu Anthroponym-M-Suffix ; ! "Jesus"
@@ -1924,6 +1927,7 @@ tii:tii Conj-Coord-Suffix ; ! "Until"
 LEXICON Connective
 ya:ya Conn-Suffix ;
 o:o Conn-Suffix ; ! No exact meaning
+e:e Conn-Suffix ; ! Frequently used before a loan word. Also indicates the 3rd person
 
 ! See https://fr.wiktionary.org/wiki/ya#Lingala
 ! Also See http://www.lingref.com/cpp/acal/42/paper2778.pdf
