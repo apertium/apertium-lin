@@ -35,7 +35,8 @@ Multichar_Symbols
 ! Gender morphology
 %<m%>      ! Maculin
 %<f%>      ! Feminine
-%<nt%>      ! Feminine
+%<mf%>      ! Masculine/Feminine
+%<nt%>     ! Neutral
 
 ! Animacy morphology
 %<aa%>      ! Animate
@@ -72,6 +73,7 @@ Multichar_Symbols
 %<rel%>    ! Relative pronoun
 %<itg%>    ! Interrogative pronoun
 %<ind%>    ! Indefinite
+%<obj%>    ! Objective
 
 %<det%>    ! Determiner
 %<qnt%>    ! Quantifier
@@ -592,8 +594,8 @@ LEXICON PRON-Pos-Bango
 %<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
 LEXICON PRON-Yango
-%<prn%>%<pers%>%<p3%>%<sg%>%<nn%>: COMMON-Suffix ;
-%<prn%>%<pers%>%<p3%>%<pl%>%<nn%>: COMMON-Suffix ;
+%<prn%>%<dem%>%<mf%>%<sg%>%<nn%>: COMMON-Suffix ; ! That
+%<prn%>%<obj%>%<p3%>%<nt%>%<sg%>%<nn%>: COMMON-Suffix ; ! It
 %<det%>%<dem%>: COMMON-Suffix ; ! Determiner
 
 LEXICON PRON-Oyo
