@@ -763,6 +763,8 @@ sodá:sodá Ia-II-Suffix ; ! "Soldier"
 tata:tata Ia-II-Suffix ; ! "Dad"
 zábolo:zábolo Ia-II-Suffix ; ! "Demon"
 sanduku:sanduku Ia-II-Suffix ; ! "Box"
+bugumési:bugumési Ia-II-Suffix ; ! "Mayor"
+sani:sani Ia-II-Suffix ; ! "Plate"
 
 LEXICON III-IV-Stems
 mosisa:sisa III-IV-Suffix ; ! "Artery, vein"
@@ -1045,9 +1047,9 @@ elanga:langa VII-VIII-Suffix ; ! "Garden"
 eleko:leko VII-VIII-Suffix ; ! "Period, time, weather"
 elikya:likya VII-VIII-Suffix ; ! "Hope"
 elóko:lóko VII-VIII-Suffix ; ! "Thing, object"
-elɔ́kɔ:ɔ́kɔ  VII-VIII-Suffix ; ! This is elóko in 7-vowel orthography. Included so that words with ɔ́ can tokenize properly
+elɔ́kɔ:lɔ́kɔ  VII-VIII-Suffix ; ! This is elóko in 7-vowel orthography. Included so that words with ɔ́ can tokenize properly
 elongi:longi VII-VIII-Suffix ; ! "Face"
-engumba:ngumba VII-VIII-Suffix ; ! "City"
+engúmba:ngumba VII-VIII-Suffix ; ! "City"
 epái:pái VII-VIII-Suffix ; ! "Place, location"
 esalelo:salelo VII-VIII-Suffix ; ! "Work material"
 esambiselo:sambiselo VII-VIII-Suffix ; ! "Court"
@@ -1253,7 +1255,7 @@ Ciluba:Ciluba MiscProper-Suffix ; ! "Ciluba"
 Congo:Congo Toponym-Suffix ; ! "Congo"
 Charle:Charle Anthroponym-M-Suffix ; ! "Charlie"
 David:David Anthroponym-M-Suffix ; ! "David"
-Demokratiki:Demokratiki MiscProper-Suffix ; ! "Democratic"
+Demokratíki:Demokratíki MiscProper-Suffix ; ! "Democratic"
 Efeze:Efeze MiscProper-Suffix ; ! "Ephesians"
 Ejipte:Ejipte Toponym-Suffix ; ! "Egypt"
 Elamani:Elamani Anthroponym-M-Suffix ; ! "Helaman"
@@ -1285,6 +1287,7 @@ Kinshasa:Kinshasa Toponym-Suffix ; ! "Kinshasa"
 kiswahili:kiswahili Toponym-Suffix ; !
 Klisto:Klisto Anthroponym-M-Suffix ; ! "Christ"
 Kɔ́ngɔ:Kɔ́ngɔ Toponym-Suffix ; ! "Congo"
+Kongó:Kongó Toponym-Suffix ; ! "Congo"
 Korente:Korente Toponym-Suffix ; ! "Corinth"
 Kristo:Kristo Anthroponym-M-Suffix ; ! "Christ"
 Kusi:Kusi Toponym-Suffix ; ! "Ethiopia"
@@ -1343,6 +1346,11 @@ Yuda:Yuda Anthroponym-M-Suffix ; ! "Judah"
 Yudas:Yudas Anthroponym-M-Suffix ; ! "Judas"
 Zaíre:Zaíre Toponym-Suffix ; ! "Zaire"
 Zalayemila:Zalayemila MiscProper-Suffix ; ! ?
+Désiré:Désiré Anthroponym-M-Suffix ; ! "Désiré"
+Cyrille:Cyrille Anthroponym-M-Suffix ; ! "Cyrille"
+Ilunga:Ilunga Anthroponym-M-Suffix ; ! "Ilunga" (Common name in Lingala-speaking regions)
+Kambundji:Kambundji Anthroponym-M-Suffix ; ! "Kambundji"
+Guérin:Guérin Anthroponym-M-Suffix ; ! "Guérin"
 
 !=============================================================================!
 !                               Verbs                                         !
@@ -1744,6 +1752,7 @@ koyánola:yánol Verb-Suffix ; ! "To reply, answer"
 kolála:lál Verb-Suffix ; ! "To sleep, nap"
 kolia:li Verb-Suffix ; ! "To eat"
 kotia:ti Verb-Suffix ; ! "To put," may have irregular form but used regularly in corpus
+kobína:bín Verb-Suffix ; ! "To dance"
 
 koyâ:y Verb-Suffix ; ! "To come"
 kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
@@ -1772,6 +1781,7 @@ kolia:le Verb-Irreg2-Suffix ; ! See kolia
 LEXICON Adjective-Stems
 moké:ké Adjective-Var-Suffix ; ! "Small"
 mokúsé:kúsé Adjective-Var-Suffix ; ! "Short"
+bokúsé:bokúsé Adjective-InVar-Suffix ; ! "Short"
 molaí:laí Adjective-Var-Suffix ; ! "Long"
 molalanda:lalanda Adjective-Var-Suffix ; ! "Blind"
 monɛ́nɛ:nɛ́nɛ Adjective-Var-Suffix ; ! "Big"
@@ -1827,6 +1837,7 @@ libata:libata Adjective-InVar-Suffix ; ! "Bald-headed"
 loko:loko Adjective-InVar-Suffix ; ! "Deaf"
 ekeseni:ekeseni Adjective-InVar-Suffix ; ! "Different"
 ngoi% ngoi:ngoi% ngoi Adjective-InVar-Suffix ; ! "Cowardly"
+kifwafwa:kifwafwa Adjective-InVar-Suffix ; ! "Epileptic"
 
 LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
@@ -1891,6 +1902,7 @@ mosúsu:mosúsu Det-Ind ; ! "Other"
 na% ngáí:na% ngáí Det-Pos ; ! "My"
 na% yó:na% yó Det-Pos ; ! "Your"
 na% yé:na% yé Det-Pos ; ! "His, her, its"
+na% yě:na% yě Det-Pos ; ! "His, her, its"
 na% bísó:na% bísó Det-Pos ; ! "Our"
 na% bínó:na% bínó Det-Pos ; ! "Your" (pl)
 na% bangó:na% bangó Det-Pos ; ! "Their"
@@ -1901,8 +1913,8 @@ na:na Prep-Suffix ; ! Many translations
 na% káti:na% káti Prep-Suffix ; ! Inside, between
 lokóla:lokóla Prep-Suffix ; ! "Like, as"
 o:o Prep-Suffix ; ! Used in Book of Mormon
-tii:tii Prep-Suffix ;  ! "Up, until"
-tii:téé Prep-Suffix ; ! "Up, until" (see tii above) Dir/LR
+tíí:tíí Prep-Suffix ;  ! "Up, until"
+tíí:téé Prep-Suffix ; ! "Up, until" (see tii above) Dir/LR
 libándá:libándá Prep-Suffix ; ! "Outside"
 libosó:libosó Prep-Suffix ; ! "Before"
 libosó% ya:libosó% ya Prep-Suffix ; ! "In front of"
@@ -1924,7 +1936,7 @@ zambi:zambi Conj-Coord-Suffix ; ! "For, because"
 soko:soko Conj-Subord-Suffix ; ! "If"
 soki:soki Conj-Subord-Suffix ; ! "If" (alternative spelling)
 ete:ete Conj-Subord-Suffix ; ! "That"
-tii:tii Conj-Coord-Suffix ; ! "Until"
+tíí:tíí Conj-Coord-Suffix ; ! "Until"
 
 LEXICON Connective
 ya:ya Conn-Suffix ;
@@ -2044,12 +2056,13 @@ aleluya:aleluya Interjection-Suffix ; ! "Hallelujah"
 
 LEXICON LoanWords
 bapolice%<n%>%<pl%>:bapolice COMMON-Suffix ; ! "Police"
-!de%<pr%>:de COMMON-Suffix ; ! "Of" (French)
+de%<pr%>:de COMMON-Suffix ; ! "Of" (French)
 !des%<pr%>des COMMON-Suffix ; ! "Of" (French)
 !du%<pr%>:du COMMON-Suffix ; ! "Of" (French)
 mersi%<n%>%<sg%>:mersi COMMON-Suffix ; ! "Thanks"
 région%<n%>%<sg%>:région COMMON-Suffix ; ! "Region"
 politiki%<n%>%<sg%>:politiki COMMON-Suffix ; ! "Policy"
+!fɛ́tí%<n%>%<sg%>:fɛ́tí COMMON-Suffix ; ! "Party"
 
 LEXICON Irregular
 ! Class 1 mwa to ba
