@@ -1771,10 +1771,7 @@ kolia:li Verb-Suffix ; ! "To eat"
 kotia:ti Verb-Suffix ; ! "To put," may have irregular form but used regularly in corpus
 kobína:bín Verb-Suffix ; ! "To dance"
 
-koyâ:y Verb-Suffix ; ! "To come"
 kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
-
-kokɛndɛ:kɛnd Verb-Suffix ; ! "To go" (not working for some reason)
 
 kokoka:kok Verb-Suffix ; ! "To be able, can, fit(clothes)"
 kozala:zal Verb-Suffix ; ! Copula, must also analyze as aux verb
@@ -1788,6 +1785,7 @@ LEXICON Verb-Stems-Irregular
 koya:y Verb-Irreg1-Suffix ; ! "To come"
 koya:ye Verb-Irreg2-Suffix ; !
 %[%-imp%]koya:yak Verb-InfImp-Suffix ; ! Irregular irregular imperative. The incorrect imperative from above entry is removed using CG
+!kokɛndɛ:kɛnd Verb-Irreg3-Suffix ; ! "To go"
 
 kolia:le Verb-Irreg2-Suffix ; ! See kolia
 
