@@ -74,6 +74,7 @@ Multichar_Symbols
 %<itg%>    ! Interrogative pronoun
 %<ind%>    ! Indefinite
 %<obj%>    ! Objective
+%<ref%>    ! Reflective
 
 %<det%>    ! Determiner
 %<qnt%>    ! Quantifier
@@ -593,6 +594,24 @@ LEXICON PRON-Pos-Bango
 %<prn%>%<pos%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
 %<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
+LEXICON PRON-Ref-Ngai
+%<prn%>%<ref%>%<p1%>%<mf%>%<sg%>: COMMON-Suffix ;
+
+LEXICON PRON-Ref-Yo
+%<prn%>%<ref%>%<p2%>%<mf%>%<sg%>: COMMON-Suffix ;
+
+LEXICON PRON-Ref-Ye
+%<prn%>%<ref%>%<p3%>%<mf%>%<sg%>: COMMON-Suffix ;
+
+LEXICON PRON-Ref-Biso
+%<prn%>%<ref%>%<p1%>%<mf%>%<pl%>: COMMON-Suffix ;
+
+LEXICON PRON-Ref-Bino
+%<prn%>%<ref%>%<p2%>%<mf%>%<pl%>: COMMON-Suffix ;
+
+LEXICON PRON-Ref-Bango
+%<prn%>%<ref%>%<p3%>%<mf%>%<pl%>: COMMON-Suffix ;
+
 LEXICON PRON-Yango
 %<prn%>%<dem%>%<mf%>%<sg%>%<nn%>: COMMON-Suffix ; ! That
 %<prn%>%<obj%>%<p3%>%<nt%>%<sg%>%<nn%>: COMMON-Suffix ; ! It
@@ -620,7 +639,7 @@ LEXICON PRON-Nini
 %<prn%>%<itg%>%<sg%>%<nn%>: COMMON-Suffix ;
 %<prn%>%<itg%>%<pl%>%<nn%>: COMMON-Suffix ;
 
-LEXICON PRON-EM
+LEXICON PRON-Em
 %<prn%>%<ind%>%<nt%>%<sg%>: COMMON-Suffix ;
 
 !=============================================================================!
@@ -1091,6 +1110,8 @@ mbuma:mbuma IX-X-Suffix ; ! "Fruit"
 mémé:mémé IX-X-Suffix ; ! "Sheep"
 mesa:mesa IX-X-Suffix ; ! "Table"
 mpáku:mpáku IX-X-Suffix ; ! "Tax"
+mói:mói IX-X-Suffix ; ! "Sun"
+
 
 !! take n
 ndakisa:ndakisa IX-X-Suffix ; ! "Example"
@@ -1883,9 +1904,19 @@ náni:náni PRON-Nani ; ! "Who?"
 banáni:banáni PRON-Banani ; ! "Who?" (pl)
 níni:níni PRON-Nini ; ! "What?"
 
-elóko% mókó:elóko% mókó PRON-EM  ; ! "Something, one thing, anything"
-elóko% nyɔ́nsɔ:elóko% nyɔ́nsɔ PRON-EM; ! "Everything"
-songolo:songolo PRON-EM ; ! "Someone" (old Lingala)
+elóko% mókó:elóko% mókó PRON-Em  ; ! "Something, one thing, anything"
+elóko% nyɔ́nsɔ:elóko% nyɔ́nsɔ PRON-Em; ! "Everything"
+songolo:songolo PRON-Em ; ! "Someone" (old Lingala)
+elóko% mókó% tɛ́:elóko% mókó% tɛ́ PRON-Em ; ! "Nothing"
+elóko% tɛ́:elóko% tɛ́ PRON-Em ; ! "Nothing"
+
+ngáí% mókó:ngáí% mókó PRON-Ref-Ngai ; ! "Myself"
+yó% mókó:yó% mókó PRON-Ref-Yo ; ! "Yourself"
+yé% mókó:yé% mókó PRON-Ref-Ye ; ! "He/She/Itself"
+yě% mókó:yě% mókó PRON-Ref-Ye ; ! "He/She/Itself"
+bísó% mókó:bísó% mókó PRON-Ref-Biso ; ! "Ourselves"
+bínó% mókó:bínó% mókó PRON-Ref-Bino ; ! "Yourselves"
+bangó% mókó:bangó% mókó PRON-Ref-Bango ; ! "Themselves"
 
 
 ! See https://fr.wiktionary.org/wiki/%C3%B3yo#Lingala
@@ -1962,6 +1993,7 @@ soko:soko Conj-Subord-Suffix ; ! "If"
 soki:soki Conj-Subord-Suffix ; ! "If" (alternative spelling)
 ete:ete Conj-Subord-Suffix ; ! "That"
 tíí:tíí Conj-Coord-Suffix ; ! "Until"
+mpó% ete:mpó% ete Conj-Coord-Suffix ; ! "Until"
 
 LEXICON Connective
 ya:ya Conn-Suffix ;
@@ -2101,6 +2133,7 @@ au%<pr%>:au COMMON-Suffix ; ! "At, to" (French)
 cas%<n%>%<sg%>:cas COMMON-Suffix ; ! "Case"
 pápa%<n%>%<sg%>:pápa COMMON-Suffix ; ! "Father"
 radio%<n%>%<sg%>:radio COMMON-Suffix ; ! "Radio"
+temwe%<n%>%<sg%>:temwe COMMON-Suffix ; ! "Witness" (Fr)
 
 LEXICON Irregular
 ! Class 1 mwa to ba
@@ -2108,6 +2141,10 @@ LEXICON Irregular
 %[%-pl%]mwana:bana I-II-Suffix ;
 %[%-sg%]mwasi:mwasi I-II-Suffix ; ! "Girl, daughter, wife"
 %[%-pl%]mwasi:basi I-II-Suffix ;
+
+! Class 3 mw to mi
+%[%-sg%]mwinda:mwinda III-IV-Suffix ; ! "Light"
+%[%-pl%]mwinda:minda III-IV-Suffix ;
 
 ! Class 1 plural only
 %[%-pl%]banzambe:banzambe I-II-Suffix ; ! "Gods"
