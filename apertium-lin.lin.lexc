@@ -595,7 +595,7 @@ LEXICON PRON-Pos-Bango
 %<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
 LEXICON PRON-Ref-Ngai
-%<prn%>%<ref%>%<p1%>%<mf%>%<sg%>: COMMON-Suffix ;
+%<prn%>%<ref%>%<p1%>%<mf%>%<sg%>f: COMMON-Suffix ;
 
 LEXICON PRON-Ref-Yo
 %<prn%>%<ref%>%<p2%>%<mf%>%<sg%>: COMMON-Suffix ;
@@ -1263,6 +1263,9 @@ kotála:tála XV-Suffix ; ! "To watch"
 
 LEXICON ProperNouns
 Abel:Abel Anthroponym-M-Suffix ; ! "Abel"
+Jonasi:Jonasi Anthroponym-M-Suffix ; ! "Jonas"
+Sefasi:Sefasi Anthroponym-M-Suffix ; ! "Cephas"
+Andele:Andele Anthroponym-M-Suffix ; ! "Andrew"
 Abraham:Abraham Anthroponym-M-Suffix ; ! "Abraham"
 Adam:Adam Anthroponym-M-Suffix ; ! "Adam
 Afríka:Afríka Toponym-Suffix ; ! "Africa"
@@ -1300,6 +1303,7 @@ Gihona:Gihona Toponym-Suffix ; ! "Gihon"
 Gracia:Gracia Anthroponym-F-Suffix ; ! "Grace"
 Farizé:ba%-Farizé Toponym-Suffix ; ! "Pharisees"
 Filipe:Filipe Anthroponym-M-Suffix ; ! "Phillip"
+Filipo:Filipo Anthroponym-M-Suffix ; ! "Phillip"
 Hawila:Hawila Anthroponym-M-Suffix ; ! "Havilah"
 Hidekele:Hidekele Anthroponym-M-Suffix ; ! "Hiddekel"
 India:India Toponym-Suffix ; ! "India"
@@ -1336,6 +1340,7 @@ Matie:Matie Anthroponym-M-Suffix ; ! "Matthew"
 Mesia:Mesia Anthroponym-M-Suffix ; ! "Messiah"
 Moize:Moize Anthroponym-M-Suffix ; ! "Moses"
 Nazaret:Nazaret Toponym-Suffix ; ! "Nazareth"
+Nazareti:Nazareti Toponym-Suffix ; ! "Nazareth"
 Nefi:Nefi Anthroponym-M-Suffix ; ! "Nefi"
 Nkolo:Nkolo Anthroponym-M-Suffix ; ! "Lord"
 Noé:Noé Anthroponym-M-Suffix ; ! "Noah"
@@ -1363,6 +1368,7 @@ Tshiluba:Tshiluba Toponym-Suffix ; ! "Tshiluba"
 Uganda:Uganda Toponym-Suffix ; ! "Uganda"
 Wikipedia:Wikipedia Toponym-Suffix ; ! "Wikipedia"
 Zaki:Zaki Anthroponym-M-Suffix ; ! "James"
+Natanayele:Natanayele Anthroponym-M-Suffix ; ! "Nathanael"
 Yawe:Yawe Anthroponym-M-Suffix ; ! "God"
 Santu:Santu Anthroponym-M-Suffix ; ! "Saint"
 Yelusaleme:Yelusaleme Toponym-Suffix ; ! "Jerusalem" (Book of Mormon)
@@ -1370,6 +1376,7 @@ Yeruzalem:Yeruzalem Toponym-Suffix ; ! "Jerusalem" (New Testament)
 Yesu:Yesu Anthroponym-M-Suffix ; ! "Jesus"
 Yézu:Yézu Anthroponym-M-Suffix ; ! "Jesus"
 Yisalaele:Yisalaele Toponym-Suffix ; ! "Israel"
+Isalayele:Isalayele Toponym-Suffix ; ! "Israel"
 Yoane:Yoane Anthroponym-M-Suffix ; ! "John"
 Yuda:Yuda Anthroponym-M-Suffix ; ! "Judah"
 Yudas:Yudas Anthroponym-M-Suffix ; ! "Judas"
@@ -1708,6 +1715,7 @@ kolanda:land Verb-Suffix ; ! "To follow"
 kolánga:láng Verb-Suffix ; ! "To get drunk"
 kolela:lel Verb-Suffix ; ! "To cry, whine"
 kotambola:tambola Verb-Suffix ; ! "To walk"
+kotatola:tatol Verb-Suffix ; ! "To testify"
 koleka:lek Verb-Suffix ; ! "To pass, surpass, exceed"
 kolɛ́mba:lɛ́mb Verb-Suffix ; ! "To be tired"
 kolénda:lénd Verb-Suffix ; ! "To be able to"
@@ -1976,6 +1984,7 @@ yambo:yambo Prep-Suffix ; ! "Before"
 zingazinga:zingazinga Prep-Suffix ; ! "Around"
 nzinga% nzinga:nzinga% nzinga Prep-Suffix ; ! Dir/LR
 nzinganzinga:nzinganzinga Prep-Suffix ; ! Dir/LR
+mpó% na:mpó% na Prep-Suffix ; ! "To"
 
 LEXICON Conjunctions
 bongo:bongo Conj-Coord-Suffix ; ! "So"
@@ -1993,7 +2002,7 @@ soko:soko Conj-Subord-Suffix ; ! "If"
 soki:soki Conj-Subord-Suffix ; ! "If" (alternative spelling)
 ete:ete Conj-Subord-Suffix ; ! "That"
 tíí:tíí Conj-Coord-Suffix ; ! "Until"
-mpó% ete:mpó% ete Conj-Coord-Suffix ; ! "Until"
+mpó% ete:mpó% ete Conj-Coord-Suffix ; ! "So that"
 
 LEXICON Connective
 ya:ya Conn-Suffix ;
