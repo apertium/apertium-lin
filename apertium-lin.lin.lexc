@@ -768,6 +768,7 @@ mbuta%-múntu:mbuta%-múntu Ia-II-Suffix ; ! "Guard"
 mbwá:mbwá Ia-II-Suffix ; ! "Dog"
 ndáko:ndáko Ia-II-Suffix ; ! "House"
 ndeko:ndeko Ia-II-Suffix ; ! "Sibling"
+ndeko% mwasi:ndeko% mwasi Ia-II-Suffix ; ! "Sister"
 ngando:ngando Ia-II-Suffix ; ! "Crocodile, transport controller"
 nganga:nganga Ia-II-Suffix ; ! "Expert, magician, healer"
 nkísi:nkísi Ia-II-Suffix ; ! "Amulet, medicine, drug"
@@ -992,6 +993,7 @@ mangwele:ngwele V-VI-Suffix ; ! "Vaccine"
 masúwa:súwa V-VI-Suffix ; ! "Ship"
 mayéle:yéle V-VI-Suffix ; ! "Intelligence"
 falansé:falansé V-VI-Suffix ; ! "French"
+ekélami:ekélami V-VI-Suffix ; ! "Creation"
 
 LEXICON VII-VIII-Stems
 elálelo:lálelo V-VI-Suffix ; ! "Bedroom"
@@ -1405,7 +1407,7 @@ Kamerun:Kamerun Toponym-Suffix ; ! "Kamerun"
 
 LEXICON Verb-Stems
 Verb-Stems-Irregular ;
-kobonja% va:bonj% va Verb-Suffix ; ! "TEST"
+kobungisa:bungis Verb-Suffix ; ! "To lose"
 kokundwa:kundw Verb-Suffix ; ! "To rise"
 kobumba:bumb Verb-Suffix ; ! "To save, hide"
 kopasola:pasol Verb-Suffix ; ! "To cleave, break"
@@ -2010,6 +2012,7 @@ LEXICON Connective
 ya:ya Conn-Suffix ;
 o:o Conn-Suffix ; ! No exact meaning
 e:e Conn-Suffix ; ! Frequently used before a loan word. Also indicates the 3rd person
+a:a Conn-Suffix ; ! Used to indicate p3. Comes before verbs
 
 ! See https://fr.wiktionary.org/wiki/ya#Lingala
 ! Also See http://www.lingref.com/cpp/acal/42/paper2778.pdf
@@ -2029,6 +2032,7 @@ ya%<cl14%>%<sg%>:bwa Conn-Suffix ;
 ya%<cl15%>%<sg%>:za Conn-Suffix ; ! Frequently used in the corpus
 
 LEXICON Adverb
+míngi% míngi:míngi% míngi Adverb-Suffix ; ! "Often"
 atá:atá Adverb-Suffix ; ! "Even"
 atako:atako Adverb-Suffix ; ! "Even if"
 áwa:áwa Adverb-Suffix ; ! "Here"
@@ -2136,7 +2140,7 @@ le%<det%>%<def%>%<sg%>:du COMMON-Suffix ; ! "The" (French)
 les%<det%>%<def%>%<pl%>:du COMMON-Suffix ; ! "The" (French)
 mersi%<n%>%<sg%>:mersi COMMON-Suffix ; ! "Thanks"
 région%<n%>%<sg%>:région COMMON-Suffix ; ! "Region"
-politiki%<n%>%<sg%>:politiki COMMON-Suffix ; ! "Policy"
+politíki%<n%>%<sg%>:politiki COMMON-Suffix ; ! "Policy"
 fɛ́tí%<n%>%<sg%>:fɛ́tí COMMON-Suffix ; ! "Party"
 letá%<n%>%<sg%>:letá COMMON-Suffix ; ! "State"
 lopitalo%<n%>%<sg%>:lopitalo COMMON-Suffix ; ! "Hospital"
@@ -2145,6 +2149,7 @@ cas%<n%>%<sg%>:cas COMMON-Suffix ; ! "Case"
 pápa%<n%>%<sg%>:pápa COMMON-Suffix ; ! "Father"
 radio%<n%>%<sg%>:radio COMMON-Suffix ; ! "Radio"
 temwe%<n%>%<sg%>:temwe COMMON-Suffix ; ! "Witness" (Fr)
+varicelle%<n%>%<sg%>:varicelle COMMON-Suffix ; ! "Chickenpox" (Fr)
 
 LEXICON Irregular
 ! Class 1 mwa to ba
