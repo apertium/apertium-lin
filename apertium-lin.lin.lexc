@@ -74,6 +74,7 @@ Multichar_Symbols
 %<itg%>    ! Interrogative pronoun
 %<ind%>    ! Indefinite
 %<obj%>    ! Objective
+%<subj%>   ! Subjective
 %<ref%>    ! Reflective
 
 %<det%>    ! Determiner
@@ -552,22 +553,28 @@ LEXICON Verb-Fut-Ref-Suffix
 !=============================================================================!
 
 LEXICON PRON-Ngai
-%<prn%>%<pers%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<subj%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<obj%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Yo
-%<prn%>%<pers%>%<p2%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<subj%>%<p2%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<obj%>%<p2%>%<sg%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Ye
-%<prn%>%<pers%>%<p3%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<subj%>%<p3%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<obj%>%<p3%>%<sg%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Biso
-%<prn%>%<pers%>%<p1%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<subj%>%<p1%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<obj%>%<p1%>%<pl%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Bino
-%<prn%>%<pers%>%<p2%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<subj%>%<p2%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<obj%>%<p2%>%<pl%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Bango
-%<prn%>%<pers%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<subj%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<obj%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Pos-Ngai
 %<prn%>%<pos%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
@@ -1354,7 +1361,7 @@ Nazareti:Nazareti Toponym-Suffix ; ! "Nazareth"
 Nefi:Nefi Anthroponym-M-Suffix ; ! "Nefi"
 Nkolo:Nkolo Anthroponym-M-Suffix ; ! "Lord"
 Noé:Noé Anthroponym-M-Suffix ; ! "Noah"
-Nzámbe:Nzámbe Anthroponym-M-Suffix ; ! "God, Lord"
+Nzámbe:Nzámbe MiscProper-Suffix ; ! "God, Lord"
 Pake:Pake MiscProper-Suffix ; ! "Passover"
 Pelata:Pelata Toponym-Suffix ; ! "Euphrates"
 Pólo:Pólo Anthroponym-M-Suffix ; ! "Paul"
@@ -2167,6 +2174,8 @@ temwe%<n%>%<sg%>:temwe COMMON-Suffix ; ! "Witness" (Fr)
 varicelle%<n%>%<sg%>:varicelle COMMON-Suffix ; ! "Chickenpox" (Fr)
 masíni%<n%>%<sg%>:masíni COMMON-Suffix ; ! "Machine"
 musica%<n%>%<sg%>:musica COMMON-Suffix ; ! "Music"
+Jean%<np%>%<ant%>%<m%>%<sg%>:Jean COMMON-Suffix ; ! "John"
+Jean% Batiste%<np%>%<ant%>%<m%>%<sg%>:Jean% Batiste COMMON-Suffix ; ! "John the Baptist"
 
 LEXICON Irregular
 ! Class 1 mwa to ba
