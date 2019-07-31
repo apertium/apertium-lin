@@ -553,28 +553,22 @@ LEXICON Verb-Fut-Ref-Suffix
 !=============================================================================!
 
 LEXICON PRON-Ngai
-%<prn%>%<subj%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
-%<prn%>%<obj%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Yo
-%<prn%>%<subj%>%<p2%>%<sg%>%<aa%>: COMMON-Suffix ;
-%<prn%>%<obj%>%<p2%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Ye
-%<prn%>%<subj%>%<p3%>%<sg%>%<aa%>: COMMON-Suffix ;
-%<prn%>%<obj%>%<p3%>%<sg%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Biso
-%<prn%>%<subj%>%<p1%>%<pl%>%<aa%>: COMMON-Suffix ;
-%<prn%>%<obj%>%<p1%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<pers%>%<p1%>%<pl%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Bino
-%<prn%>%<subj%>%<p2%>%<pl%>%<aa%>: COMMON-Suffix ;
-%<prn%>%<obj%>%<p2%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<pers%>%<p2%>%<pl%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Bango
-%<prn%>%<subj%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
-%<prn%>%<obj%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<aa%>: COMMON-Suffix ;
 
 LEXICON PRON-Pos-Ngai
 %<prn%>%<pos%>%<p1%>%<sg%>%<aa%>: COMMON-Suffix ;
@@ -1156,6 +1150,7 @@ nzémbo:nzémbo IX-X-Suffix ; ! "Song"
 nzeté:nzeté IX-X-Suffix ; ! "Tree, wood"
 nzoku:nzoku IX-X-Suffix ; ! "Elephant"
 nzɔ́to:nzɔ́to IX-X-Suffix ; ! "Body"
+nkémbo:nkémbo IX-X-Suffix ; ! "Glory"
 
 !!! Never takes n/m
 LEXICON IX-X-a-Stems
