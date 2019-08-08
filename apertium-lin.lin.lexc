@@ -794,6 +794,7 @@ gilípi:gilípi Ia-II-Suffix ; ! "Flu"
 kanton:kanton Ia-II-Suffix ; ! "Province"
 mumpɛ́:mumpɛ́ Ia-II-Suffix ; ! "Catholic, catholicism"
 ewutéli:ewutéli Ia-II-Suffix ; ! "Origin"
+ekélami:ekélami Ia-II-Suffix ; ! "Creation"
 
 LEXICON III-IV-Stems
 mosisa:sisa III-IV-Suffix ; ! "Artery, vein"
@@ -883,6 +884,8 @@ mótuka:tuka III-IV-Suffix ; ! "Car"
 moyíbi:yíbi III-IV-Suffix ; ! "Theft"
 mozindó:zindó III-IV-Suffix ; ! "Depth"
 motuna:tuna III-IV-Suffix ; ! "Question"
+mokakatano:kakatano III-IV-Suffix ; ! "Challenge, problem"
+mosani:sani III-IV-Suffix ; ! "Athlete"
 
 LEXICON V-VI-Stems
 litukú:tukú V-VI-Suffix ; ! "Abcess"
@@ -1001,8 +1004,6 @@ mambénga:mbénga V-VI-Suffix ; ! "Equator"
 mángwɛlɛ́:ngwɛlɛ́ V-VI-Suffix ; ! "Vaccine"
 masúwa:súwa V-VI-Suffix ; ! "Ship"
 mayéle:yéle V-VI-Suffix ; ! "Intelligence"
-mikakatano:kakatano V-VI-Suffix ; ! "Challenge, problem"
-ekélami:kélami V-VI-Suffix ; ! "Creation"
 
 LEXICON VII-VIII-Stems
 elálelo:lálelo V-VI-Suffix ; ! "Bedroom"
@@ -1236,7 +1237,7 @@ lopángo:pángo XI-VI-Suffix ; ! "Residential parcel"
 loposo:poso XI-VI-Suffix ; ! "Skin"
 lomposo:mposo XI-VI-Suffix ; ! "Skin"
 loyémbo:yémbo XI-VI-Suffix ; ! "Song"
-lombú:lombú XI-VI-Suffix ; ! "Sea, ocean"
+lombú:mbú XI-VI-Suffix ; ! "Sea, ocean"
 
 LEXICON XIV-Stems
 bobé:bé XIV-Suffix ; ! "Evil, ugliness"
@@ -1420,6 +1421,7 @@ Kamerun:Kamerun Toponym-Suffix ; ! "Kamerun"
 Nizeria:Nizeria Toponym-Suffix ; ! "Nigeria"
 Kotdivuar:Kotdivuar Toponym-Suffix ; ! "Cote d'Ivoire"
 Wɛlɛ:Wɛlɛ Toponym-Suffix ; ! "Cote d'Ivoire"
+Mozambíki:Mozambíki Toponym-Suffix ; ! "Mozambique"
 
 !=============================================================================!
 !                               Verbs                                         !
@@ -2171,7 +2173,7 @@ le%<det%>%<def%>%<sg%>:le COMMON-Suffix ; ! "The" (French)
 les%<det%>%<def%>%<pl%>:les COMMON-Suffix ; ! "The" (French)
 mersi%<n%>%<sg%>:mersi COMMON-Suffix ; ! "Thanks"
 région%<n%>%<sg%>:région COMMON-Suffix ; ! "Region"
-politíki%<n%>%<sg%>:politiki COMMON-Suffix ; ! "Policy"
+politíki%<n%>%<sg%>:politíki COMMON-Suffix ; ! "Politic"
 fɛ́tí%<n%>%<sg%>:fɛ́tí COMMON-Suffix ; ! "Party"
 letá%<n%>%<sg%>:letá COMMON-Suffix ; ! "State"
 lopitalo%<n%>%<sg%>:lopitalo COMMON-Suffix ; ! "Hospital"
