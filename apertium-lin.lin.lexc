@@ -1200,7 +1200,7 @@ mpósá:pósá IX-X-Suffix ; ! "Envy"
 nkándá:kándá IX-X-Suffix ; ! "Anger"
 nkáké:káké IX-X-Suffix ; ! "Thunder"
 nkímyá:kímyá IX-X-Suffix ; ! "Calm"
-nkímyá:imia IX-X-Suffix ; ! "Calm" Dir/LR
+nkímyá:kimia IX-X-Suffix ; ! "Calm" Dir/LR
 nkínga:kínga IX-X-Suffix ; ! "Bicycle"
 nkómbó:kómbó IX-X-Suffix ; ! "Name"
 nsangó:sangó IX-X-Suffix ; ! "Information"
@@ -1494,6 +1494,7 @@ kolabwa:labw Verb-Suffix ; ! "To land"
 kobíka:bík Verb-Suffix ; ! "To survive"
 kolángisa:lángis Verb-Suffix ; ! "To intoxicate"
 koswána:swán Verb-Suffix ; ! "To argue, wrangle"
+kosuána:suán Verb-Suffix ; ! "To argue, wrangle"
 kolemwa:lemw Verb-Suffix ; ! "To worry"
 kosepelisa:sepelis Verb-Suffix ; ! "To amuse"
 kotánisa:tánis Verb-Suffix ; ! "To polish"
@@ -2035,6 +2036,7 @@ ete:ete Conj-Subord-Suffix ; ! "That"
 tíí:tíí Conj-Coord-Suffix ; ! "Until"
 kino:kino Conj-Coord-Suffix ; ! "Until"
 mpó% ete:mpó% ete Conj-Coord-Suffix ; ! "So that"
+mpɔ% na:mpɔ% na Conj-Coord-Suffix ; ! "For"
 
 LEXICON Connective
 ya:ya Conn-Suffix ;
@@ -2077,6 +2079,7 @@ kuna:kuna Adverb-Suffix ; ! "Over there"
 wâná:wâná Adverb-Suffix ; ! "There"
 kútu:kútu Adverb-Suffix ; ! "Rather, moreover"
 lelo:lelo Adverb-Suffix ; ! "Today"
+lelo:lolo Adverb-Suffix ; ! "Today"
 lobi:lobi Adverb-Suffix ; ! "Yesterday, tomorrow" Same word
 lisúsu:lisúsu Adverb-Suffix ; ! "Again"
 mbele:mbele Adverb-Suffix ; ! "Then" (only if soki "if" precedes it)
@@ -2152,7 +2155,7 @@ nkámá:nkámá Numeral-Suffix ; ! Dir/LR
 LEXICON Quantifiers
 ebelé:ebelé Quant-Suffix ; ! "Many"
 míngi:míngi Quant-Suffix ; ! "A lot of"
-moké:moké Quant-Suffix ; ! "A bit, few"
+!moké:moké Quant-Suffix ; ! "A bit, few"
 nyɔ́nsɔ:nyɔ́nsɔ Quant-Suffix ; ! "Each, all"
 nionso:nionso Quant-Suffix ; ! "Each, all"
 
@@ -2191,8 +2194,8 @@ mizíki%<n%>%<sg%>:mizíki COMMON-Suffix ; ! "Music"
 million%<n%>%<sg%>:million COMMON-Suffix ; ! "Million" frequently used in corpus
 provinci%<n%>%<sg%>:provinci COMMON-Suffix ; ! "Province"
 Atlantíki%<np%>%<top%>%<sg%>Atlantíki COMMON-Suffix ; ! "Atlantic"
-dɛsɛ́mbɛ%<n%>%<sg%>:dɛsɛ́mbɛ COMMON-Suffix ; ! "December"
-febwáli%<n%>%<sg%>:febwáli COMMON-Suffix ; ! "February"
+Dɛsɛ́mbɛ%<n%>%<sg%>:dɛsɛ́mbɛ COMMON-Suffix ; ! "December"
+Febwáli%<n%>%<sg%>:febwáli COMMON-Suffix ; ! "February"
 guvɛnɛmá%<n%>%<sg%>:guvɛnɛmá COMMON-Suffix ; ! "Gouvernement"
 
 LEXICON Irregular
