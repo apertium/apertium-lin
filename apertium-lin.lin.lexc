@@ -679,6 +679,12 @@ LEXICON Adjective-Prefix
 Adjective-Stems ;
 %[%-sg%]:mo%> Adjective-Stems ;
 %[%-pl%]:mi%> Adjective-Stems ;
+%[%-pl%]:ba%> Adjective-Stems ;
+%[%-sg%]:mu%> Adjective-Stems ;
+%[%-sg%]:li%> Adjective-Stems ;
+%[%-pl%]:ma%> Adjective-Stems ;
+%[%-sg%]:e%> Adjective-Stems ;
+%[%-pl%]:bi%> Adjective-Stems ;
 
 LEXICON Adjective-Var-Suffix
 %[%+sg%]%<adj%>%<sg%>: COMMON-Suffix ;
@@ -1869,7 +1875,7 @@ mobésu:mobésu Adjective-InVar-Suffix ; ! "Raw"
 mobimba:mobimba Adjective-InVar-Suffix ; ! "All, whole"
 mwá:mwá Adjective-InVar-Suffix ; ! Generally means "small," "some," etc.
 mwíndo:mwíndo Adjective-InVar-Suffix ; ! "Black, African"
-ntei:ntei Adjective-InVar-Suffix ; ! "Middle, central"
+ntéi:ntéi Adjective-InVar-Suffix ; ! "Middle, central"
 kitóko:kitóko Adjective-InVar-Suffix ; ! "Beautiful"
 pémbé:pémbé Adjective-InVar-Suffix ; ! "White"
 pémbé:mpémbé Adjective-InVar-Suffix ; ! "White" Dir/LR
@@ -2017,6 +2023,7 @@ zingazinga:zingazinga Prep-Suffix ; ! "Around"
 nzinga% nzinga:nzinga% nzinga Prep-Suffix ; ! Dir/LR
 nzinganzinga:nzinganzinga Prep-Suffix ; ! Dir/LR
 mpó% na:mpó% na Prep-Suffix ; ! "To"
+ntéi:ntéi Prep-Suffix ; ! "Among"
 
 LEXICON Conjunctions
 bongo:bongo Conj-Coord-Suffix ; ! "So"
@@ -2079,7 +2086,7 @@ kuna:kuna Adverb-Suffix ; ! "Over there"
 wâná:wâná Adverb-Suffix ; ! "There"
 kútu:kútu Adverb-Suffix ; ! "Rather, moreover"
 lelo:lelo Adverb-Suffix ; ! "Today"
-lelo:lolo Adverb-Suffix ; ! "Today"
+lolo:lolo Adverb-Suffix ; ! "Today" (Infrequently used)
 lobi:lobi Adverb-Suffix ; ! "Yesterday, tomorrow" Same word
 lisúsu:lisúsu Adverb-Suffix ; ! "Again"
 mbele:mbele Adverb-Suffix ; ! "Then" (only if soki "if" precedes it)
