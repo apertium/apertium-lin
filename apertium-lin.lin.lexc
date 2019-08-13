@@ -166,7 +166,7 @@ NounPrefix ;
 ProperNouns ;
 VerbPersonNum-Prefix ;
 Pronouns ;
-Determiners;
+Determiner-Prefix;
 Prepositions ;
 Conjunctions ;
 Connective ;
@@ -647,10 +647,20 @@ LEXICON PRON-Em
 !                         Determiner Morphotactics                            !
 !=============================================================================!
 
+LEXICON Determiner-Prefix
+Determiner-Stems
+:mo%> Determiner-Stems ;
+:li%> Determiner-Stems ;
+:ma%> Determiner-Stems ;
+:ba%> Determiner-Stems ;
+:mu%> Determiner-Stems ;
+:bi%> Determiner-Stems ;
+:e%> Determiner-Stems ;
+
 LEXICON Det-Pos
 %<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
-LEXICON Det-Ind
+LEXICON Det-Var-Ind
 %<det%>%<ind%>%<sp%>: COMMON-Suffix ;
 
 !=============================================================================!
@@ -1993,8 +2003,11 @@ yangó%<cl7%>%<pl%>:byangó PRON-Yango ;
 yangó:%<cl11%>%<sg%>lwangó PRON-Yango ;
 yangó%<cl14%>%<sg%>:bwangó PRON-Yango ;
 
-LEXICON Determiners
-mosúsu:mosúsu Det-Ind ; ! "Other"
+LEXICON Determiner-Stems
+mosúsu:súsu Det-Var-Ind ; ! "Other"
+ekoki:koki Det-Var-Ind ; ! "Enough"
+moké:ké Det-Var-Ind ; ! "Few"
+!nyɔ́nsɔ:ɔ́nsɔ Det-Var-Ind ; ! "All"
 
 ! In all of these, 'na' can be replaced by 'ya'
 na% ngáí:na% ngáí Det-Pos ; ! "My"
