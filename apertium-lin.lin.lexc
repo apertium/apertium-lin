@@ -2134,29 +2134,31 @@ ya:ya Conn-Suffix ;
 o:o Conn-Suffix ; ! No exact meaning
 e:e Conn-Suffix ; ! Frequently used before a loan word. Also indicates the 3rd person
 a:a Conn-Suffix ; ! Used to indicate p3. Comes before verbs
-s:s Conn-Suffix ; ! No exact meaning
-ue:ue Conn-Suffix ; ! No exact meaning
-n:n Conn-Suffix ; ! No exact meaning
-ko:ko Conn-Suffix ; ! No exact meaning
-l:l Conn-Suffix ; ! No exact meaning
-li:li Conn-Suffix ; ! No exact meaning
-br:br Conn-Suffix ; ! No exact meaning
-t:t Conn-Suffix ; ! No exact meaning
-mi:mi Conn-Suffix ; ! No exact meaning
-ni:ni Conn-Suffix ; ! No exact meaning
-lo:lo Conn-Suffix ; ! No exact meaning
-o:o Conn-Suffix ; ! No exact meaning
-u:u Conn-Suffix ; ! No exact meaning
-í:í Conn-Suffix ; ! No exact meaning
-d:d Conn-Suffix ; ! No exact meaning
-r:r Conn-Suffix ; ! No exact meaning
-mí:mí Conn-Suffix ; ! No exact meaning
-ka:ka Conn-Suffix ; ! No exact meaning
-go:go Conn-Suffix ; ! No exact meaning
-á:á Conn-Suffix ; ! No exact meaning
-m:m Conn-Suffix ; ! No exact meaning
-ki:ki Conn-Suffix ; ! No exact meaning
-má:má Conn-Suffix ; ! No exact meaning
+
+! The following aren't connectives. They are used solely to make it easy to add words from the corpus.
+!s:s Conn-Suffix ; ! No exact meaning
+!ue:ue Conn-Suffix ; ! No exact meaning
+!n:n Conn-Suffix ; ! No exact meaning
+!ko:ko Conn-Suffix ; ! No exact meaning
+!l:l Conn-Suffix ; ! No exact meaning
+!li:li Conn-Suffix ; ! No exact meaning
+!br:br Conn-Suffix ; ! No exact meaning
+!t:t Conn-Suffix ; ! No exact meaning
+!mi:mi Conn-Suffix ; ! No exact meaning
+!ni:ni Conn-Suffix ; ! No exact meaning
+!lo:lo Conn-Suffix ; ! No exact meaning
+!o:o Conn-Suffix ; ! No exact meaning
+!u:u Conn-Suffix ; ! No exact meaning
+!í:í Conn-Suffix ; ! No exact meaning
+!d:d Conn-Suffix ; ! No exact meaning
+!r:r Conn-Suffix ; ! No exact meaning
+!mí:mí Conn-Suffix ; ! No exact meaning
+!ka:ka Conn-Suffix ; ! No exact meaning
+!go:go Conn-Suffix ; ! No exact meaning
+!á:á Conn-Suffix ; ! No exact meaning
+!m:m Conn-Suffix ; ! No exact meaning
+!ki:ki Conn-Suffix ; ! No exact meaning
+!má:má Conn-Suffix ; ! No exact meaning
 
 
 ! See https://fr.wiktionary.org/wiki/ya#Lingala
