@@ -772,11 +772,13 @@ mopǎgánu:pǎgánu I-II-Suffix ; ! "Pangan"
 mopaya:paya I-II-Suffix ; ! "Visitor"
 mosántu:sántu I-II-Suffix ; ! "Saint"
 moto:to I-II-Suffix ; ! "Person"
+mɔ̌tɔ:tɔ I-II-Suffix ; ! Dir/LR
 mutu:tu I-II-Suffix ; ! "Person"
 moúmbu:úmbu I-II-Suffix ; ! "Slave"
 moyémbi:yémbi I-II-Suffix ; ! "Singer"
 moyíbi:yíbi I-II-Suffix ; ! "Thief"
 moyángeli:yángeli I-II-Suffix ; ! "Governor"
+molɔngɔ́:lɔngɔ́ I-II-Suffix ; ! "Line, genealogy"
 
 
 LEXICON Ia-II-Stems
@@ -795,7 +797,6 @@ ndeko% mwasi:ndeko% mwasi Ia-II-Suffix ; ! "Sister"
 ngando:ngando Ia-II-Suffix ; ! "Crocodile, transport controller"
 nganga:nganga Ia-II-Suffix ; ! "Expert, magician, healer"
 nkísi:nkísi Ia-II-Suffix ; ! "Amulet, medicine, drug"
-nkolo:nkolo Ia-II-Suffix ; ! "Lord, owner"
 nókó:nókó Ia-II-Suffix ; ! "Uncle"
 nsómí:nsómí Ia-II-Suffix ; ! "Free person"
 ntoma:ntoma Ia-II-Suffix ; ! "Apostle"
@@ -822,7 +823,7 @@ mosisa:sisa III-IV-Suffix ; ! "Artery, vein"
 moláto:láto III-IV-Suffix ; ! "Dress"
 molangi:langi III-IV-Suffix ; ! "Bottle"
 mokulu:kulu III-IV-Suffix ; ! "Cable, string"
-mozonto:zonto III-IV-Suffix ; ! "Star"
+monzɔ́tɔ:nzɔ́tɔ III-IV-Suffix ; ! "Star"
 monsinga:nsinga III-IV-Suffix ; ! "Canon"
 monyɔlɔ:nyɔlɔ III-IV-Suffix ; ! "Chain"
 molangi:langi III-IV-Suffix ; ! "Bottle"
@@ -873,7 +874,7 @@ mompé:mpé III-IV-Suffix ; ! "Wind"
 mompɛpɛ:mpɛpɛ III-IV-Suffix ; ! "Wind"
 miko:ko III-IV-Suffix ; ! No singular form
 mobali:bali III-IV-Suffix ; ! "Boy, man, husband"
-mobeko:beko III-IV-Suffix ; ! "Law, command"
+mobéko:béko III-IV-Suffix ; ! "Law, command"
 mobú:bú III-IV-Suffix ; ! "Year"
 mobúlú:búlú III-IV-Suffix ; ! "Disorder"
 mokandá:kandá III-IV-Suffix ; ! "Book"
@@ -895,7 +896,7 @@ monyókoli:nyókoli III-IV-Suffix ; ! "Torment"
 mosálá:sálá III-IV-Suffix ; ! "Work, occupation"
 mosíká:síká III-IV-Suffix ; ! "Far away"
 mosolo:solo III-IV-Suffix ; ! "Dowry, money"
-mosusu:susu III-IV-Suffix ; ! "Other" (See same entry in Class I, can apparently be both)
+mosúsu:súsu III-IV-Suffix ; ! "Other" (See same entry in Class I, can apparently be both)
 motámbo:támbo III-IV-Suffix ; ! "Trap"
 motáné:táné III-IV-Suffix ; ! "Light color"
 motéma:téma III-IV-Suffix ; ! "Heart, strength of character"
@@ -908,6 +909,7 @@ motuna:tuna III-IV-Suffix ; ! "Question"
 mokakatano:kakatano III-IV-Suffix ; ! "Challenge, problem"
 mosani:sani III-IV-Suffix ; ! "Athlete"
 motango:tango III-IV-Suffix ; ! "Number, estimate"
+monkɔ́lɔ́tɔ́:nkɔ́lɔ́tɔ́ III-IV-Suffix ; ! "Line(geometry)"
 
 LEXICON V-VI-Stems
 litukú:tukú V-VI-Suffix ; ! "Abcess"
@@ -983,7 +985,7 @@ likámwisi:kámwisi V-VI-Suffix ; ! "Miracle"
 likanisi:kanisi V-VI-Suffix ; ! "Thought"
 likí:kí V-VI-Suffix ; ! "Egg"
 likita:kita V-VI-Suffix ; ! "Meeting, assembly, conspiracy"
-likoki:koki V-VI-Suffix ; ! "The means, resources, the right"
+likokí:kokí V-VI-Suffix ; ! "The means, resources, the right"
 likoló:koló V-VI-Suffix ; ! "Sky, above"
 liloki:loki V-VI-Suffix ; ! "Demonology"
 liloba:loba V-VI-Suffix ; ! "Talk, speech (word)"
@@ -1015,6 +1017,7 @@ lisano:sano V-VI-Suffix ; ! "Game"
 lingómbá:ngómbá V-VI-Suffix ; ! "(political) party"
 litatoli:tatoli V-VI-Suffix ; ! "Testimony"
 likindo:kindo V-VI-Suffix ; ! "Seminary(school)"
+litámbwisi:támbwisi V-VI-Suffix ; ! "Guidance"
 
 LEXICON VI-Only-Stems
 mabélé:bélé V-VI-Suffix ; ! "Sand, earth"
@@ -1024,7 +1027,6 @@ máí:í V-VI-Suffix ; ! "Water"
 máí:yí V-VI-Suffix ; ! Dir/LR
 makilá:kilá V-VI-Suffix ; ! "Blood"
 mambénga:mbénga V-VI-Suffix ; ! "Equator"
-mángwɛlɛ́:ngwɛlɛ́ V-VI-Suffix ; ! "Vaccine"
 masúwa:súwa V-VI-Suffix ; ! "Ship"
 mayéle:yéle V-VI-Suffix ; ! "Intelligence"
 mapɔnɔmi:pɔnɔmi V-VI-Suffix ; ! "Voting season"
@@ -1040,7 +1042,7 @@ epásu:pásu V-VI-Suffix ; ! "Chip"
 etakoleli:takoleli V-VI-Suffix ; ! "Custom house"
 étónga:tónga V-VI-Suffix ; ! "Flock"
 elobélí:lobélí V-VI-Suffix ; ! "Fishing rights"
-etuka:tuka V-VI-Suffix ; ! "Group, department"
+étuka:tuka V-VI-Suffix ; ! "Group, department"
 etubeli:tubeli V-VI-Suffix ; ! "Hammer"
 etumbeli:tumbeli V-VI-Suffix ; ! "Oven"
 enkoti:nkoti V-VI-Suffix ; ! "Cap, crown"
@@ -1063,7 +1065,7 @@ embotu:mbotu V-VI-Suffix ; ! "Fist"
 eloli:loli V-VI-Suffix ; ! "Flame"
 engasa:ngasa V-VI-Suffix ; ! "Fork"
 etanda:tanda V-VI-Suffix ; ! "Bench"
-ebende:bende V-VI-Suffix ; ! "Metal"
+ebende:bendé V-VI-Suffix ; ! "Metal"
 engomeli:engomeli V-VI-Suffix ; ! "Iron"
 ebóngá:bóngá V-VI-Suffix ; ! "Seat"
 esóngí:sóngí V-VI-Suffix ; ! "Torch"
@@ -1099,6 +1101,7 @@ ekila:kila VII-VIII-Suffix ; ! "Abstinence"
 eklézia:klézia VII-VIII-Suffix ; ! "Church"
 eklézia:klézya VII-VIII-Suffix ; !  Dir/LR
 ekeléziya:keléziya VII-VIII-Suffix ; !  Dir/LR
+ekelézia:kelézia VII-VIII-Suffix ; !  Dir/LR
 ekólo:kólo VII-VIII-Suffix ; !"Measuring unit, country," depending on tone
 ekomele:komele VII-VIII-Suffix ; ! "Pencil"
 elambá:lambá VII-VIII-Suffix ; ! "Costume, dress, garment"
@@ -1128,6 +1131,8 @@ eyano:yano VII-VIII-Suffix ; ! "Answer"
 eyékwelo:yékwelo VII-VIII-Suffix ; ! "School"
 ezaleli:zaleli VII-VIII-Suffix ; ! "Conduct"
 ezibele:zibele VII-VIII-Suffix ; ! "Door, lid"
+etúká:túká VII-VIII-Suffix ; ! "Province"
+ebengeli:bengeli VII-VIII-Suffix ; ! "Telephone"
 
 LEXICON IX-X-Stems
 !! take m
@@ -1149,6 +1154,11 @@ mesa:mesa IX-X-Suffix ; ! "Table"
 mpáku:mpáku IX-X-Suffix ; ! "Tax"
 mói:mói IX-X-Suffix ; ! "Sun"
 mweté:mweté IX-X-Suffix ; ! "Tree"
+mpanzi:mpanzi IX-X-Suffix ; ! "Rib"
+mokongo:mokongo IX-X-Suffix ; ! "Back(body)"
+mukongo:mukongo IX-X-Suffix ; ! DIR/LR
+mabendé:mabendé IX-X-Suffix ; ! Other way of writing "Metal"
+mpɔndú:mpɔndú IX-X-Suffix ; ! "Cassave leaf"
 
 !! take n
 ndakisa:ndakisa IX-X-Suffix ; ! "Example"
@@ -1183,6 +1193,10 @@ nzeté:nzeté IX-X-Suffix ; ! "Tree, wood"
 nzoku:nzoku IX-X-Suffix ; ! "Elephant"
 nzɔ́to:nzɔ́to IX-X-Suffix ; ! "Body"
 nkémbo:nkémbo IX-X-Suffix ; ! "Glory"
+ngúma:ngúma IX-X-Suffix ; ! "Glory"
+ngóla:ngóla IX-X-Suffix ; ! "Red"
+nkunza:nkunza IX-X-Suffix ; ! "Hair"
+ngɛngɛ:ngɛngɛ IX-X-Suffix ; ! "Poison"
 
 !!! Never takes n/m
 LEXICON IX-X-a-Stems
@@ -1209,6 +1223,12 @@ víno:víno IX-X-Suffix ; ! "Wine"
 víno:vinu IX-X-Suffix ; ! "Wine" Dir/LR
 zélo:zélo IX-X-Suffix ; ! "Sand"
 ndɛkɛ:ndɛkɛ IX-X-Suffix ; ! "Bird"
+zuluná:zuluná IX-X-Suffix ; ! "Newspaper"
+komíni:komíni IX-X-Suffix ; ! "Communes"
+sapáto:sapáto IX-X-Suffix ; ! "Shoe"
+afabɛ́:afabɛ́ IX-X-Suffix ; ! "Alphabet"
+dyosɛ́zi:dyosɛ́zi IX-X-Suffix ; ! "Diocese"
+mángwɛlɛ́:mángwɛlɛ́ V-VI-Suffix ; ! "Vaccine"
 
 !!! Can take n/m or not
 LEXICON IX-X-b-Stems
@@ -1219,6 +1239,7 @@ mpembéni:pembéni IX-X-Suffix ; ! "Close"
 mpókwa:pókwa IX-X-Suffix ; ! "Twilight, evening"
 mpongí:pongí IX-X-Suffix ; ! "Sleep"
 mpósá:pósá IX-X-Suffix ; ! "Envy"
+mpúnda:púnda IX-X-Suffix ; ! "Horse"
 
 !! Can take n or not
 nkándá:kándá IX-X-Suffix ; ! "Anger"
@@ -1242,12 +1263,15 @@ ntembe:tembe IX-X-Suffix ; ! "Doubt"
 ntolí:tolí IX-X-Suffix ; ! "Advice"
 ntólo:tólo IX-X-Suffix ; ! "Torso"
 nzámba:zámba IX-X-Suffix ; ! "Forest"
-nkíngó:nkíngó IX-X-Suffix ; ! "Neck"
+nkíngó:kíngó IX-X-Suffix ; ! "Neck"
+nkíngá:kíngá IX-X-Suffix ; ! "Bike"
+ntángawisi:tángawisi IX-X-Suffix ; ! "Ginger"
+nkóló:kóló IX-X-Suffix ; ! "Owner, Lord"
 
 LEXICON XI-VI-Stems
 lobebo:bebo XI-VI-Suffix ; ! "Lip"
 lobíko:bíko XI-VI-Suffix ; ! "Life, existence"
-loboko:boko XI-VI-Suffix ; ! "Arm, hand"
+lobɔ́kɔ:bɔ́kɔ XI-VI-Suffix ; ! "Arm, hand"
 lofundu:fundu XI-VI-Suffix ; ! "Vanity"
 lokásá:kásá XI-VI-Suffix ; ! "Leaf, page"
 lokolo:kolo XI-VI-Suffix ; ! "Foot, leg"
@@ -1296,12 +1320,15 @@ boúmeli:úmeli XIV-Suffix ; ! "Duration"
 boyíké:yíké XIV-Suffix ; ! "Many"
 bozóba:zóba XIV-Suffix ; ! "Ignorance, stupidity"
 bozitó:zitó XIV-Suffix ; ! "Fatness"
-bozwi:zwi XIV-Suffix ; ! "Possession"
+bozwi:zwi XIV-Suffix ; ! "Possession, acquisition"
 bowéyi:wéyi XIV-Suffix ; ! "Death"
+bonkámá:nkámá XIV-Suffix ; ! "Century"
+bobɔngɔ́:bɔngɔ́ XIV-Suffix ; ! "University"
 
 LEXICON XV-Stems
 kolinga:linga XV-Suffix ; ! "To love"
 kotála:tála XV-Suffix ; ! "To watch"
+kokɛndɛ:kɛndɛ XV-Suffix ; ! "To go"
 
 LEXICON ProperNouns
 Abel:Abel Anthroponym-M-Suffix ; ! "Abel"
@@ -1435,12 +1462,15 @@ Kambundji:Kambundji Anthroponym-M-Suffix ; ! "Kambundji"
 Guérin:Guérin Anthroponym-M-Suffix ; ! "Guérin"
 Lumumba:Lumumba Anthroponym-M-Suffix ; ! "Lumumba"
 Evariste:Evariste Anthroponym-M-Suffix ; ! "Evariste"
-Kasa% Vubu:Kasa% Vubu Anthroponym-M-Suffix ; ! "Kasa-Vubu"
+Kasa-Vubu:Kasa-Vubu Anthroponym-M-Suffix ; ! "Kasa-Vubu"
+Kasa-Vubu:Kasa-vubu Anthroponym-M-Suffix ; ! DIR/LR
+Kasa% Vubu:Kasa% Vubu Anthroponym-M-Suffix ; ! DIR/LR
 Kabinda:Kabinda Toponym-Suffix ; ! "Kabinda"
 Lubumbashi:Lubumbashi Toponym-Suffix ; ! "Lubumbashi"
 Kisangani:Kisangani Toponym-Suffix ; ! "Kisangani"
 Wenge:Wenge MiscProper-Suffix ; ! "Wenge" (Popular music in Kinshasa)
 Léopoldville:Léopoldville Toponym-Suffix ; ! "Léopoldville"
+Léopold:Léopold Anthroponym-M-Suffix ; ! "Leopold"
 Kamerun:Kamerun Toponym-Suffix ; ! "Kamerun"
 Nizeria:Nizeria Toponym-Suffix ; ! "Nigeria"
 Kotdivuar:Kotdivuar Toponym-Suffix ; ! "Cote d'Ivoire"
@@ -1452,12 +1482,24 @@ Otrish:Otrish Toponym-Suffix ; ! "Austria"
 Pulutugal:Pulutugal Toponym-Suffix ; ! "Portugal"
 Londoni:Londoni Toponym-Suffix ; ! "London"
 Kasai:Kasai Toponym-Suffix ; ! "Kasai(region in the DRC)"
+Bandundu:Bandundu Toponym-Suffix ; ! "Bandundu(region in the DRC)"
+Italya:Italya Toponym-Suffix ; ! "Italy"
+Katumbi:Katumbi Anthroponym-M-Suffix ; ! "Katumbi"
+Mbándáká:Mbándáká Toponym-Suffix ; ! "Mbándáká"
+Mpiana:Mpiana Toponym-Suffix ; ! "Mpiana"
 
 LEXICON NoClassNouns
+! These words are not preceded by 'ba' and appear only in this form.
 yúni:yúni N1-Suffix ; ! "June"
 yúli:yúli N1-Suffix ; ! "July"
 máyí:máyí N1-Suffix ; ! "May"
-
+apríli:apríli N1-Suffix ; ! "April"
+ɔkɔtɔ́bɛ:ɔkɔtɔ́bɛ N1-Suffix ; ! "October"
+novɛ́mbɛ:novɛ́mbɛ N1-Suffix ; ! "November"
+alpi:alpi N1-Suffix ; ! "Alps"
+Nɔ́ɛlɛ:Nɔ́ɛlɛ N1-Suffix ; ! "Christmas"
+ɛntɛrnɛ́tɛ:ɛntɛrnɛ́tɛ N1-Suffix ; ! "Internet"
+oksijɛ́ní:oksijɛ́ní N1-Suffix ; ! "Oxygen"
 
 !=============================================================================!
 !                               Verbs                                         !
@@ -1760,7 +1802,7 @@ kokíma:kím Verb-Suffix ; ! "To avoid, run, run away"
 kokita:kit Verb-Suffix ; ! "To land"
 kokoba:kob Verb-Suffix ; ! "To advance"
 kokóla:kól Verb-Suffix ; ! "To grow, increase, ripe, mature:
-kokoma:kom Verb-Suffix ; ! "To arrive, happen, become, write, start to"
+kokóma:kóm Verb-Suffix ; ! "To arrive, happen, become, write, start to"
 komɛla:mɛl Verb-Suffix ; ! "To drink, swallow"
 kokónza:kónz Verb-Suffix ; ! "To monopolize, occupy by force"
 kokósa:kós Verb-Suffix ; ! "To lie, fool"
@@ -1863,7 +1905,7 @@ kolála:lál Verb-Suffix ; ! "To sleep, nap"
 kolia:li Verb-Suffix ; ! "To eat"
 kotia:ti Verb-Suffix ; ! "To put," may have irregular form but used regularly in corpus
 kobína:bín Verb-Suffix ; ! "To dance"
-kovimba:vimb Verb-Suffix ; ! "To inflate, puff(up)"
+kovímba:vímba Verb-Suffix ; ! "To inflate, puff(up)"
 
 kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
 
@@ -1936,7 +1978,7 @@ noki:noki Adjective-InVar-Suffix ; ! "Quick"
 sambá:sambá Adjective-InVar-Suffix ; ! "Correct"
 yaya:yaya Adjective-InVar-Suffix ; ! "Elder"
 téla:téla Adjective-InVar-Suffix ; ! "Ripe"
-sudi:sudi Adjective-InVar-Suffix ; ! "South"
+súdi:súdi Adjective-InVar-Suffix ; ! "South"
 sidi:sidi Adjective-InVar-Suffix ; ! "South"
 nordi:nordi Adjective-InVar-Suffix ; ! "North"
 nola:nola Adjective-InVar-Suffix ; ! "North"
@@ -1956,7 +1998,11 @@ ngoi% ngoi:ngoi% ngoi Adjective-InVar-Suffix ; ! "Cowardly"
 kifwafwa:kifwafwa Adjective-InVar-Suffix ; ! "Epileptic"
 lifalansé:lifalansé Adjective-InVar-Suffix ; ! "French"
 falansé:falansé Adjective-InVar-Suffix ; ! "French"
-lingála:lingála Adjective-InVar-Suffix ; ! "Lingala"
+lingɛlɛ́sa:lingɛlɛ́sa Adjective-InVar-Suffix ; ! "Lingala"
+lingála:lingála Adjective-InVar-Suffix ; ! Dir/LR
+lialémani:lialémani Adjective-InVar-Suffix ; ! "German"
+ngóla:ngóla Adjective-InVar-Suffix ; ! "Red"
+ngɛngɛ:ngɛngɛ Adjective-InVar-Suffix ; ! "Poisonous"
 
 LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
@@ -2050,7 +2096,7 @@ lokóla:lokóla Prep-Suffix ; ! "Like, as"
 o:o Prep-Suffix ; ! Used in Book of Mormon
 tíí:tíí Prep-Suffix ;  ! "Up, until"
 tíí:téé Prep-Suffix ; ! "Up, until" (see tii above) Dir/LR
-kino:kino Prep-Suffix ; ! "Until"
+kíno:kíno Prep-Suffix ; ! "Until"
 libándá:libándá Prep-Suffix ; ! "Outside"
 libosó:libosó Prep-Suffix ; ! "Before"
 libosó% ya:libosó% ya Prep-Suffix ; ! "In front of"
@@ -2060,9 +2106,10 @@ nzinga% nzinga:nzinga% nzinga Prep-Suffix ; ! Dir/LR
 nzinganzinga:nzinganzinga Prep-Suffix ; ! Dir/LR
 mpó% na:mpó% na Prep-Suffix ; ! "To"
 ntéi:ntéi Prep-Suffix ; ! "Among"
+útá:útá Prep-Suffix ; ! "From"
 
 LEXICON Conjunctions
-bongo:bongo Conj-Coord-Suffix ; ! "So"
+bɔngɔ́:bɔngɔ́ Conj-Coord-Suffix ; ! "So"
 kasi:kasi Conj-Coord-Suffix ; ! "But"
 mpé:mpé Conj-Coord-Suffix ; ! "And"
 mpɔ:mpɔ Conj-Coord-Suffix ; ! "For"
@@ -2078,7 +2125,7 @@ soko:soko Conj-Subord-Suffix ; ! "If"
 sɔ́kí:sɔ́kí Conj-Subord-Suffix ; ! "If" (alternative spelling)
 ete:ete Conj-Subord-Suffix ; ! "That"
 tíí:tíí Conj-Coord-Suffix ; ! "Until"
-kino:kino Conj-Coord-Suffix ; ! "Until"
+kíno:kíno Conj-Coord-Suffix ; ! "Until"
 mpó% ete:mpó% ete Conj-Coord-Suffix ; ! "So that"
 mpɔ% na:mpɔ% na Conj-Coord-Suffix ; ! "For"
 
@@ -2087,6 +2134,30 @@ ya:ya Conn-Suffix ;
 o:o Conn-Suffix ; ! No exact meaning
 e:e Conn-Suffix ; ! Frequently used before a loan word. Also indicates the 3rd person
 a:a Conn-Suffix ; ! Used to indicate p3. Comes before verbs
+s:s Conn-Suffix ; ! No exact meaning
+ue:ue Conn-Suffix ; ! No exact meaning
+n:n Conn-Suffix ; ! No exact meaning
+ko:ko Conn-Suffix ; ! No exact meaning
+l:l Conn-Suffix ; ! No exact meaning
+li:li Conn-Suffix ; ! No exact meaning
+br:br Conn-Suffix ; ! No exact meaning
+t:t Conn-Suffix ; ! No exact meaning
+mi:mi Conn-Suffix ; ! No exact meaning
+ni:ni Conn-Suffix ; ! No exact meaning
+lo:lo Conn-Suffix ; ! No exact meaning
+o:o Conn-Suffix ; ! No exact meaning
+u:u Conn-Suffix ; ! No exact meaning
+í:í Conn-Suffix ; ! No exact meaning
+d:d Conn-Suffix ; ! No exact meaning
+r:r Conn-Suffix ; ! No exact meaning
+mí:mí Conn-Suffix ; ! No exact meaning
+ka:ka Conn-Suffix ; ! No exact meaning
+go:go Conn-Suffix ; ! No exact meaning
+á:á Conn-Suffix ; ! No exact meaning
+m:m Conn-Suffix ; ! No exact meaning
+ki:ki Conn-Suffix ; ! No exact meaning
+má:má Conn-Suffix ; ! No exact meaning
+
 
 ! See https://fr.wiktionary.org/wiki/ya#Lingala
 ! Also See http://www.lingref.com/cpp/acal/42/paper2778.pdf
@@ -2094,7 +2165,7 @@ a:a Conn-Suffix ; ! Used to indicate p3. Comes before verbs
 ! They are frequent in (old)Literature but uncommon in modern writings.
 ! Their use will be limited for analysis only.
 
-ya%<cl1%>%<sg%>:wa Conn-Suffix ;
+ya%<cl1%>%<sg%>:wá Conn-Suffix ;
 ya%<cl1%>%<pl%>:ba Conn-Suffix ;
 ya%<cl3%>%<sg%>:mwa Conn-Suffix ;
 mya%<cl3%>%<pl%>:mya Conn-Suffix ;
@@ -2112,9 +2183,10 @@ atako:atako Adverb-Suffix ; ! "Even if"
 áwa:áwa Adverb-Suffix ; ! "Here"
 bandá:bandá Adverb-Suffix ; ! "Since"
 boye:boye Adverb-Suffix ; ! "Like this"
+buye:buye Adverb-Suffix ; ! "Like this"
 ee:ee Adverb-Suffix ; ! "Yes"
 tɛ́:tɛ́ Adverb-Suffix ; ! "No"
-elongó:elongó Adverb-Suffix ; ! "Together"
+elɔngɔ́:elɔngɔ́ Adverb-Suffix ; ! "Together"
 iyo:iyo Adverb-Suffix ; ! "Yes"
 káka:káka Adverb-Suffix ; ! "Only, still"
 se:se Adverb-Suffix ; ! "Still"
@@ -2132,6 +2204,7 @@ nanu:nanu Adverb-Suffix ; ! "Already"
 neti:neti Adverb-Suffix ; ! "As if"
 malembe:malembe Adverb-Suffix ; ! "Slowly"
 kasi:kasi Adverb-Suffix ; ! "However"
+nzokande:nzokande Adverb-Suffix ; ! "However"
 penzá:penzá Adverb-Suffix ; ! "Really, very"
 penepene:penepene Adverb-Suffix ; ! "Very close"
 sikawa:sikawa Adverb-Suffix ; ! "Now" (sikoyo is a synonym)
@@ -2208,6 +2281,10 @@ ndé:ndé Focus-Suffix ; ! "Focus marker with 'copula capacity'"
 
 LEXICON Interjections
 aleluya:aleluya Interjection-Suffix ; ! "Hallelujah"
+mbɔ́tɛ:mbɔ́tɛ Interjection-Suffix ; ! "Hello"
+losako:losako Interjection-Suffix ; ! "Hello"
+kende% malamu:kende% malamu Interjection-Suffix ; ! "Bye"
+limbisa% ngáí:limbisa% ngáí Interjection-Suffix ; ! "Excuse me"
 
 LEXICON LoanWords
 ! These words frequently appear in the corpus but rarely in literature
@@ -2237,11 +2314,13 @@ Jean% Batiste%<np%>%<ant%>%<m%>%<sg%>:Jean% Batiste COMMON-Suffix ; ! "John the 
 mizíki%<n%>%<sg%>:mizíki COMMON-Suffix ; ! "Music"
 million%<n%>%<sg%>:million COMMON-Suffix ; ! "Million" frequently used in corpus
 provinci%<n%>%<sg%>:provinci COMMON-Suffix ; ! "Province"
-Atlantíki%<np%>%<top%>%<sg%>Atlantíki COMMON-Suffix ; ! "Atlantic"
+Atlantíki%<np%>%<top%>%<sg%>:Atlantíki COMMON-Suffix ; ! "Atlantic"
 Dɛsɛ́mbɛ%<n%>%<sg%>:dɛsɛ́mbɛ COMMON-Suffix ; ! "December"
 Febwáli%<n%>%<sg%>:febwáli COMMON-Suffix ; ! "February"
 guvɛnɛmá%<n%>%<sg%>:guvɛnɛmá COMMON-Suffix ; ! "Gouvernement"
 biló%<n%>%<sg%>:biló COMMON-Suffix ; ! "Office"
+vɔ́ti%<n%>%<sg%>:vɔ́ti COMMON-Suffix ; ! "Votes(electoral)"
+tetanɔ́si%<n%>%<sg%>:tetanɔ́si COMMON-Suffix ; ! "Tetanus"
 
 LEXICON Irregular
 ! Class 1 mwa to ba
@@ -2262,7 +2341,10 @@ LEXICON Irregular
 %[%-pl%]liso:miso V-VI-Suffix ;
 
 ! Class 7 no singular
-%[%-pl%]bilei:bilei VII-VIII-Suffix ; ! "Food"
+%[%-pl%]biléi:biléi VII-VIII-Suffix ; ! "Food"
+
+! Class 4 no plural
+%[%-sg%]lialémani:lialémani V-VI-Suffix ; ! "German"
 
 ! Class 11 lo to nd
 %[%-sg%]loléngé:loléngé XI-VI-Suffix ; ! "Method"
