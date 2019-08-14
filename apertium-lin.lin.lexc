@@ -164,6 +164,7 @@ Multichar_Symbols
 LEXICON Root
 NounPrefix ;
 ProperNouns ;
+NoClassNouns ;
 VerbPersonNum-Prefix ;
 Pronouns ;
 Determiner-Prefix;
@@ -341,6 +342,9 @@ LEXICON XIV-Suffix
 
 LEXICON XV-Suffix
 %[%+sg%]%<n%>%<cl15%>%<sg%>: COMMON-Suffix ;
+
+LEXICON N1-Suffix
+%<n%>%<sg%>: COMMON-Suffix ;
 
 LEXICON Anthroponym-F-Suffix
 %<np%>%<ant%>%<f%>%<sg%>: COMMON-Suffix ;
@@ -648,7 +652,7 @@ LEXICON PRON-Em
 !=============================================================================!
 
 LEXICON Determiner-Prefix
-Determiner-Stems
+Determiner-Stems ;
 :mo%> Determiner-Stems ;
 :li%> Determiner-Stems ;
 :ma%> Determiner-Stems ;
@@ -656,6 +660,7 @@ Determiner-Stems
 :mu%> Determiner-Stems ;
 :bi%> Determiner-Stems ;
 :e%> Determiner-Stems ;
+:i%> Determiner-Stems ;
 
 LEXICON Det-Pos
 %<det%>%<pos%>%<sp%>: COMMON-Suffix ;
@@ -902,6 +907,7 @@ mozindó:zindó III-IV-Suffix ; ! "Depth"
 motuna:tuna III-IV-Suffix ; ! "Question"
 mokakatano:kakatano III-IV-Suffix ; ! "Challenge, problem"
 mosani:sani III-IV-Suffix ; ! "Athlete"
+motango:tango III-IV-Suffix ; ! "Number, estimate"
 
 LEXICON V-VI-Stems
 litukú:tukú V-VI-Suffix ; ! "Abcess"
@@ -1003,23 +1009,25 @@ litíti:títi V-VI-Suffix ; ! "Grass'
 litói:tói V-VI-Suffix ; ! "Ear"
 liwá:wá V-VI-Suffix ; ! "Death"
 liyebisi:yebisi V-VI-Suffix ; ! "Press"
-lizali:zali V-VI-Suffix ; ! "Existence"
+lizalí:zalí V-VI-Suffix ; ! "Existence"
 lininisa:ninisa V-VI-Suffix ; ! "Window"
 lisano:sano V-VI-Suffix ; ! "Game"
 lingómbá:ngómbá V-VI-Suffix ; ! "(political) party"
 litatoli:tatoli V-VI-Suffix ; ! "Testimony"
+likindo:kindo V-VI-Suffix ; ! "Seminary(school)"
 
 LEXICON VI-Only-Stems
 mabélé:bélé V-VI-Suffix ; ! "Sand, earth"
 mafúta:fúta V-VI-Suffix ; ! "Oil"
 malási:lási V-VI-Suffix ; ! "Perfume"
-maí:í V-VI-Suffix ; ! "Water"
-maí:mayí V-VI-Suffix ; ! Dir/LR
+máí:í V-VI-Suffix ; ! "Water"
+máí:yí V-VI-Suffix ; ! Dir/LR
 makilá:kilá V-VI-Suffix ; ! "Blood"
 mambénga:mbénga V-VI-Suffix ; ! "Equator"
 mángwɛlɛ́:ngwɛlɛ́ V-VI-Suffix ; ! "Vaccine"
 masúwa:súwa V-VI-Suffix ; ! "Ship"
 mayéle:yéle V-VI-Suffix ; ! "Intelligence"
+mapɔnɔmi:pɔnɔmi V-VI-Suffix ; ! "Voting season"
 
 LEXICON VII-VIII-Stems
 elálelo:lálelo V-VI-Suffix ; ! "Bedroom"
@@ -1140,7 +1148,7 @@ mémé:mémé IX-X-Suffix ; ! "Sheep"
 mesa:mesa IX-X-Suffix ; ! "Table"
 mpáku:mpáku IX-X-Suffix ; ! "Tax"
 mói:mói IX-X-Suffix ; ! "Sun"
-
+mweté:mweté IX-X-Suffix ; ! "Tree"
 
 !! take n
 ndakisa:ndakisa IX-X-Suffix ; ! "Example"
@@ -1229,7 +1237,7 @@ nsúka:súka IX-X-Suffix ; ! "Target, end"
 ntálo:tálo IX-X-Suffix ; ! "Number"
 ntángo:tángo IX-X-Suffix ; ! "Time"
 ntóngó:tóngó IX-X-Suffix ; ! "Morning"
-ntina:tina IX-X-Suffix ; ! "Reason, cause"
+ntína:tína IX-X-Suffix ; ! "Reason, cause"
 ntembe:tembe IX-X-Suffix ; ! "Doubt"
 ntolí:tolí IX-X-Suffix ; ! "Advice"
 ntólo:tólo IX-X-Suffix ; ! "Torso"
@@ -1438,6 +1446,18 @@ Nizeria:Nizeria Toponym-Suffix ; ! "Nigeria"
 Kotdivuar:Kotdivuar Toponym-Suffix ; ! "Cote d'Ivoire"
 Wɛlɛ:Wɛlɛ Toponym-Suffix ; ! "Cote d'Ivoire"
 Mozambíki:Mozambíki Toponym-Suffix ; ! "Mozambique"
+Ɛntɛrnɛ́tɛ:Ɛntɛrnɛ́tɛ Toponym-Suffix ; ! "Internet"
+Alémani:Alémani Toponym-Suffix ; ! "Germany"
+Otrish:Otrish Toponym-Suffix ; ! "Austria"
+Pulutugal:Pulutugal Toponym-Suffix ; ! "Portugal"
+Londoni:Londoni Toponym-Suffix ; ! "London"
+Kasai:Kasai Toponym-Suffix ; ! "Kasai(region in the DRC)"
+
+LEXICON NoClassNouns
+yúni:yúni N1-Suffix ; ! "June"
+yúli:yúli N1-Suffix ; ! "July"
+máyí:máyí N1-Suffix ; ! "May"
+
 
 !=============================================================================!
 !                               Verbs                                         !
@@ -1701,6 +1721,7 @@ kobanda:band Verb-Suffix ; ! "To attach, sew"
 kobánga:báng Verb-Suffix ; ! "To be scared"
 kobánza:bánz Verb-Suffix ; ! "To think, believe, remember"
 kobatá:bat Verb-Suffix ; ! "To watch"
+kobatáma:batam Verb-Suffix ; ! "To hide(oneself)"
 kobéba:béb Verb-Suffix ; ! "To damage"
 kobɛla:bɛl Verb-Suffix ; ! "To cook"
 kobélela:bélel Verb-Suffix ; ! "To hail"
@@ -1842,6 +1863,7 @@ kolála:lál Verb-Suffix ; ! "To sleep, nap"
 kolia:li Verb-Suffix ; ! "To eat"
 kotia:ti Verb-Suffix ; ! "To put," may have irregular form but used regularly in corpus
 kobína:bín Verb-Suffix ; ! "To dance"
+kovimba:vimb Verb-Suffix ; ! "To inflate, puff(up)"
 
 kolia:liy Verb-Suffix ; ! "To eat" Dir/LR
 
@@ -1884,6 +1906,7 @@ malámu:malámu Adjective-InVar-Suffix ; ! "Good"
 mobésu:mobésu Adjective-InVar-Suffix ; ! "Raw"
 mobimba:mobimba Adjective-InVar-Suffix ; ! "All, whole"
 mwá:mwá Adjective-InVar-Suffix ; ! Generally means "small," "some," etc.
+mwá:mua Adjective-InVar-Suffix ; ! "some, small" DIR/LR
 mwíndo:mwíndo Adjective-InVar-Suffix ; ! "Black, African"
 ntéi:ntéi Adjective-InVar-Suffix ; ! "Middle, central"
 kitóko:kitóko Adjective-InVar-Suffix ; ! "Beautiful"
@@ -1939,7 +1962,7 @@ LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
 yó:yó PRON-Yo ; ! "You"
 yé:yé PRON-Ye ; ! "He/She/It"
-yě:yě PRON-Ye ; ! "He/She/It"
+ye:ye PRON-Ye ; ! "He/She/It" DIR/LR
 bísó:bísó PRON-Biso ; ! "We"
 bínó:bínó PRON-Bino ; ! "You" (pl)
 bangó:bangó PRON-Bango ; ! "They"
@@ -2049,6 +2072,7 @@ pámba% te:pámba% te Conj-Coord-Suffix ; ! "Because"
 pé:pé Conj-Coord-Suffix ; ! "And"
 po:po Conj-Coord-Suffix ; ! "For"
 to:to Conj-Coord-Suffix ; ! "Or"
+tó:tó Conj-Coord-Suffix ; ! "Or" DIR/LR
 zambi:zambi Conj-Coord-Suffix ; ! "For, because"
 soko:soko Conj-Subord-Suffix ; ! "If"
 sɔ́kí:sɔ́kí Conj-Subord-Suffix ; ! "If" (alternative spelling)
@@ -2217,6 +2241,7 @@ Atlantíki%<np%>%<top%>%<sg%>Atlantíki COMMON-Suffix ; ! "Atlantic"
 Dɛsɛ́mbɛ%<n%>%<sg%>:dɛsɛ́mbɛ COMMON-Suffix ; ! "December"
 Febwáli%<n%>%<sg%>:febwáli COMMON-Suffix ; ! "February"
 guvɛnɛmá%<n%>%<sg%>:guvɛnɛmá COMMON-Suffix ; ! "Gouvernement"
+biló%<n%>%<sg%>:biló COMMON-Suffix ; ! "Office"
 
 LEXICON Irregular
 ! Class 1 mwa to ba
