@@ -137,6 +137,24 @@ Multichar_Symbols
 %[%-inf%]  ! Infinitive
 %[%-imp%]  ! Imperative
 
+%[%-cl1%]
+%[%-cl2%]
+%[%-cl3%]
+%[%-cl4%]
+%[%-cl5%]
+%[%-cl6%]
+%[%-cl7%]
+%[%-cl8%]
+
+%[%+cl1%]
+%[%+cl2%]
+%[%+cl3%]
+%[%+cl4%]
+%[%+cl5%]
+%[%+cl6%]
+%[%+cl7%]
+%[%+cl8%]
+
 
 %<sent%>      ! Sentence marker
 %<guio%>      ! Hyphen
@@ -694,12 +712,12 @@ LEXICON Adjective-Prefix
 Adjective-Stems ;
 %[%-sg%]:mo%> Adjective-Stems ;
 %[%-pl%]:mi%> Adjective-Stems ;
-%[%-pl%]:ba%> Adjective-Stems ;
-%[%-sg%]:mu%> Adjective-Stems ;
-%[%-sg%]:li%> Adjective-Stems ;
-%[%-pl%]:ma%> Adjective-Stems ;
-%[%-sg%]:e%> Adjective-Stems ;
-%[%-pl%]:bi%> Adjective-Stems ;
+%[%-pl%]%[%-cl10%]:ba%> Adjective-Stems ;
+%[%-sg%]%[%-cl1%]:mu%> Adjective-Stems ;
+%[%-sg%]%[%-cl5%]:li%> Adjective-Stems ;
+%[%-pl%]%[%-cl6%]:ma%> Adjective-Stems ;
+%[%-sg%]%[%-cl7%]:e%> Adjective-Stems ;
+%[%-pl%]%[%-cl8%]:bi%> Adjective-Stems ;
 
 LEXICON Adjective-Var-Suffix
 %[%+sg%]%<adj%>%<sg%>: COMMON-Suffix ;
@@ -1032,64 +1050,64 @@ mayéle:yéle V-VI-Suffix ; ! "Intelligence"
 mapɔnɔmi:pɔnɔmi V-VI-Suffix ; ! "Voting season"
 
 LEXICON VII-VIII-Stems
-elálelo:lálelo V-VI-Suffix ; ! "Bedroom"
-elémá:lémá V-VI-Suffix ; ! "Mad, fool"
-ekómo:kómo V-VI-Suffix ; ! "Bracelet"
-etápi:tápi V-VI-Suffix ; ! "Branch(tree)"
-ekango:kango V-VI-Suffix ; ! "Bunch(bananas)"
-ekútu:kútu V-VI-Suffix ; ! "Pumpkin"
-epásu:pásu V-VI-Suffix ; ! "Chip"
-etakoleli:takoleli V-VI-Suffix ; ! "Custom house"
-étónga:tónga V-VI-Suffix ; ! "Flock"
-elobélí:lobélí V-VI-Suffix ; ! "Fishing rights"
-étuka:tuka V-VI-Suffix ; ! "Group, department"
-etubeli:tubeli V-VI-Suffix ; ! "Hammer"
-etumbeli:tumbeli V-VI-Suffix ; ! "Oven"
-enkoti:nkoti V-VI-Suffix ; ! "Cap, crown"
-emekeli:mekeli V-VI-Suffix ; ! "Ruler, measure"
-ebakoleli:bakoleli V-VI-Suffix ; ! "Nail puller"
-elékéla:lekela V-VI-Suffix ; ! "Passage, way"
-etimeli:timeli V-VI-Suffix ; ! "Pickaxe"
-eyotoleli:yotoleli V-VI-Suffix ; ! "Screwdriver"
-esamba:samba V-VI-Suffix ; ! "Shed(animal)"
-esende:sende V-VI-Suffix ; ! "Squirrel"
-esaléli:saléli V-VI-Suffix ; ! "Tool"
-etuna:tuna V-VI-Suffix ; ! "Tsete fly"
-eyémbu:yémbu V-VI-Suffix ; ! "Weed"
-eyenga:yenga V-VI-Suffix ; ! "Sunday, holiday, festival"
-ekombeli:kombeli V-VI-Suffix ; ! "Broom, brush"
-ekangilu:kangilu V-VI-Suffix ; ! "Parcel"
-ebembe:bembe V-VI-Suffix ; ! "Corpse"
-ebumbeli:bumbeli V-VI-Suffix ; ! "Cover"
-embotu:mbotu V-VI-Suffix ; ! "Fist"
-eloli:loli V-VI-Suffix ; ! "Flame"
-engasa:ngasa V-VI-Suffix ; ! "Fork"
-etanda:tanda V-VI-Suffix ; ! "Bench"
-ebende:bendé V-VI-Suffix ; ! "Metal"
-engomeli:engomeli V-VI-Suffix ; ! "Iron"
-ebóngá:bóngá V-VI-Suffix ; ! "Seat"
-esóngí:sóngí V-VI-Suffix ; ! "Torch"
-étɛ́kɛ:tɛ́kɛ V-VI-Suffix ; ! "Eyelid"
-elɛngɛ́:elɛngɛ́ V-VI-Suffix ; ! "Young"
-ejáleli:jáleli V-VI-Suffix ; ! "Custom, habit"
-elɛ́ngí:lɛ́ngí V-VI-Suffix ; ! "Good(taste), sweet"
-etombá:tombá V-VI-Suffix ; ! "Morsel"
-eboka:boka V-VI-Suffix ; ! "Mortar"
-ebimba:bimba V-VI-Suffix ; ! "Package, bundle"
-ekomélí:komélí V-VI-Suffix ; ! "Pen, pencil"
-ebengá:bengá V-VI-Suffix ; ! "Pigeon, dove"
-ekɔ́mbá:kɔ́mbá V-VI-Suffix ; ! "Impotent(woman)"
-esóbé:sóbé V-VI-Suffix ; ! "Meadow, plain"
-etálángu:tálángu V-VI-Suffix ; ! "Scaffold"
-elembo:lembo V-VI-Suffix ; ! "Sign, symptom, seal, mark"
-esakángo:sakángo V-VI-Suffix ; ! "Shed"
-ekoto:koto V-VI-Suffix ; ! "Shoe"
-elímo:límo V-VI-Suffix ; ! "Spirit"
-etáláká:táláká V-VI-Suffix ; ! "Display"
-ekúmbakɛ:kúmbakɛ V-VI-Suffix ; ! "Storm"
-etutú:tutú V-VI-Suffix ; ! "Wall"
-efelo:felo V-VI-Suffix ; ! "Wall"
-eyíká:yíká V-VI-Suffix ; ! "Wheel"
+elálelo:lálelo VII-VIII-Suffix ; ! "Bedroom"
+elémá:lémá VII-VIII-Suffix ; ! "Mad, fool"
+ekómo:kómo VII-VIII-Suffix ; ! "Bracelet"
+etápi:tápi VII-VIII-Suffix ; ! "Branch(tree)"
+ekango:kango VII-VIII-Suffix ; ! "Bunch(bananas)"
+ekútu:kútu VII-VIII-Suffix ; ! "Pumpkin"
+epásu:pásu VII-VIII-Suffix ; ! "Chip"
+etakoleli:takoleli VII-VIII-Suffix ; ! "Custom house"
+étónga:tónga VII-VIII-Suffix ; ! "Flock"
+elobélí:lobélí VII-VIII-Suffix ; ! "Fishing rights"
+étuka:tuka VII-VIII-Suffix ; ! "Group, department"
+etubeli:tubeli VII-VIII-Suffix ; ! "Hammer"
+etumbeli:tumbeli VII-VIII-Suffix ; ! "Oven"
+enkoti:nkoti VII-VIII-Suffix ; ! "Cap, crown"
+emekeli:mekeli VII-VIII-Suffix ; ! "Ruler, measure"
+ebakoleli:bakoleli VII-VIII-Suffix ; ! "Nail puller"
+elékéla:lekela VII-VIII-Suffix ; ! "Passage, way"
+etimeli:timeli VII-VIII-Suffix ; ! "Pickaxe"
+eyotoleli:yotoleli VII-VIII-Suffix ; ! "Screwdriver"
+esamba:samba VII-VIII-Suffix ; ! "Shed(animal)"
+esende:sende VII-VIII-Suffix ; ! "Squirrel"
+esaléli:saléli VII-VIII-Suffix ; ! "Tool"
+etuna:tuna VII-VIII-Suffix ; ! "Tsete fly"
+eyémbu:yémbu VII-VIII-Suffix ; ! "Weed"
+eyenga:yenga VII-VIII-Suffix ; ! "Sunday, holiday, festival"
+ekombeli:kombeli VII-VIII-Suffix ; ! "Broom, brush"
+ekangilu:kangilu VII-VIII-Suffix ; ! "Parcel"
+ebembe:bembe VII-VIII-Suffix ; ! "Corpse"
+ebumbeli:bumbeli VII-VIII-Suffix ; ! "Cover"
+embotu:mbotu VII-VIII-Suffix ; ! "Fist"
+eloli:loli VII-VIII-Suffix ; ! "Flame"
+engasa:ngasa VII-VIII-Suffix ; ! "Fork"
+etanda:tanda VII-VIII-Suffix ; ! "Bench"
+ebende:bendé VII-VIII-Suffix ; ! "Metal"
+engomeli:engomeli VII-VIII-Suffix ; ! "Iron"
+ebóngá:bóngá VII-VIII-Suffix ; ! "Seat"
+esóngí:sóngí VII-VIII-Suffix ; ! "Torch"
+étɛ́kɛ:tɛ́kɛ VII-VIII-Suffix ; ! "Eyelid"
+elɛngɛ́:elɛngɛ́ VII-VIII-Suffix ; ! "Young"
+ejáleli:jáleli VII-VIII-Suffix ; ! "Custom, habit"
+elɛ́ngí:lɛ́ngí VII-VIII-Suffix ; ! "Good(taste), sweet"
+etombá:tombá VII-VIII-Suffix ; ! "Morsel"
+eboka:boka VII-VIII-Suffix ; ! "Mortar"
+ebimba:bimba VII-VIII-Suffix ; ! "Package, bundle"
+ekomélí:komélí VII-VIII-Suffix ; ! "Pen, pencil"
+ebengá:bengá VII-VIII-Suffix ; ! "Pigeon, dove"
+ekɔ́mbá:kɔ́mbá VII-VIII-Suffix ; ! "Impotent(woman)"
+esóbé:sóbé VII-VIII-Suffix ; ! "Meadow, plain"
+etálángu:tálángu VII-VIII-Suffix ; ! "Scaffold"
+elembo:lembo VII-VIII-Suffix ; ! "Sign, symptom, seal, mark"
+esakángo:sakángo VII-VIII-Suffix ; ! "Shed"
+ekoto:koto VII-VIII-Suffix ; ! "Shoe"
+elímo:límo VII-VIII-Suffix ; ! "Spirit"
+etáláká:táláká VII-VIII-Suffix ; ! "Display"
+ekúmbakɛ:kúmbakɛ VII-VIII-Suffix ; ! "Storm"
+etutú:tutú VII-VIII-Suffix ; ! "Wall"
+efelo:felo VII-VIII-Suffix ; ! "Wall"
+eyíká:yíká VII-VIII-Suffix ; ! "Wheel"
 ebale:bale VII-VIII-Suffix ; ! "River"
 ebandeli:bandeli VII-VIII-Suffix ; ! "Beginning"
 ebangá:bangá VII-VIII-Suffix ; ! "Wave"
@@ -1937,7 +1955,7 @@ molaí:laí Adjective-Var-Suffix ; ! "Long"
 molayi:layi Adjective-Var-Suffix ; ! "Tall, long"
 molalanda:lalanda Adjective-Var-Suffix ; ! "Blind"
 monɛ́nɛ:nɛ́nɛ Adjective-Var-Suffix ; ! "Big"
-mobala:bola Adjective-Var-Suffix ; ! "Poor"
+mobola:bola Adjective-Var-Suffix ; ! "Poor"
 banso:banso Adjective-InVar-Suffix ; ! "All"
 bobele:bobele Adjective-InVar-Suffix ; ! "Only"
 bololo:bololo Adjective-InVar-Suffix ; ! "Bitter, sour"
@@ -1948,7 +1966,7 @@ malámu:malámu Adjective-InVar-Suffix ; ! "Good"
 mobésu:mobésu Adjective-InVar-Suffix ; ! "Raw"
 mobimba:mobimba Adjective-InVar-Suffix ; ! "All, whole"
 mwá:mwá Adjective-InVar-Suffix ; ! Generally means "small," "some," etc.
-mwá:mua Adjective-InVar-Suffix ; ! "some, small" DIR/LR
+mua:mua Adjective-InVar-Suffix ; ! "some, small" DIR/LR
 mwíndo:mwíndo Adjective-InVar-Suffix ; ! "Black, African"
 ntéi:ntéi Adjective-InVar-Suffix ; ! "Middle, central"
 kitóko:kitóko Adjective-InVar-Suffix ; ! "Beautiful"
