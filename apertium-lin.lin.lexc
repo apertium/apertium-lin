@@ -145,6 +145,7 @@ Multichar_Symbols
 %[%-cl6%]
 %[%-cl7%]
 %[%-cl8%]
+%[%-cl10%]
 
 %[%+cl1%]
 %[%+cl2%]
@@ -154,6 +155,7 @@ Multichar_Symbols
 %[%+cl6%]
 %[%+cl7%]
 %[%+cl8%]
+%[%+cl10%]
 
 
 %<sent%>      ! Sentence marker
@@ -671,20 +673,27 @@ LEXICON PRON-Em
 
 LEXICON Determiner-Prefix
 Determiner-Stems ;
-:mo%> Determiner-Stems ;
-:li%> Determiner-Stems ;
-:ma%> Determiner-Stems ;
-:ba%> Determiner-Stems ;
-:mu%> Determiner-Stems ;
-:bi%> Determiner-Stems ;
-:e%> Determiner-Stems ;
-:i%> Determiner-Stems ;
+%[%-sg%]:mo%> Determiner-Stems ;
+%[%-cl1%]:mu%> Determiner-Stems ;
+%[%-cl5%]:li%> Determiner-Stems ;
+%[%-cl5%]:i%> Determiner-Stems ;
+%[%-cl6%]:ma%> Determiner-Stems ;
+%[%-cl7%]:e%> Determiner-Stems ;
+%[%-cl8%]:bi%> Determiner-Stems ;
+!%[%-cl10%]:ba%> Determiner-Stems ;
+
+LEXICON Det-Var-Ind
+%[%+sg%]%<det%>%<ind%>%<sp%>: COMMON-Suffix ;
+%[%+cl1%]%<det%>%<ind%>%<sp%>%<cl1%>: COMMON-Suffix ;
+%[%+cl5%]%<det%>%<ind%>%<sp%>%<cl5%>: COMMON-Suffix ;
+%[%+cl6%]%<det%>%<ind%>%<sp%>%<cl6%>: COMMON-Suffix ;
+%[%+cl7%]%<det%>%<ind%>%<sp%>%<cl7%>: COMMON-Suffix ;
+%[%+cl8%]%<det%>%<ind%>%<sp%>%<cl8%>: COMMON-Suffix ;
+!%[%+cl10%]%<det%>%<ind%>%<sp%>: COMMON-Suffix ;
 
 LEXICON Det-Pos
 %<det%>%<pos%>%<sp%>: COMMON-Suffix ;
 
-LEXICON Det-Var-Ind
-%<det%>%<ind%>%<sp%>: COMMON-Suffix ;
 
 !=============================================================================!
 !                         Misc. Morphotactics                                 !
@@ -712,16 +721,22 @@ LEXICON Adjective-Prefix
 Adjective-Stems ;
 %[%-sg%]:mo%> Adjective-Stems ;
 %[%-pl%]:mi%> Adjective-Stems ;
-%[%-pl%]%[%-cl10%]:ba%> Adjective-Stems ;
 %[%-sg%]%[%-cl1%]:mu%> Adjective-Stems ;
 %[%-sg%]%[%-cl5%]:li%> Adjective-Stems ;
 %[%-pl%]%[%-cl6%]:ma%> Adjective-Stems ;
 %[%-sg%]%[%-cl7%]:e%> Adjective-Stems ;
 %[%-pl%]%[%-cl8%]:bi%> Adjective-Stems ;
+!%[%-pl%]%[%-cl10%]:ba%> Adjective-Stems ;
 
 LEXICON Adjective-Var-Suffix
 %[%+sg%]%<adj%>%<sg%>: COMMON-Suffix ;
 %[%+pl%]%<adj%>%<pl%>: COMMON-Suffix ;
+%[%+sg%]%[%+cl1%]%<adj%>%<sg%>%<cl1%>: COMMON-Suffix ;
+%[%+sg%]%[%+cl5%]%<adj%>%<sg%>%<cl5%>: COMMON-Suffix ;
+%[%+pl%]%[%+cl6%]%<adj%>%<sg%>%<cl6%>: COMMON-Suffix ;
+%[%+sg%]%[%+cl7%]%<adj%>%<sg%>%<cl7%>: COMMON-Suffix ;
+%[%+pl%]%[%+cl8%]%<adj%>%<sg%>%<cl8%>: COMMON-Suffix ;
+!%[%+pl%]%[%+cl10%]%<adj%>%<sg%>%<cl10%>: COMMON-Suffix ;
 
 LEXICON Adjective-InVar-Suffix
 %<adj%>: COMMON-Suffix ;
@@ -973,6 +988,7 @@ likémba:kémba V-VI-Suffix ; ! "Banana, plantain"
 lisalá:salá V-VI-Suffix ; ! "Field, garden"
 likabo:kabo V-VI-Suffix ; ! "Portion"
 likonjí:konjí V-VI-Suffix ; ! "Post"
+likonzi:konzi V-VI-Suffix ; ! "Stake, pole"
 lisasú:sasú V-VI-Suffix ; ! "Saucepan"
 litwáya:twáya V-VI-Suffix ; ! "Serviette"
 lingɔngɔ:ngɔngɔ V-VI-Suffix ; ! "Sheet"
@@ -1041,7 +1057,7 @@ LEXICON VI-Only-Stems
 mabélé:bélé V-VI-Suffix ; ! "Sand, earth"
 mafúta:fúta V-VI-Suffix ; ! "Oil"
 malási:lási V-VI-Suffix ; ! "Perfume"
-máí:í V-VI-Suffix ; ! "Water"
+maí:í V-VI-Suffix ; ! "Water"
 máí:yí V-VI-Suffix ; ! Dir/LR
 makilá:kilá V-VI-Suffix ; ! "Blood"
 mambénga:mbénga V-VI-Suffix ; ! "Equator"
@@ -1246,7 +1262,8 @@ komíni:komíni IX-X-Suffix ; ! "Communes"
 sapáto:sapáto IX-X-Suffix ; ! "Shoe"
 afabɛ́:afabɛ́ IX-X-Suffix ; ! "Alphabet"
 dyosɛ́zi:dyosɛ́zi IX-X-Suffix ; ! "Diocese"
-mángwɛlɛ́:mángwɛlɛ́ V-VI-Suffix ; ! "Vaccine"
+mángwɛlɛ́:mángwɛlɛ́ IX-X-Suffix ; ! "Vaccine"
+zemi:zemi IX-X-Suffix ; ! "Pregnancy"
 
 !!! Can take n/m or not
 LEXICON IX-X-b-Stems
@@ -1838,7 +1855,7 @@ kolaka:lak Verb-Suffix ; ! "To warn, predict, advise"
 kolanda:land Verb-Suffix ; ! "To follow"
 kolánga:láng Verb-Suffix ; ! "To get drunk"
 kolela:lel Verb-Suffix ; ! "To cry, whine"
-kotambola:tambola Verb-Suffix ; ! "To walk"
+kotambola:tambol Verb-Suffix ; ! "To walk"
 kotatola:tatol Verb-Suffix ; ! "To testify"
 koleka:lek Verb-Suffix ; ! "To pass, surpass, exceed"
 kolɛ́mba:lɛ́mb Verb-Suffix ; ! "To be tired"
@@ -2021,6 +2038,7 @@ lingála:lingála Adjective-InVar-Suffix ; ! Dir/LR
 lialémani:lialémani Adjective-InVar-Suffix ; ! "German"
 ngóla:ngóla Adjective-InVar-Suffix ; ! "Red"
 ngɛngɛ:ngɛngɛ Adjective-InVar-Suffix ; ! "Poisonous"
+zemi:zemi Adjective-InVar-Suffix ; ! "Pregnant"
 
 LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
@@ -2125,13 +2143,15 @@ nzinganzinga:nzinganzinga Prep-Suffix ; ! Dir/LR
 mpó% na:mpó% na Prep-Suffix ; ! "To"
 ntéi:ntéi Prep-Suffix ; ! "Among"
 útá:útá Prep-Suffix ; ! "From"
+bandá:bandá Prep-Suffix ; ! "From"
 
 LEXICON Conjunctions
 bɔngɔ́:bɔngɔ́ Conj-Coord-Suffix ; ! "So"
 kasi:kasi Conj-Coord-Suffix ; ! "But"
 mpé:mpé Conj-Coord-Suffix ; ! "And"
 mpɔ:mpɔ Conj-Coord-Suffix ; ! "For"
-mpó:mpó Conj-Coord-Suffix ; ! "For"
+mpó:mpó Conj-Coord-Suffix ; ! "For" Dir/LR
+mpô:mpô Conj-Coord-Suffix ; ! "For" Dir/LR
 na:na Conj-Coord-Suffix ; ! "And"
 pámba% te:pámba% te Conj-Coord-Suffix ; ! "Because"
 pé:pé Conj-Coord-Suffix ; ! "And"
@@ -2341,6 +2361,8 @@ guvɛnɛmá%<n%>%<sg%>:guvɛnɛmá COMMON-Suffix ; ! "Gouvernement"
 biló%<n%>%<sg%>:biló COMMON-Suffix ; ! "Office"
 vɔ́ti%<n%>%<sg%>:vɔ́ti COMMON-Suffix ; ! "Votes(electoral)"
 tetanɔ́si%<n%>%<sg%>:tetanɔ́si COMMON-Suffix ; ! "Tetanus"
+katolike%<n%>%<sg%>:tetanɔ́si COMMON-Suffix ; ! "Catholic"
+bakatolike%<n%>%<pl%>:tetanɔ́si COMMON-Suffix ; ! "Catholics"
 
 LEXICON Irregular
 ! Class 1 mwa to ba
