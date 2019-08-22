@@ -138,9 +138,9 @@ Multichar_Symbols
 %[%-imp%]  ! Imperative
 
 %[%-cl1%]
-%[%-cl2%]
-%[%-cl3%]
-%[%-cl4%]
+!%[%-cl2%]
+!%[%-cl3%]
+!%[%-cl4%]
 %[%-cl5%]
 %[%-cl6%]
 %[%-cl7%]
@@ -148,9 +148,9 @@ Multichar_Symbols
 %[%-cl10%]
 
 %[%+cl1%]
-%[%+cl2%]
-%[%+cl3%]
-%[%+cl4%]
+!%[%+cl2%]
+!%[%+cl3%]
+!%[%+cl4%]
 %[%+cl5%]
 %[%+cl6%]
 %[%+cl7%]
@@ -672,6 +672,9 @@ LEXICON PRON-Nini
 LEXICON PRON-Em
 %<prn%>%<ind%>%<nt%>%<sg%>: COMMON-Suffix ;
 
+LEXICON PRON-Mosusu
+%<prn%>%<ind%>%<mf%>%<pl%>: COMMON-Suffix ;
+
 !=============================================================================!
 !                         Determiner Morphotactics                            !
 !=============================================================================!
@@ -724,24 +727,25 @@ LEXICON Neg-Suffix
 
 LEXICON Adjective-Prefix
 Adjective-Stems ;
-%[%-sg%]:mo%> Adjective-Stems ;
-%[%-pl%]:mi%> Adjective-Stems ;
-%[%-sg%]%[%-cl1%]:mu%> Adjective-Stems ;
-%[%-sg%]%[%-cl5%]:li%> Adjective-Stems ;
-%[%-pl%]%[%-cl6%]:ma%> Adjective-Stems ;
-%[%-sg%]%[%-cl7%]:e%> Adjective-Stems ;
-%[%-pl%]%[%-cl8%]:bi%> Adjective-Stems ;
+%[%-sg%]:mo%> Adjective-Stems ; ! default singular
+%[%-pl%]:mi%> Adjective-Stems ; ! defautl plural
+%[%-cl1%]:mu%> Adjective-Stems ;
+%[%-cl5%]:li%> Adjective-Stems ;
+%[%-cl6%]:ma%> Adjective-Stems ;
+%[%-cl7%]:e%> Adjective-Stems ;
+%[%-cl8%]:bi%> Adjective-Stems ;
 !%[%-pl%]%[%-cl10%]:ba%> Adjective-Stems ;
 
 LEXICON Adjective-Var-Suffix
 %[%+sg%]%<adj%>%<sg%>: COMMON-Suffix ;
 %[%+pl%]%<adj%>%<pl%>: COMMON-Suffix ;
-%[%+sg%]%[%+cl1%]%<adj%>%<sg%>%<cl1%>: COMMON-Suffix ;
-%[%+sg%]%[%+cl5%]%<adj%>%<sg%>%<cl5%>: COMMON-Suffix ;
-%[%+pl%]%[%+cl6%]%<adj%>%<sg%>%<cl6%>: COMMON-Suffix ;
-%[%+sg%]%[%+cl7%]%<adj%>%<sg%>%<cl7%>: COMMON-Suffix ;
-%[%+pl%]%[%+cl8%]%<adj%>%<sg%>%<cl8%>: COMMON-Suffix ;
+%[%+cl1%]%<adj%>%<sg%>%<cl1%>: COMMON-Suffix ;
+%[%+cl5%]%<adj%>%<sg%>%<cl5%>: COMMON-Suffix ;
+%[%+cl6%]%<adj%>%<sg%>%<cl6%>: COMMON-Suffix ;
+%[%+cl7%]%<adj%>%<sg%>%<cl7%>: COMMON-Suffix ;
+%[%+cl8%]%<adj%>%<sg%>%<cl8%>: COMMON-Suffix ;
 !%[%+pl%]%[%+cl10%]%<adj%>%<sg%>%<cl10%>: COMMON-Suffix ;
+
 
 LEXICON Adjective-InVar-Suffix
 %<adj%>: COMMON-Suffix ;
@@ -2112,6 +2116,8 @@ liputrugɛ́shi:liputrugɛ́shi Adjective-InVar-Suffix ; ! "Portuguese"
 libándá:libándá Adjective-InVar-Suffix ; ! "Outside"
 bondɔbɔ́:bondɔbɔ́ Adjective-InVar-Suffix ; ! "Yellow"
 mbwé:mbwé Adjective-InVar-Suffix ; ! "Gray"
+mayɛ́lɛ:mayɛ́lɛ Adjective-InVar-Suffix ; ! "Intelligent, smart"
+mumpɛ́:mumpɛ́ Adjective-InVar-Suffix ; ! "Catholic"
 
 LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
@@ -2142,6 +2148,8 @@ elóko% nyɔ́nsɔ:elóko% nyɔ́nsɔ PRON-Em; ! "Everything"
 songolo:songolo PRON-Em ; ! "Someone" (old Lingala)
 elóko% mókó% tɛ́:elóko% mókó% tɛ́ PRON-Em ; ! "Nothing"
 elóko% tɛ́:elóko% tɛ́ PRON-Em ; ! "Nothing"
+mosúsu:mosúsu PRON-Mosusu ; ! "Others" cl1
+basúsu:basúsu PRON-Mosusu ; ! "Others" cl2
 
 ngáí% mókó:ngáí% mókó PRON-Ref-Ngai ; ! "Myself"
 yó% mókó:yó% mókó PRON-Ref-Yo ; ! "Yourself"
@@ -2451,6 +2459,7 @@ espania%<np%>%<top%>%<sg%>:espania COMMON-Suffix ; ! "Spain"
 fízíkí%<n%>%<sg%>:fízíkí COMMON-Suffix ; ! "Physics"
 tomáti%<n%>%<sg%>:tomáti COMMON-Suffix ; ! "Tomatoe"
 republíki%<n%>%<sg%>:republíki COMMON-Suffix ; ! "Republic"
+Rusí%<np%>%<top%>%<sg%>:Rusí COMMON-Suffix ; ! "Russia"
 
 LEXICON Irregular
 ! Class 1 mwa to ba
