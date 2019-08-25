@@ -376,7 +376,7 @@ LEXICON Toponym-Suffix
 %<np%>%<top%>%<sg%>: COMMON-Suffix ;
 
 LEXICON MiscProper-Suffix
-%<np%>%<al%>: COMMON-Suffix ;
+%<np%>%<al%>%<sg%>: COMMON-Suffix ;
 
 !=============================================================================!
 !                         Verb Morphotactics                                  !
@@ -942,7 +942,6 @@ monyókoli:nyókoli III-IV-Suffix ; ! "Torment"
 mosálá:sálá III-IV-Suffix ; ! "Work, occupation"
 mosíká:síká III-IV-Suffix ; ! "Far away"
 mosolo:solo III-IV-Suffix ; ! "Dowry, money"
-mosúsu:súsu III-IV-Suffix ; ! "Other" (See same entry in Class I, can apparently be both)
 motámbo:támbo III-IV-Suffix ; ! "Trap"
 motáné:táné III-IV-Suffix ; ! "Light color"
 motéma:téma III-IV-Suffix ; ! "Heart, strength of character"
@@ -1391,7 +1390,6 @@ boúmbu:úmbu XIV-Suffix ; ! "Slavery"
 boúmeli:úmeli XIV-Suffix ; ! "Duration"
 boyíké:yíké XIV-Suffix ; ! "Many"
 bozóba:zóba XIV-Suffix ; ! "Ignorance, stupidity"
-bozitó:zitó XIV-Suffix ; ! "Fatness"
 bozwi:zwi XIV-Suffix ; ! "Possession, acquisition"
 bowéyi:wéyi XIV-Suffix ; ! "Death"
 bowéi:wéi XIV-Suffix ; ! "Death"
@@ -1512,7 +1510,7 @@ Tanzania:Tanzania Toponym-Suffix ; ! "Tanzania"
 Timote:Timote Anthroponym-M-Suffix ; ! "Timothy"
 Tshiluba:Tshiluba Toponym-Suffix ; ! "Tshiluba"
 Uganda:Uganda Toponym-Suffix ; ! "Uganda"
-Wikipedia:Wikipedia Toponym-Suffix ; ! "Wikipedia"
+Wikipedia:Wikipedia MiscProper-Suffix ; ! "Wikipedia"
 Zaki:Zaki Anthroponym-M-Suffix ; ! "James"
 Tshombe:Tshombe Anthroponym-M-Suffix ; ! "Tshombe"
 Natanayele:Natanayele Anthroponym-M-Suffix ; ! "Nathanael"
@@ -2118,6 +2116,7 @@ bondɔbɔ́:bondɔbɔ́ Adjective-InVar-Suffix ; ! "Yellow"
 mbwé:mbwé Adjective-InVar-Suffix ; ! "Gray"
 mayɛ́lɛ:mayɛ́lɛ Adjective-InVar-Suffix ; ! "Intelligent, smart"
 mumpɛ́:mumpɛ́ Adjective-InVar-Suffix ; ! "Catholic"
+bozitó:bozitó Adjective-InVar-Suffix ; ! "Heavy, fatness"
 
 LEXICON Pronouns
 ngáí:ngáí PRON-Ngai ; ! "I"
@@ -2330,7 +2329,7 @@ kasi:kasi Adverb-Suffix ; ! "However"
 nzokande:nzokande Adverb-Suffix ; ! "However"
 nzoka% nde:nzoka% nde Adverb-Suffix ; ! "Yet, however"
 penzá:penzá Adverb-Suffix ; ! "Really, very"
-penepene:penepene Adverb-Suffix ; ! "Very close"
+penepene:penepene Adverb-Suffix ; ! "Near"
 sikawa:sikawa Adverb-Suffix ; ! "Now" (sikoyo is a synonym)
 sik'oyo:sik'oyo Adverb-Suffix ; ! "Now, immediately"
 wápi:wápi Adverb-Suffix ; ! "Where?"
