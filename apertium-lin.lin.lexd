@@ -24,47 +24,47 @@ PATTERNS
 :XV XV-Stems XV:
 
 LEXICON I-II
-<n><cl1><sg>:mo>
-<n><cl1><sg><abs>:ki>mo>
-<n><cl1><pl>:ba>
+<n><cl1><sg>:mo
+#<n><cl1><sg><abs>:ki>mo>
+<n><cl1><pl>:ba
 <n><cl1><pl><abs>:ki>ba>
 <n><cl1><pl><def>:ba>ba>
 
 LEXICON Ia-II
 <n><cl1a><sg>:
-<n><cl1a><sg><abs>:ki>
-<n><cl1a><pl>:ba>
+<n><cl1a><sg><abs>:ki
+<n><cl1a><pl>:ba
 <n><cl1a><pl><abs>:ki>ba>
 <n><cl1a><pl><def>:ba>ba>
 
 LEXICON III-IV
-<n><cl3><sg>:mo>
+<n><cl3><sg>:mo
 <n><cl3><sg><abs>:ki>mo>
-<n><cl3><pl>:mi>
+<n><cl3><pl>:mi
 <n><cl3><pl><abs>:ki>mi>
 <n><cl3><pl><def>:ba>mi>
 
 LEXICON V-VI
-<n><cl5><sg>:li>
+<n><cl5><sg>:li
 <n><cl5><sg><abs>:ki>li>
-<n><cl5><pl>:ma>
+<n><cl5><pl>:ma
 <n><cl5><pl><abs>:ki>ma>
 <n><cl5><pl><def>:ba>ma>
 
 LEXICON VI-Only
-<n><cl5><pl>:ma>
+<n><cl5><pl>:ma
 
 LEXICON VII-VIII
-<n><cl7><sg>:e>
+<n><cl7><sg>:e
 <n><cl7><sg><abs>:ki>e>
-<n><cl7><pl>:bi>
+<n><cl7><pl>:bi
 <n><cl7><pl><abs>:ki>bi>
 <n><cl7><pl><def>:ba>bi>
 
 LEXICON IX-X
 <n><cl9><sg>:
-<n><cl9><pl>:ba>
-<n><cl9><sg><abs>:ki>
+<n><cl9><pl>:ba
+<n><cl9><sg><abs>:ki
 <n><cl9><pl><abs>:ki>ba>
 <n><cl9><pl><def>:ba>ba>
 
@@ -72,20 +72,20 @@ LEXICON IX-X-Var
 :{n}
 
 LEXICON XI-VI
-<n><cl11><sg>:lo>
+<n><cl11><sg>:lo
 <n><cl11><sg><abs>:ki>lo>
 <n><cl11><sg><inst>:ba>lo>
-<n><cl11><pl>:ma>
+<n><cl11><pl>:ma
 <n><cl11><pl><abs>:ki>ma>
 <n><cl11><pl><def>:ba>ma>
 
 LEXICON XIV
-<n><cl14><sg>:bo>
+<n><cl14><sg>:bo
 <n><cl14><sg><abs>:ki>bo>
 <n><cl14><sg><inst>:ba>bo>
 
 LEXICON XV
-<n><cl15><sg>:ko>
+<n><cl15><sg>:ko
 
 LEXICON N1-Suffix
 <n><sg>:
@@ -139,8 +139,8 @@ LEXICON VerbPersNum
 <p3><sp><nn>:e>
 
 LEXICON VerbInfImp(2)
-:ko> <inf>:a
-:ko> <inf><intns>:áká
+:ko <inf>:a
+:ko <inf><intns>:áká
 : <imp>:a
 : <imp><intns>:áká
 
@@ -157,21 +157,21 @@ LEXICON VerbTense
 <urp>:ákí
 
 LEXICON VerbRef
-<refl>:mí>
+<refl>:mí
 :
 
 LEXICON Verb-Suffix
-<vblex>:>
+<vblex>:
 
 LEXICON Verb-Suffix-Caus
 <vblex><caus><rev>:>ol>
 
 LEXICON Verb-Rad-Ex
-<appl>:el>
-<caus>:is>
-<recip>:an>
-<rev>:w>
-<pass>:am>
+<appl>:el
+<caus>:is
+<recip>:an
+<rev>:w
+<pass>:am
 :
 
 ALIAS Verb-Rad-Ex Verb-Rad-Ex2
@@ -180,7 +180,7 @@ LEXICON Aux-Verb-Suffix
 <vaux>:
 
 LEXICON Verb-Irreg2-Suffix
-:>
+:
 
 #=============================================================================!
 #                         Misc. Morphotactics                                 !
