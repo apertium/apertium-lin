@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Lingala], [0.1.0], [apowell1@swarthmore.edu], [apertium-lin], [http://wiki.apertium.org/wiki/Apertium-lin])
+AC_INIT([Apertium Lingala], [0.1.0], [apowell1@swarthmore.edu], [apertium-lin], [https://wiki.apertium.org/wiki/Apertium-lin])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
