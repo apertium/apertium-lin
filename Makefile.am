@@ -138,7 +138,9 @@ if HAVE_HFSTOSPELL
 EXTRA_TARGETS += $(LANG1).zhfst
 endif # HAVE_HFSTOSPELL
 
-apertium_lin_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS) $(LANG1).prob
+apertium_lin_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS) $(LANG1).prob \
+				  $(BASENAME).$(LANG1).lexd $(BASENAME).$(LANG1).rlx \
+				  $(BASENAME).post-$(LANG1).dix
 
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
@@ -146,10 +148,7 @@ pkgconfig_DATA = $(BASENAME).pc
 noinst_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local: install-modes
-	test -d $(DESTDIR)$(apertium_lin_srcdir) || mkdir -p $(DESTDIR)$(apertium_lin_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).lexd $(DESTDIR)$(apertium_lin_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_lin_srcdir)
-	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_lin_srcdir)
+uninstall-local: uninstall-modes
 
 ###############################################################################
 ## Cleanup
